@@ -1,0 +1,50 @@
+.header {
+  background-image: url("../images/header.svg");
+}
+
+.header__content {
+  padding: 0 65px 0 65px;
+  width: 100%;
+  min-height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__content a {
+  color: #ffffff;
+}
+
+.header__phone-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.phone,
+.mail,
+.registration {
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.mail {
+  text-decoration-line: underline;
+}
+
+.search {
+  max-width: 508px;
+  width: 100%;
+}
+
+.search-input {
+  border: none;
+  background: #ffffff;
+  border-radius: 4px;
+  width: 100%;
+  padding: 12px 0 12px 12px;
+  font-size: 14px;
+  line-height: 146.02%;
+  color: #5d3097;
+}

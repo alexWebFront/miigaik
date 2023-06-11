@@ -1,0 +1,29 @@
+.portal-description__title {
+  margin-bottom: 30px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 51px;
+  max-width: 473px;
+}
+
+.portal-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 510px;
+  margin: 0 auto;
+}
+
+.portal-description__info {
+  margin-bottom: 50px;
+  color: #323232;
+  font-size: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 146.02%;
+}
+
+.portal-description__info p:not(:last-child) {
+  margin-bottom: 15px;
+}

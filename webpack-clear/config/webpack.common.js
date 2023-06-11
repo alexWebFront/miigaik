@@ -47,6 +47,13 @@ module.exports = {
       // шаблон
       template: paths.src + '/template.html',
       filename: 'index.html' // output file
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/restorePassword.html',
+      filename: 'restorePassword.html' // output file
     })
   ],
 

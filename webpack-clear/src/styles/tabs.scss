@@ -1,0 +1,43 @@
+.tabs__items {
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #2c3637;
+}
+
+.tabs__item {
+  flex: 0 1 50%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs_login {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 35px 60px 35px;
+}
+
+.tabs_login input {
+  width: 100%;
+  line-height: 146.02%;
+  padding: 16px 0 17px 16px;
+  font-size: 16px;
+}
+
+.tabs_login span a {
+  line-height: 146.02%;
+  text-decoration-line: underline;
+  color: #4f55bd;
+}
+
+.tabs_login span {
+  margin-bottom: 30px;
+}
+
+.tabs_registration {
+  display: none;
+}

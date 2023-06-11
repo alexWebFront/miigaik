@@ -1,7 +1,56 @@
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Regular.ttf');
+@import 'fonts';
+@import 'variables';
+@import 'normalize';
+@import 'footer.scss';
+@import 'tabs.scss';
+@import 'header';
+@import 'buttons.scss';
+@import 'registration-form.scss';
+@import 'portal-description.scss';
+@import 'restore-password-form.scss';
+
+body, header, footer {
+  font-family: "Montserrat";
 }
 
-@import 'variables';
-@import 'scaffolding';
+
+.set-new-password-form h1 {
+	font-size: 34px;
+	line-height: 41px;
+}
+
+
+
+  
+a {  text-decoration: none;
+	color: #2C3637;
+}
+
+
+
+h1{
+	font-size: 42px;
+	line-height: 51px;
+	color: #2C3637;
+}
+
+
+.content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 100%;
+}
+
+.page {
+	height: calc(100% - 296px);
+}
+
+label {
+	display: flex;
+	flex-direction: column;
+	font-size: 13px;
+	line-height: 146.02%;
+	color: #323232;
+	margin-bottom: 16px;
+}
+

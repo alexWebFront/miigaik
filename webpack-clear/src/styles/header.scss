@@ -3,7 +3,15 @@
   background-image: url("../images/header.svg");
 
   @media screen and (max-width: 375px) {
-    display: none;
+  }
+
+  &__logo {
+    img {
+      @media screen and (max-width: 375px) {
+        width: 132px;
+        height: 40px;
+      }
+    }
   }
 
   &__content {
@@ -13,6 +21,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: 375px) {
+      padding: 0 15px;
+      min-height: 50px;
+    }
   }
 
   &__phone-link {
@@ -20,6 +33,10 @@
     line-height: 22px;
     color: #ffffff;
     font-weight: 500;
+
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
   }
 
   &__mail-link {
@@ -28,11 +45,17 @@
     line-height: 22px;
     color: #ffffff;
     font-weight: 500;
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
   }
 
   &__search {
     max-width: 508px;
     width: 100%;
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
   }
 
   &__search-input {
@@ -52,5 +75,8 @@
     line-height: 22px;
     color: #ffffff;
     font-weight: 500;
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
   }
 }

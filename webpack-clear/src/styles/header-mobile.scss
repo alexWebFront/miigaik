@@ -9,15 +9,15 @@
     padding: 5px 15px 5px 15px;
     background-image: url("../images/header-mobile-bg.svg");
   }
-
-  &-logo {
-    img {
-      @media screen and (max-width: 375px) {
-        width: 132px;
-        height: 40px;
-      }
-    }
-  }
+  //
+  //&-logo {
+  //  img {
+  //    @media screen and (max-width: 375px) {
+  //      width: 132px;
+  //      height: 40px;
+  //    }
+  //  }
+  //}
 
   &-menu {
     display: flex;

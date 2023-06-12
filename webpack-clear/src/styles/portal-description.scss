@@ -1,11 +1,20 @@
-.portal-description__title {
-  margin-bottom: 30px;
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 51px;
-  max-width: 473px;
+.content {
+  height: 100%;
+  @media screen and (max-width: 375px) {
+    height: auto;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+
+    @media screen and (max-width: 375px) {
+      display: block;
+    }
+  }
 }
+
 
 .portal-description {
   display: flex;
@@ -13,17 +22,43 @@
   justify-content: center;
   max-width: 510px;
   margin: 0 auto;
+
+  @media screen and (max-width: 375px) {
+    max-width: 345px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 51px;
+    max-width: 473px;
+    color: #2C3637;
+
+    @media screen and (max-width: 375px) {
+      font-size: 28px;
+      line-height: 34px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__info {
+    margin-bottom: 50px;
+    color: #323232;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 146.02%;
+
+    @media screen and (max-width: 375px) {
+      font-size: 14px;
+      line-height: 136.02%;
+      margin-bottom: 22px;
+    }
+  }
+
+  &__info p:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
-.portal-description__info {
-  margin-bottom: 50px;
-  color: #323232;
-  font-size: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 146.02%;
-}
-
-.portal-description__info p:not(:last-child) {
-  margin-bottom: 15px;
-}

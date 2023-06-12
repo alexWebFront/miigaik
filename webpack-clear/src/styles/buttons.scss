@@ -12,11 +12,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 375px) {
+    margin-bottom: 50px;
+  }
+}
+
+.button-restore {
+  width: 265px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
 .button {
   display: flex;
   font-family: "Montserrat";
+  font-size: 16px;
   font-weight: 700;
   line-height: 146.02%;
   text-align: center;

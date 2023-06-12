@@ -2,46 +2,40 @@
 @import 'variables';
 @import 'normalize';
 @import 'footer.scss';
+@import 'footer-mobile';
 @import 'tabs.scss';
 @import 'header';
+@import 'header-mobile';
 @import 'buttons.scss';
 @import 'auth-form.scss';
 @import 'portal-description.scss';
 @import 'restore-password-form.scss';
+@import 'set-new-password.scss';
 
 body, header, footer {
   font-family: "Montserrat";
 }
 
 
-.set-new-password-form h1 {
-	font-size: 34px;
-	line-height: 41px;
-}
-
-
-
-  
-a {  text-decoration: none;
-	color: #2C3637;
-}
-
-
-
-h1{
-	font-size: 42px;
-	line-height: 51px;
-	color: #2C3637;
-}
-
-
-.content {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	height: 100%;
-}
-
 .page {
-	height: calc(100% - 296px);
+  height: calc(100% - 296px);
+  @media screen and (max-width: 375px) {
+    height: 100%;
+  }
 }
+
+
+.set-new-password-form h1 {
+  font-size: 34px;
+  line-height: 41px;
+}
+
+
+a {
+  color: #2C3637;
+}
+
+
+
+
 

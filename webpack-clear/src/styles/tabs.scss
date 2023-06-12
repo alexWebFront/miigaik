@@ -1,19 +1,25 @@
 .tabs {
   &__items {
     display: flex;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
     text-align: center;
     color: #2c3637;
   }
 
   &__item {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
     flex: 0 1 50%;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: none;
+
+    @media screen and (max-width: 375px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 }

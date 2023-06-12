@@ -2,6 +2,10 @@
   //height: 211px;
   background: #eceef7;
   //padding: 38px 103px 26px 65px;
+  font-weight: 400;
+  @media screen and (max-width: 375px){
+    display: none;
+  }
 
   &__content {
     display: flex;

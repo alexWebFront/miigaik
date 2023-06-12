@@ -1,6 +1,7 @@
 .header {
   display: block;
   background-image: url("../images/header.svg");
+  background-repeat: no-repeat;
 
   @media screen and (max-width: 375px) {
     display: none;

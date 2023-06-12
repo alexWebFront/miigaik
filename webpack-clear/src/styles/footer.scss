@@ -1,6 +1,6 @@
 .footer {
   //height: 211px;
-  background: #eceef7;
+  background: $dark-gray;
   //padding: 38px 103px 26px 65px;
   @media screen and (max-width: 375px) {
     display: none;
@@ -22,7 +22,7 @@
 
   &__content-item-span {
     line-height: 20px;
-    color: #3b4559;
+    color: $dark;
   }
 
   &__content-item-link {
@@ -41,7 +41,7 @@
   &__line {
     margin-bottom: 20px;
     opacity: 0.15;
-    border: 1px solid #3b4559;
+    border: 1px solid $dark;
   }
 
   &__policy {
@@ -54,7 +54,7 @@
   &__policy-item {
     font-size: 13px;
     line-height: 16px;
-    color: #3b4559;
+    color: $dark;
     opacity: 0.7;
 
   }

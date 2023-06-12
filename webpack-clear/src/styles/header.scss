@@ -50,10 +50,18 @@
 
   &__search {
     max-width: 508px;
+    position: relative;
     width: 100%;
     @media screen and (max-width: 375px) {
       display: none;
     }
+  }
+
+  &__search-image {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    cursor: pointer;
   }
 
   &__search-input {

@@ -2,178 +2,180 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>
     <%= htmlWebpackPlugin.options.title %>
   </title>
 </head>
 
 <body>
-<div class="page">
-  <header class="header">
-    <div class="header__content">
-      <div class="header__logo">
-        <a href="index.html">
-          <img src="./assets/images/logo.svg" alt="">
-        </a>
-      </div>
-      <div class="header__phone">
-        <a class="header__phone-link" href="tel:+777785485848">+7 777 854 858 48</a>
-      </div>
-      <div class="header__mail">
-        <a class="header__mail-link" href="mailto: pochta@pochta.ru">pochta@pochta.ru</a>
-      </div>
-      <div class="header__search">
-        <input type="text" class="header__search-input" placeholder="Поиск по сайту">
-        <img src="./assets/images/search-icon.svg" alt="" class="header__search-image">
-      </div>
-      <div class="header__registration">
-        <a class="header__registration-link" href="#">Регистрация и вход</a>
-      </div>
-      <div class="header__mobile-menu">
-        <span>Меню</span>
-        <img src="./assets/images/header-mobile-menu-icon.svg" alt="">
-      </div>
-
-    </div>
-  </header>
-
-  <div class="content">
-    <div class="content__wrapper">
-      <div class="portal-description">
-        <div class="portal-description__wrapper">
-          <h1 class="portal-description__title">Портал «Проектные практики»</h1>
-          <div class="portal-description__info">
-            <p>Здесь будет текстовое описание о том, что это за портал и для чего нужен. Здесь будет текстовое описание
-              о том, что это за портал и для чего нужен</p>
-            <p>Здесь будет текстовое описание о том, что это за портал и для чего нужен. Здесь будет текстовое описание
-              о том, что это за портал и для чего нужен.</p>
-          </div>
-          <a href="#" class="button button-register">Регистрация</a>
+  <div class="page">
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo">
+          <a class="header__logo-link" href="index.html">
+            <img class="header__logo-link-img" src="./assets/images/logo.svg" alt="logo">
+          </a>
+        </div>
+        <div class="header__phone">
+          <a class="header__phone-link" href="tel:+777785485848">+7 777 854 858 48</a>
+        </div>
+        <div class="header__mail">
+          <a class="header__mail-link" href="mailto: pochta@pochta.ru">pochta@pochta.ru</a>
+        </div>
+        <div class="header__search">
+          <input type="text" class="header__search-input" placeholder="Поиск по сайту">
+          <img src="./assets/images/search-icon.svg" alt="" class="header__search-image">
+        </div>
+        <div class="header__registration">
+          <a class="header__registration-link" href="#">Регистрация и вход</a>
+        </div>
+        <div class="header__mobile-menu">
+          <span class="header__mobile-menu-span">Меню</span>
+          <img class="header__mobile-menu-img" src="./assets/images/header-mobile-menu-icon.svg" alt="burger">
         </div>
       </div>
-      <div class="auth-form">
-        <div class="auth-form__window">
-          <div class="tabs">
-            <div class="tabs__items">
-              <button class="tabs__item">Вход</button>
-              <button class="tabs__item">Регистрация</button>
+    </header>
+
+    <div class="content">
+      <div class="content__wrapper">
+        <div class="portal-description">
+          <div class="portal-description__wrapper">
+            <h1 class="portal-description__title">Портал «Проектные практики»</h1>
+            <div class="portal-description__info">
+              <p>Здесь будет текстовое описание о том, что это за портал и для чего нужен. Здесь будет текстовое
+                описание
+                о том, что это за портал и для чего нужен</p>
+              <p>Здесь будет текстовое описание о том, что это за портал и для чего нужен. Здесь будет текстовое
+                описание
+                о том, что это за портал и для чего нужен.</p>
             </div>
+            <a class="portal-description__link" href="#" class="button button-register">Регистрация</a>
           </div>
-          <form class="auth-form__body">
-            <div class="auth-form__inputs">
-              <label class="auth-form__inputs-label">Логин
-                <input name="login" class="auth-form__inputs-item" type="text" placeholder="Введите логин">
-              </label>
-              <label class="auth-form__inputs-label">
-                Пароль
-                <input class="auth-form__inputs-item" name="password" type="password" placeholder="Введите пароль">
-              </label>
-              <span class="auth-form__reset-password">
-                <a class="auth-form__reset-password-link" href="restorePassword.html">Забыли пароль?</a>
-              </span>
-
-              <button class="button button-login">Вход</button>
+        </div>
+        <div class="auth-form">
+          <div class="auth-form__window">
+            <div class="tabs">
+              <div class="tabs__items">
+                <button class="tabs__item">Вход</button>
+                <button class="tabs__item">Регистрация</button>
+              </div>
             </div>
-            <div class="auth-form__registration">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eligendi esse est fuga
-              illum magnam quisquam quos, sed velit! Accusamus, asperiores at distinctio ea magnam pariatur
-              perspiciatis quo sint voluptatum?
-            </div>
-          </form>
+            <form class="auth-form__body">
+              <div class="auth-form__inputs">
+                <label class="auth-form__inputs-label">Логин
+                  <input name="login" class="auth-form__inputs-item" type="text" placeholder="Введите логин">
+                </label>
+                <label class="auth-form__inputs-label">
+                  Пароль
+                  <input class="auth-form__inputs-item" name="password" type="password" placeholder="Введите пароль">
+                </label>
+                <span class="auth-form__reset-password">
+                  <a class="auth-form__reset-password-link" href="restorePassword.html">Забыли пароль?</a>
+                </span>
 
+                <button class="button button-login">Вход</button>
+              </div>
+              <div class="auth-form__registration">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eligendi esse est fuga
+                illum magnam quisquam quos, sed velit! Accusamus, asperiores at distinctio ea magnam pariatur
+                perspiciatis quo sint voluptatum?
+              </div>
+            </form>
+
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <footer class="footer">
-    <div class="footer__content">
-      <div class="footer__content-item">
-        <img src="./assets/images/footer-logo.svg"/>
-      </div>
-      <div class="footer__content-item">
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__content-item">
+          <img src="./assets/images/footer-logo.svg" />
+        </div>
+        <div class="footer__content-item">
           <span class="footer__content-item-span">
             <a class="footer__content-item-link" href="#">Акселераторы</a>
           </span>
-        <span class="footer__content-item-span">
+          <span class="footer__content-item-span">
             <a class="footer__content-item-link" href="#">
               Заявки на кейсы
             </a>
-            </span>
-      </div>
-      <div class="footer__content-item">
+          </span>
+        </div>
+        <div class="footer__content-item">
           <span class="footer__content-item-span">
             <a class="footer__content-item-link" href="#">Решение кейсов</a>
           </span>
-        <span class="footer__content-item-span">
+          <span class="footer__content-item-span">
             <a class="footer__content-item-link" href="#">
               Участие в команде
             </a>
           </span>
-      </div>
-      <div class="footer__content-item">
+        </div>
+        <div class="footer__content-item">
           <span class="footer__content-item-span">
             <a class="footer__content-item-link" href="#">Банк проектов</a>
           </span>
-        <span class="footer__content-item-span">
+          <span class="footer__content-item-span">
             <a class="footer__content-item-link" href="#">
               Регистрация и вход
             </a>
-            </span>
-      </div>
-      <div class="footer__content-item">
-        <img class="footer__content-item-img" src="./assets/images/footer-image-1.svg"/>
-        <img class="footer__content-item-img" src="./assets/images/footer-image-2.svg"/>
-      </div>
-      <div class="footer__content-item">
+          </span>
+        </div>
+        <div class="footer__content-item">
+          <img alt="img" class="footer__content-item-img" src="./assets/images/footer-image-1.svg" />
+          <img alt="img" class="footer__content-item-img" src="./assets/images/footer-image-2.svg" />
+        </div>
+        <div class="footer__content-item">
           <span class="footer__content-item-span">
-            <a class="footer__content-item-link footer__content-item-link--phone" href="tel:+777785485848">7 777 854 858 48</a>
-            </span>
-        <span class="footer__content-item-span">
+            <a class="footer__content-item-link footer__content-item-link--phone" href="tel:+777785485848">7 777 854 858
+              48</a>
+          </span>
+          <span class="footer__content-item-span">
             <a class="footer__content-item-link footer__content-item-link--mail" href="mailto: pochta@pochta.ru">
               pochta@pochta.ru
             </a>
           </span>
+        </div>
       </div>
-    </div>
-    <div class="footer__line"></div>
-    <div class="footer__policy">
-      <span class="footer__policy-item">All rights reserved 2023</span>
-      <a href="#">
-        <span class="footer__policy-item">Политика конфендициальности</span>
-      </a>
-    </div>
-  </footer>
-  <footer class="footer footer__mobile">
-    <div class="footer__content">
-      <div class="footer__content-item">
-        <img class="footer__content-item-logo" src="./assets/images/footer-logo.svg">
-        <img class="footer__content-item-img" src="./assets/images/footer-image-1.svg">
+      <div class="footer__line"></div>
+      <div class="footer__policy">
+        <span class="footer__policy-item">All rights reserved 2023</span>
+        <a class="footer__policy-item-link" href="#">
+          <span class="footer__policy-item">Политика конфендициальности</span>
+        </a>
       </div>
-      <div class="footer__content-item">
+    </footer>
+    <footer class="footer footer__mobile">
+      <div class="footer__content">
+        <div class="footer__content-item">
+          <img alt="logo" class="footer__content-item-logo" src="./assets/images/footer-logo.svg">
+          <img alt="img" class="footer__content-item-img" src="./assets/images/footer-image-1.svg">
+        </div>
+        <div class="footer__content-item">
           <span class="footer__content-item-span">
-            <a class="footer__content-item-link footer__content-item-link--phone"
-               href="tel:+777785485848">7 777 854 858 48</a>
+            <a class="footer__content-item-link footer__content-item-link--phone" href="tel:+777785485848">7 777 854 858
+              48</a>
           </span>
-        <span class="footer__content-item-span">
+          <span class="footer__content-item-span">
             <a class="footer__content-item-link footer__content-item-link--mail"
-               href="mailto: pochta@pochta.ru">pochta@pochta.ru</a>
-        </span>
-        <img class="footer__content-item-img" src="./assets/images/footer-image-2.svg">
+              href="mailto: pochta@pochta.ru">pochta@pochta.ru</a>
+          </span>
+          <img class="footer__content-item-img" src="./assets/images/footer-image-2.svg">
+        </div>
       </div>
-    </div>
-    <div class="footer__line"></div>
-    <div class="footer__policy">
-      <span class="footer__policy-item">All rights <br> reserved 2023</span>
-      <a href="#">
-        <span class="footer__policy-item footer__policy-item--policy">Политика <br> конфендициальности</span>
-      </a>
-    </div>
-  </footer>
-</div>
+      <div class="footer__line"></div>
+      <div class="footer__policy">
+        <span class="footer__policy-item">All rights <br> reserved 2023</span>
+        <a class="footer__policy-item-link" href="#">
+          <span class="footer__policy-item footer__policy-item--policy">Политика <br> конфендициальности</span>
+        </a>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>

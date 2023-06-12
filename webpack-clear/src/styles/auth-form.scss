@@ -1,0 +1,44 @@
+.auth-form {
+  background: #1e44bb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &__window {
+    background: #f7f7f7;
+    border-radius: 5px;
+    width: 583px;
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 35px 60px 35px;
+  }
+
+  &__inputs-label {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    line-height: 146.02%;
+    color: #323232;
+    margin-bottom: 16px;
+  }
+
+  &__inputs-item {
+    width: 100%;
+    line-height: 146.02%;
+    padding: 16px 0 17px 16px;
+    font-size: 16px;
+  }
+
+  &__reset-password-link {
+    line-height: 146.02%;
+    text-decoration-line: underline;
+    color: #4f55bd;
+  }
+
+  &__registration {
+    display: none;
+  }
+}

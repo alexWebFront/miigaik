@@ -13,13 +13,13 @@
 <body>
   <div class="page">
     <header class="header">
-      <!--        <img class="header__layer-image" src="images/header-image-layer.svg">-->
       <div class="header__content">
         <div class="header__logo">
           <img src="./assets/images/logo.svg">
         </div>
         <div class="header__phone"><a class="header__phone-link" href="tel:+777785485848">+7 777 854 858 48</a></div>
-        <div class="header__mail"><a class="header__mail-link" href="mailto: pochta@pochta.ru">pochta@pochta.ru</a></div>
+        <div class="header__mail"><a class="header__mail-link" href="mailto: pochta@pochta.ru">pochta@pochta.ru</a>
+        </div>
         <div class="header__search">
           <input type="text" class="header__search-input" placeholder="Поиск по сайту">
         </div>
@@ -40,35 +40,35 @@
           <a href="#" class="button button-register">Регистрация</a>
         </div>
       </div>
-      <div class="registration-form">
-        <div class="registration-form__window">
+      <div class="auth-form">
+        <div class="auth-form__window">
           <div class="tabs">
-            <nav class="tabs__items">
-              <a href="#tabs_login" class="tabs__item">Вход</a>
-              <a href="#tabs_registration" class="tabs__item">Регистрация</a>
-            </nav>
+            <div class="tabs__items">
+              <button class="tabs__item">Вход</button>
+              <button class="tabs__item">Регистрация</button>
+            </div>
           </div>
-          <div class="tabs__body">
-            <div id="tabs_login" class="tabs_login">
-              <label>Логин
-                <input type="text" placeholder="Введите логин">
+          <form class="auth-form__body">
+            <div class="auth-form__inputs">
+              <label class="auth-form__inputs-label">Логин
+                <input name="login" class="auth-form__inputs-item" type="text" placeholder="Введите логин">
               </label>
-              <label>
+              <label class="auth-form__inputs-label">
                 Пароль
-                <input type="password" placeholder="Введите пароль">
+                <input class="auth-form__inputs-item" name="password" type="password" placeholder="Введите пароль">
               </label>
-              <span>
-                <a href="restorePassword.html">Забыли пароль?</a>
+              <span class="auth-form__reset-password">
+                <a class="auth-form__reset-password-link" href="restorePassword.html">Забыли пароль?</a>
               </span>
 
-              <a href="#" class="button button-login">Вход</a>
+              <button class="button button-login">Вход</button>
             </div>
-            <div id="tabs_registration" class="tabs_registration">
+            <div class="auth-form__registration">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eligendi esse est fuga
               illum magnam quisquam quos, sed velit! Accusamus, asperiores at distinctio ea magnam pariatur
               perspiciatis quo sint voluptatum?
             </div>
-          </div>
+          </form>
 
         </div>
       </div>
@@ -80,24 +80,30 @@
           <img src="./assets/images/footer-logo.svg">
         </div>
         <div class="footer__content-item">
-          <span><a href="#">Акселераторы</a></span>
-          <span><a href="#">Заявки на кейсы</a></span>
+          <span class="footer__content-item-span"><a class="footer__content-item-link" href="#">Акселераторы</a></span>
+          <span class="footer__content-item-span"><a class="footer__content-item-link" href="#">Заявки на
+              кейсы</a></span>
         </div>
         <div class="footer__content-item">
-          <span><a href="#">Решение кейсов</a></span>
-          <span><a href="#">Участие в команде</a></span>
+          <span class="footer__content-item-span"><a class="footer__content-item-link" href="#">Решение
+              кейсов</a></span>
+          <span class="footer__content-item-span"><a class="footer__content-item-link" href="#">Участие в
+              команде</a></span>
         </div>
         <div class="footer__content-item">
-          <span><a href="#">Банк проектов</a></span>
-          <span><a href="#">Регистрация и вход</a></span>
+          <span class="footer__content-item-span"><a class="footer__content-item-link" href="#">Банк проектов</a></span>
+          <span class="footer__content-item-span"><a class="footer__content-item-link" href="#">Регистрация и
+              вход</a></span>
         </div>
         <div class="footer__content-item">
-          <img src="./assets/images/footer-image-1.svg">
-          <img src="./assets/images/footer-image-2.svg">
+          <img class="footer__content-item-img" src="./assets/images/footer-image-1.svg">
+          <img class="footer__content-item-img" src="./assets/images/footer-image-2.svg">
         </div>
         <div class="footer__content-item">
-          <span><a href="tel:+777785485848">7 777 854 858 48</a></span>
-          <span><a href="mailto: pochta@pochta.ru">pochta@pochta.ru</a></span>
+          <span class="footer__content-item-span"><a class="footer__content-item-link footer__content-item-link--phone"
+              href="tel:+777785485848">7 777 854 858 48</a></span>
+          <span class="footer__content-item-span"><a class="footer__content-item-link footer__content-item-link--mail"
+              href="mailto: pochta@pochta.ru">pochta@pochta.ru</a></span>
         </div>
       </div>
       <div class="footer__line"></div>

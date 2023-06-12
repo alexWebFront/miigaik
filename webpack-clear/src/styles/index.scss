@@ -21,6 +21,8 @@ body, header, footer {
   height: calc(100% - 296px);
   @media screen and (max-width: 375px) {
     height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }
 

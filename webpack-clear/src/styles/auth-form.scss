@@ -1,5 +1,5 @@
 .auth-form {
-  background: #1e44bb;
+  background: $blue;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,7 +10,7 @@
   }
 
   &__window {
-    background: #f7f7f7;
+    background: $grey;
     border-radius: 5px;
     width: 583px;
 
@@ -54,7 +54,7 @@
   &__reset-password-link {
     line-height: 146.02%;
     text-decoration-line: underline;
-    color: #4f55bd;
+    color: $dark-blue;
     font-weight: 500;
   }
 

@@ -36,7 +36,7 @@
     font-size: 42px;
     line-height: 51px;
     max-width: 473px;
-    color: #2C3637;
+    color: $link-text;
 
     @media screen and (max-width: 375px) {
       font-size: 28px;
@@ -47,7 +47,7 @@
 
   &__info {
     margin-bottom: 50px;
-    color: #323232;
+    color: $black-gray;
     font-size: 16px;
     font-weight: 400;
     line-height: 146.02%;

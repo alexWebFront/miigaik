@@ -1,20 +1,75 @@
 .footer {
   background: $dark-gray;
-  @media screen and (max-width: 375px) {
-    display: none;
-  }
+  //@media screen and (max-width: 375px) {
+  //  display: none;
+  //}
 
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 38px 103px 43px 65px;
+
+    @media screen and (max-width: 375px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-direction: row;
+      max-width: 375px;
+      flex-wrap: wrap;
+      padding: 22px 15px 18px 15px;
+      position: relative;
+      gap: 20px;
+    }
   }
 
   &__content-item {
     display: flex;
     gap: 20px;
     flex-direction: column;
+    @media screen and (max-width: 375px) {
+      gap: 2px;
+    }
+  }
+
+  &__content-item--contacts {
+
+    @media screen and (max-width: 375px) {
+      position: absolute;
+      top: 27px;
+      right: 15px;
+    }
+    @media screen and (max-width: 320px) {
+      position: absolute;
+      top: 27px;
+      right: 10px;
+    }
+  }
+
+  &__content-item-menu {
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
+  }
+
+  &__content-item--images {
+    @media screen and (max-width: 375px) {
+      flex-direction: row;
+      gap: 110px;
+    }
+    @media screen and (max-width: 320px) {
+      gap: 60px;
+    }
+  }
+
+  &__content-item--logo {
+    @media screen and (max-width: 375px) {
+      //position: absolute;
+      //top: 22px;
+      //left: 15px;
+      width: 124px;
+      height: 37px;
+    }
   }
 
   &__content-item-span {
@@ -30,6 +85,13 @@
     margin-bottom: 20px;
     opacity: 0.15;
     border: 1px solid $dark;
+
+    @media screen and (max-width: 375px) {
+      //position: absolute;
+      //top: 124px;
+      //left: 0px;
+
+    }
   }
 
   &__policy {
@@ -37,6 +99,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 103px 26px 65px;
+
+    @media screen and (max-width: 375px) {
+      padding: 0 15px;
+      gap: 90px;
+    }
+    @media screen and (max-width: 320px) {
+      gap: 40px;
+    }
   }
 
   &__policy-item {
@@ -46,7 +116,8 @@
     opacity: 0.7;
 
   }
-  &__policy-item--policy{
+
+  &__policy-item--policy {
     text-decoration: underline;
   }
 }

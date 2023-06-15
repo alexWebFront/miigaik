@@ -61,7 +61,21 @@ module.exports = {
       favicon: paths.src + '/images/favicon.png',
       template: paths.src + '/setNewPassword.html',
       filename: 'setNewPassword.html' // output file
-    })
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/moderator/moderatorMain.html',
+      filename: 'moderatorMain.html' // output file
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/moderator/accelerators.html',
+      filename: 'accelerators.html' // output file
+    }),
   ],
 
   // Determine how modules within the project are treated

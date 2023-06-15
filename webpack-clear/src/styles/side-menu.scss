@@ -1,0 +1,47 @@
+.side-menu {
+  background: $side-menu-bg;
+  max-height: 960px;
+  min-width: 338px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 37px;
+
+  &__logo {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__svg:hover {
+    stroke: white !important;
+  }
+
+  &__list-item {
+    a {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: $side-menu-color;
+      display: flex;
+      align-items: flex-end;
+      gap: 12px;
+    }
+
+    a:hover {
+      color: $white;
+    }
+  }
+
+  &__list-item--active {
+    a {
+      color: $white;
+    }
+  }
+}

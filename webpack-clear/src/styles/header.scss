@@ -13,7 +13,7 @@
   }
 
   &__content {
-    padding: 0 65px 0 65px;
+    padding: 0 65px;
     width: 100%;
     min-height: 85px;
     display: flex;
@@ -52,6 +52,11 @@
     max-width: 508px;
     position: relative;
     width: 100%;
+
+    input::placeholder {
+      color: #5D3097;
+    }
+
     @media screen and (max-width: 375px) {
       display: none;
     }
@@ -104,5 +109,53 @@
       text-transform: uppercase;
       color: $white;
     }
+  }
+}
+
+.role-page {
+  display: flex;
+  justify-content: space-between;
+
+  .header__content {
+    padding: 0;
+    max-width: 1480px;
+    margin: 0 40px 0 38px;
+  }
+
+  .header__search {
+    max-width: 367px;
+  }
+
+  .header__account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 37px;
+  }
+
+  .header__account-svg {
+    display: flex;
+    gap: 25px;
+
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  .header__account-person {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  .header__account-person-name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $white;
   }
 }

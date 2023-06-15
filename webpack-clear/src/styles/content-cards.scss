@@ -1,0 +1,52 @@
+.content {
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 26px;
+    max-width: 1480px;
+  }
+
+  &__card {
+    width: 355px;
+    height: 346px;
+    margin-bottom: 14px;
+  }
+
+  &__card-image {
+    width: 355px;
+    height: 240px;
+    margin-bottom: 14px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__card-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $link-text;
+    margin-bottom: 5px;
+  }
+
+  &__card-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140.52%;
+    color: $black-gray;
+    margin-bottom: 10px;
+  }
+
+  &__card-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: $dark-blue;
+  }
+}

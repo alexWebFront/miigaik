@@ -1,0 +1,56 @@
+.role-page {
+  .content__top--actions {
+    max-width: 1480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .content__card-accelerator {
+    height: 381px;
+
+    .content__card-image {
+      position: relative;
+    }
+  }
+
+  .content__card-tags {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 10px;
+
+    &-item {
+      text-transform: uppercase;
+      padding: 5px 10px;
+      background: $card-tags-bg;
+      border-radius: 35px;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 140.52%;
+      letter-spacing: 0.02em;
+      color: $select-text;
+    }
+  }
+
+  .status-card {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 6px 28px 6px 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: $card-status-bg;
+    border-radius: 4px;
+
+    &__text {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      color: $black-gray;
+    }
+  }
+}

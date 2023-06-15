@@ -2,7 +2,6 @@
 @import 'variables';
 @import 'normalize';
 @import 'footer.scss';
-@import 'footer-mobile';
 @import 'tabs.scss';
 @import 'header';
 @import 'buttons.scss';
@@ -10,6 +9,13 @@
 @import 'portal-description.scss';
 @import 'restore-password-form.scss';
 @import 'set-new-password.scss';
+@import 'content-cards.scss';
+@import 'pagination.scss';
+@import 'side-menu.scss';
+@import 'dropdown.scss';
+@import 'breadcrumb.scss';
+@import './moderator-style/moderator-main.scss';
+@import './moderator-style/accelerators.scss';
 
 
 body, header, footer {

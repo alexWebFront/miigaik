@@ -1,0 +1,41 @@
+.role-page {
+  display: flex;
+
+
+
+  .page__wrapper {
+    width: 100%;
+  }
+
+  .content {
+    padding: 40px 40px 60px 38px;
+
+    &__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      margin-right: 10px;
+
+      h1 {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 41px;
+        color: $link-text;
+      }
+    }
+
+    &__line {
+      background: #D3D8EA;
+      height: 1px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+  }
+
+}
+
+
+
+

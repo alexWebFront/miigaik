@@ -1,0 +1,26 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__wrapper {
+    display: flex;
+    gap: 10px;
+    margin: 0 32px;
+  }
+
+  &__link {
+    width: 55px;
+    height: 55px;
+    background: $white;
+    border: 1px solid $pagination-border;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link--active {
+    background: $pagination-active;
+  }
+}

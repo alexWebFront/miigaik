@@ -1,0 +1,22 @@
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $link-text;
+  }
+
+  &__select {
+    background: $select-bg;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $select-text;
+    padding: 10px 47px 12px 12px;
+  }
+}

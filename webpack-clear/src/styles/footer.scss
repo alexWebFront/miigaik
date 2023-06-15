@@ -1,8 +1,5 @@
 .footer {
   background: $dark-gray;
-  //@media screen and (max-width: 375px) {
-  //  display: none;
-  //}
 
   &__content {
     display: flex;
@@ -33,16 +30,10 @@
   }
 
   &__content-item--contacts {
-
     @media screen and (max-width: 375px) {
       position: absolute;
       top: 27px;
       right: 15px;
-    }
-    @media screen and (max-width: 320px) {
-      position: absolute;
-      top: 27px;
-      right: 10px;
     }
   }
 
@@ -55,18 +46,20 @@
   &__content-item--images {
     @media screen and (max-width: 375px) {
       flex-direction: row;
-      gap: 110px;
+      width: 100%;
+      position: relative;
     }
-    @media screen and (max-width: 320px) {
-      gap: 60px;
+  }
+
+  &__content-item-img-second {
+    @media screen and (max-width: 375px) {
+      position: absolute;
+      right: 64px;
     }
   }
 
   &__content-item--logo {
     @media screen and (max-width: 375px) {
-      //position: absolute;
-      //top: 22px;
-      //left: 15px;
       width: 124px;
       height: 37px;
     }
@@ -85,13 +78,6 @@
     margin-bottom: 20px;
     opacity: 0.15;
     border: 1px solid $dark;
-
-    @media screen and (max-width: 375px) {
-      //position: absolute;
-      //top: 124px;
-      //left: 0px;
-
-    }
   }
 
   &__policy {

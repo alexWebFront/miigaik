@@ -1,0 +1,69 @@
+.projects-bank {
+  display: flex;
+
+  .side-list {
+    max-width: 293px;
+    width: 100%;
+    min-height: 875px;
+    max-height: 875px;
+    border-right: 5px solid $card-tags-bg;
+
+    &__sort {
+      background: $card-tags-bg;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 43px;
+      padding: 0 24px;
+      margin-bottom: 28px;
+
+      &-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+
+        p {
+          color: $table-title-item;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 106.9%;
+          letter-spacing: 0.3px;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    &__items {
+      max-width: 213px;
+      width: 100%;
+      margin: 0 auto;
+
+    }
+
+    &__items .side-list__item:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+
+
+      &-wrapper {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+
+        p {
+          color: $black-gray;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

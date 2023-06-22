@@ -1,21 +1,38 @@
-@import 'fonts';
-@import 'variables';
-@import 'normalize';
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'normalize.scss';
+
+@import 'header.scss';
 @import 'footer.scss';
+
 @import 'tabs.scss';
-@import 'header';
 @import 'buttons.scss';
+@import 'input.scss';
+@import 'table.scss';
+@import 'pagination.scss';
+@import 'side-menu.scss';
+@import 'side-list-bank.scss';
+@import 'dropdown.scss';
+@import 'breadcrumb.scss';
+@import 'status-card.scss';
+
 @import 'auth-form.scss';
 @import 'portal-description.scss';
 @import 'restore-password-form.scss';
 @import 'set-new-password.scss';
+@import 'registration.scss';
 @import 'content-cards.scss';
-@import 'pagination.scss';
-@import 'side-menu.scss';
-@import 'dropdown.scss';
-@import 'breadcrumb.scss';
+
 @import './moderator-style/moderator-main.scss';
 @import './moderator-style/accelerators.scss';
+@import './moderator-style/accelerators-create.scss';
+@import './moderator-style/accelerators-item.scss';
+@import './moderator-style/accelerators-case-name.scss';
+@import './moderator-style/request-case.scss';
+@import './moderator-style/request-team.scss';
+@import './moderator-style/case-success.scss';
+@import './moderator-style/bank-project.scss';
+@import './moderator-style/personal-data.scss';
 
 
 body, header, footer {
@@ -24,7 +41,9 @@ body, header, footer {
 
 
 .page {
-  height: calc(100% - 296px);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   @media screen and (max-width: 375px) {
     height: 100%;
     display: flex;
@@ -32,6 +51,13 @@ body, header, footer {
   }
 }
 
+.page-content {
+  //height: 784px;
+  flex: 2;
+  @media screen and (max-width: 375px) {
+    height: auto;
+  }
+}
 
 .set-new-password-form h1 {
   font-size: 34px;

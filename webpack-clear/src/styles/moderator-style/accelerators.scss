@@ -1,4 +1,10 @@
+
 .role-page {
+  .content-popup {
+    position: relative;
+
+  }
+
   .content__top--actions {
     max-width: 1480px;
     display: flex;
@@ -9,6 +15,12 @@
 
   .content__card-accelerator {
     height: 381px;
+
+    .status-card {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
 
     .content__card-image {
       position: relative;
@@ -32,25 +44,6 @@
       line-height: 140.52%;
       letter-spacing: 0.02em;
       color: $select-text;
-    }
-  }
-
-  .status-card {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 6px 28px 6px 8px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    background: $card-status-bg;
-    border-radius: 4px;
-
-    &__text {
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 15px;
-      color: $black-gray;
     }
   }
 }

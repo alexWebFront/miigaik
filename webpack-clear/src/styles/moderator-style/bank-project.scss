@@ -1,0 +1,113 @@
+.role-page {
+  .breadcrumb-project-bank {
+    left: 333px;
+  }
+
+  .projects-bank {
+    display: flex;
+
+    .content-bank-projects {
+      max-width: 1290px;
+      width: 100%;
+
+      .content__top {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+
+      .table {
+        max-width: 1188px;
+        width: 100%;
+
+        &__title {
+          justify-content: flex-start;
+
+          &-case-title {
+            max-width: 224px;
+            width: 100%;
+          }
+
+          &-case-description {
+            max-width: 344px;
+            width: 100%;
+          }
+
+          &-files {
+            max-width: 221px;
+            width: 100%;
+          }
+
+          &-score-final {
+            max-width: 216px;
+            width: 100%;
+          }
+        }
+
+        &__body {
+          &-item {
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            a, p {
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 18px;
+              color: $black-gray;
+            }
+
+            &-case-title {
+              max-width: 224px;
+              width: 100%;
+
+              p {
+                font-weight: 500;
+              }
+            }
+
+            &-case-description {
+              max-width: 344px;
+              width: 100%;
+
+              p {
+                max-width: 344px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+            }
+
+            &-files {
+              max-width: 221px;
+              width: 100%;
+
+              a {
+                color: $blue-link;
+              }
+            }
+
+            &-score-final {
+              max-width: 216px;
+              width: 100%;
+            }
+
+            &-view-case {
+              a {
+                display: flex;
+                gap: 9px;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                  color: $blue-link;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

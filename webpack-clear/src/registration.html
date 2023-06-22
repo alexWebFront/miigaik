@@ -41,54 +41,67 @@
 
   <!-- Основной контент страницы-->
   <div class="content page-content">
-    <div class="content__wrapper">
-      <div class="portal-description">
-        <div class="portal-description__wrapper">
-          <h1 class="portal-description__title">Портал «Проектные практики»</h1>
-          <div class="portal-description__info">
-            <p>Здесь будет текстовое описание о том, что это за портал и для чего нужен. Здесь будет текстовое
-              описание
-              о том, что это за портал и для чего нужен</p>
-            <p>Здесь будет текстовое описание о том, что это за портал и для чего нужен. Здесь будет текстовое
-              описание
-              о том, что это за портал и для чего нужен.</p>
-          </div>
-          <a class="button portal-description__link button-register" href="#">Регистрация</a>
-        </div>
+    <div class="registration">
+      <div class="registration__title">
+        <h1>Регистрация на портале</h1>
+        <p>Заполните все данные максимально корректно <br> и отправьте нам. Регистрация не доступна для обучающихся.</p>
       </div>
 
-      <!-- Форма входа/регистрации-->
-      <div class="auth-form">
-        <div class="auth-form__window">
-          <div class="tabs">
-            <div class="tabs__items">
-              <button class="tabs__item">Вход</button>
-              <button class="tabs__item">Регистрация</button>
-            </div>
-          </div>
-          <form class="auth-form__body">
-            <div class="auth-form__inputs">
-              <label class="auth-form__inputs-label">Логин
-                <input name="login" class="auth-form__inputs-item" type="text" placeholder="Введите логин">
-              </label>
-              <label class="auth-form__inputs-label">
-                Пароль
-                <input class="auth-form__inputs-item" name="password" type="password" placeholder="Введите пароль">
-              </label>
-              <span class="auth-form__reset-password">
-                  <a class="auth-form__reset-password-link" href="restorePassword.html">Забыли пароль?</a>
-                </span>
-
-              <button class="button button-login">Вход</button>
-            </div>
-            <div class="auth-form__registration">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eligendi esse est fuga
-              illum magnam quisquam quos, sed velit! Accusamus, asperiores at distinctio ea magnam pariatur
-              perspiciatis quo sint voluptatum?
-            </div>
-          </form>
+      <!-- Форма регистрации-->
+      <form class="registration__form">
+        <div class="registration__form-data">
+          <p class="registration__form-title">Личные данные</p>
+          <label class="input-label">
+            Имя
+            <input type="text" class="input registration__form-input" placeholder="Введите имя">
+          </label>
+          <label class="input-label">
+            Фамилия
+            <input type="text" class="input registration__form-input" placeholder="Введите фамилию">
+          </label>
+          <label class="input-label">
+            Образование
+            <input type="text" class="input registration__form-input" placeholder="Укажите ваше бразование">
+          </label>
+          <label class="input-label">
+            Должность
+            <input type="text" class="input registration__form-input" placeholder="Введите вашу должность">
+          </label>
+          <label class="input-label">
+            Место работы
+            <input type="text" class="input registration__form-input" placeholder="Укажите место работы">
+          </label>
         </div>
-      </div>
+        <div class="registration__form-security">
+          <p class="registration__form-title">Безопасность</p>
+          <label class="input-label">
+            Почта
+            <input type="email" class="input registration__form-input" placeholder="Введите вашу почту">
+          </label>
+          <label class="input-label">
+            Придумайте пароль
+            <input type="password" class="input registration__form-input" placeholder="Введите пароль">
+          </label>
+          <label class="input-label">
+            Повторите пароль
+            <input type="password" class="input registration__form-input" placeholder="Введите пароль повторно">
+          </label>
+        </div>
+        <div class="registration__form-checkbox">
+          <div class="registration__form-checkbox-item">
+            <input type="checkbox" id="policy" checked>
+            <label for="policy">Согласие с политикой конфиденциальности</label>
+          </div>
+          <div class="registration__form-checkbox-item">
+            <input type="checkbox" id="personal-data">
+            <label for="personal-data">Согласие на обработку персональных данных</label>
+          </div>
+        </div>
+        <div class="registration__form-links">
+          <a href="#" class="button registration__form-links-send">Отправить данные</a>
+          <a href="template.html" class="registration__form-links-back">Назад к странице входа</a>
+        </div>
+      </form>
     </div>
   </div>
 
@@ -129,7 +142,8 @@
       </div>
       <div class="footer__content-item footer__content-item--images">
         <img alt="img" class="footer__content-item-img" src="./assets/images/footer-image-1.svg"/>
-        <img alt="img" class="footer__content-item-img footer__content-item-img-second" src="./assets/images/footer-image-2.svg"/>
+        <img alt="img" class="footer__content-item-img footer__content-item-img-second"
+             src="./assets/images/footer-image-2.svg"/>
       </div>
       <div class="footer__content-item footer__content-item--contacts">
           <span class="footer__content-item-span">
@@ -137,7 +151,7 @@
               7 777 854 858 48
             </a>
           </span>
-          <span class="footer__content-item-span">
+        <span class="footer__content-item-span">
             <a class="footer__content-item-link footer__content-item-link--mail" href="mailto: pochta@pochta.ru">
               pochta@pochta.ru
             </a>

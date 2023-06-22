@@ -1,0 +1,485 @@
+.role-page {
+
+  .content__top-accelerators-item {
+    margin-bottom: 10px;
+  }
+
+  .report {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 20px;
+
+    &__edit {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      svg {
+        cursor: pointer;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $black-gray;
+      }
+    }
+  }
+
+  .accelerators-item {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+    &__control-points-date-ended {
+      display: flex;
+      align-items: center;
+      background: #F4F7FF;
+      border-radius: 4px;
+      padding: 20px 0 26px 33px;
+      gap: 107px;
+      margin-bottom: 60px;
+
+      .date-ended__item {
+        display: flex;
+        flex-direction: column;
+        max-width: 225px;
+
+        span {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 140.52%;
+          color: $side-menu-bg;
+          margin-bottom: 5px;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 140.52%;
+          color: $black-gray;
+        }
+      }
+    }
+
+    &__wrapper-content {
+      max-width: 730px;
+      width: 100%;
+    }
+
+    &__description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140.52%;
+      color: $black-gray;
+      margin-bottom: 14px;
+    }
+
+    &__description p:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &__files {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 41px;
+      margin-bottom: 63px;
+
+      a {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: $blue-link;
+        border-bottom: 1px solid rgba(79, 85, 189, 0.25);
+        padding: 0 0 3px;
+      }
+    }
+
+    &__right-image {
+      width: 667px;
+      height: 450px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__control-points {
+      &:last-child {
+        .accelerators-item__control-points-item {
+          &::before {
+            content: none;
+          }
+        }
+      }
+    }
+
+    &__control-points-item {
+      padding-left: 23px;
+      position: relative;
+      margin-left: 10px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -1px;
+        top: 5px;
+        height: calc(100% + 25px);
+        width: 2px;
+        background: $pagination-border;
+      }
+
+
+      .control-points-circle {
+        position: absolute;
+        left: -10px;
+        top: 0;
+      }
+
+      .control-points-date {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140.52%;
+        color: $link-text;
+        margin-bottom: 11px;
+      }
+
+      .control-points-description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140.52%;
+        color: $black-gray;
+        margin-bottom: 22px;
+      }
+
+      .control-points-line {
+        border: 1px solid $pagination-border;
+        margin-bottom: 22px;
+      }
+
+    }
+
+  }
+
+  .accelerators-item__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: $link-text;
+    margin-bottom: 23px;
+  }
+
+  .case-accelerators-table {
+
+    .table__title {
+
+      &-name {
+        max-width: 352px;
+        width: 100%;
+      }
+
+      &-files {
+        max-width: 123px;
+        width: 100%;
+      }
+
+      &-owner {
+        max-width: 116px;
+        width: 100%;
+      }
+
+      &-type {
+        max-width: 120px;
+        width: 100%;
+      }
+
+      &-list-users {
+        max-width: 188px;
+        width: 100%;
+
+      }
+
+      &-empty-item {
+        max-width: 165px;
+        width: 100%;
+      }
+    }
+
+    .table__body {
+
+
+      &-item {
+        &-title {
+          p {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: $link-text;
+          }
+
+          span {
+            width: 352px;
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            color: $table-gray-text;
+          }
+        }
+
+        &-files {
+          max-width: 123px;
+          width: 100%;
+
+          a {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: $blue-link;
+          }
+        }
+
+        &-owner {
+          max-width: 116px;
+          width: 100%;
+
+          p {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: $black-gray;
+          }
+        }
+
+        &-type {
+          max-width: 114px;
+          width: 100%;
+
+          p {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: $link-text;
+          }
+        }
+
+        &-list-users {
+          max-width: 188px;
+          width: 100%;
+
+          a {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: $blue-link;
+            cursor: pointer;
+          }
+        }
+
+        &-report {
+          max-width: 156px;
+          width: 100%;
+
+          a {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: $blue-link;
+          }
+        }
+      }
+    }
+  }
+
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /*Цвет затемнения фона*/
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+
+    .accelerators-popup {
+      max-width: 1186px;
+      width: 100%;
+      height: 514px;
+      background: $white;
+      border-radius: 8px;
+      padding: 30px;
+      position: relative;
+      overflow-y: auto;
+
+      .table {
+
+        max-width: 1126px;
+        width: 100%;
+        max-height: 402px;
+
+        &__title {
+          .title-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            gap: 12px;
+          }
+
+          justify-content: flex-start;
+
+          &-name {
+            max-width: 203px;
+            width: 100%;
+          }
+
+          &-role {
+            max-width: 210px;
+            width: 100%;
+          }
+
+          &-date {
+            max-width: 200px;
+            width: 100%;
+          }
+
+          &-empty-item {
+            max-width: 265px;
+            width: 100%;
+          }
+        }
+
+        &__body {
+          max-height: 352px;
+          overflow-y: scroll;
+
+          &::-webkit-scrollbar {
+            width: 6px; /* ширина scrollbar */
+          }
+
+          &::-webkit-scrollbar-track {
+            background: rgba(217, 217, 217, 0.3);
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background-color: #D9D9D9;
+            border-radius: 14px;
+          }
+
+          .link-wrapper {
+            display: flex;
+          }
+
+          &-item {
+            justify-content: flex-start;
+
+            &-name {
+              max-width: 203px;
+              width: 100%;
+
+              p {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                color: $link-text;
+              }
+            }
+
+            &-role {
+              max-width: 210px;
+              width: 100%;
+
+              p {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                display: flex;
+                color: $black-gray;
+              }
+            }
+
+            &-date {
+              max-width: 200px;
+              width: 100%;
+
+              p {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                color: $black-gray;
+              }
+            }
+
+            &-owner {
+              max-width: 265px;
+              width: 100%;
+
+              a {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                gap: 8px;
+
+                p {
+                  font-weight: 400;
+                  font-size: 15px;
+                  line-height: 18px;
+                  color: $blue-link;
+                }
+              }
+
+            }
+
+            &-delete-team {
+              a {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                gap: 8px;
+
+                p {
+                  font-weight: 400;
+                  font-size: 15px;
+                  line-height: 18px;
+                  color: $blue-link;
+                }
+              }
+
+            }
+          }
+        }
+      }
+
+      .popup__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .active {
+    display: flex;
+  }
+}

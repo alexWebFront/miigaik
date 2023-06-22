@@ -1,0 +1,88 @@
+.role-page {
+  .content-team-request {
+    .content__top {
+      margin-bottom: 30px;
+    }
+
+    .table {
+      max-width: 1480px;
+
+      &__title {
+        justify-content: flex-start;
+        &-date {
+          max-width: 166px;
+          width: 100%;
+        }
+
+        &-accelerator-title {
+          max-width: 243px;
+          width: 100%;
+        }
+
+        &-case-title {
+          max-width: 196px;
+          width: 100%;
+        }
+
+        &-username {
+          max-width: 225px;
+          width: 100%;
+        }
+
+        &-group {
+          max-width: 264px;
+          width: 100%;
+        }
+      }
+
+      &__body {
+        &-item {
+          align-items: flex-start;
+          justify-content: flex-start;
+          p {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: $link-text;
+          }
+
+          &-date {
+            max-width: 166px;
+            width: 100%;
+          }
+
+          &-accelerator-title {
+            max-width: 243px;
+            width: 100%;
+
+            p {
+              font-weight: 500;
+            }
+          }
+
+          &-case-title {
+            max-width: 196px;
+            width: 100%;
+          }
+
+          &-username {
+            max-width: 225px;
+            width: 100%;
+          }
+
+          &-group {
+            max-width: 264px;
+            width: 100%;
+          }
+
+          &-actions {
+            display: flex;
+            gap: 13px;
+            align-items: center;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

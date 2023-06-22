@@ -1,14 +1,13 @@
 .role-page {
   display: flex;
 
-
-
   .page__wrapper {
     width: 100%;
   }
 
   .content {
     padding: 40px 40px 60px 38px;
+    height: auto;
 
     &__top {
       display: flex;

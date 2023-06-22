@@ -1,0 +1,46 @@
+.create-accelerators {
+  max-width: 480px;
+  width: 100%;
+
+  input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #CBD2DB;
+    border-radius: 4px;
+    padding: 12px 40px 12px 12px;
+  }
+
+  .dropdown {
+    &__select {
+      width: 100%;
+    }
+  }
+
+  textarea {
+    resize: none;
+    background: #FFFFFF;
+    border: 1px solid #CBD2DB;
+    border-radius: 4px;
+    max-width: 480px;
+    height: 132px;
+    width: 100%;
+  }
+
+  .create-accelerator {
+    margin-bottom: 45px;
+  }
+
+  .field-description {
+  }
+
+
+  .control-point {
+  }
+
+  .control-point__item {
+  }
+
+  .control-point__title {
+  }
+
+}

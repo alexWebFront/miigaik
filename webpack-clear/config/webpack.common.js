@@ -76,6 +76,68 @@ module.exports = {
       template: paths.src + '/moderator/accelerators.html',
       filename: 'accelerators.html' // output file
     }),
+
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/moderator/acceleratorsCreate.html',
+      filename: 'acceleratorsCreate.html' // output file
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/moderator/acceleratorsItem.html',
+      filename: 'acceleratorsItem.html' // output file
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/registration.html',
+      filename: 'registration.html' // output file
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/moderator/acceleratorsCaseName.html',
+      filename: 'acceleratorsCaseName.html' // output file
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/moderator/requestCase.html',
+      filename: 'requestCase.html' // output file
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/moderator/requestTeam.html',
+      filename: 'requestTeam.html' // output file
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/moderator/caseSuccess.html',
+      filename: 'caseSuccess.html' // output file
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/moderator/bankProjects.html',
+      filename: 'bankProjects.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/moderator/personalData.html',
+      filename: 'personalData.html' // output file
+    }),
   ],
 
   // Determine how modules within the project are treated

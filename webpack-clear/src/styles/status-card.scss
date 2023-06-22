@@ -1,0 +1,24 @@
+.status-card {
+  padding: 6px 28px 6px 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+
+  .status-card__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: $black-gray;
+  }
+
+  &--success {
+    background: $card-status-bg;
+  }
+  &--revision {
+    background: $card-status-bg-revision;
+  }
+  &--rejected{
+    background: $card-status-bg-rejected;
+  }
+}

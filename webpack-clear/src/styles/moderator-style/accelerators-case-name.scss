@@ -1,0 +1,125 @@
+.role-page {
+  .content-case-name {
+    .content__top {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+    &__line {
+      border: 1px solid $pagination-border;
+      width: 100%;
+    }
+
+    .accelerators-item {
+      margin-bottom: 50px;
+    }
+
+    .table {
+      max-width: 1480px;
+
+      &__title {
+        justify-content: flex-start;
+
+        &-point-name {
+          max-width: 336px;
+          width: 100%;
+        }
+
+        &-point-date {
+          max-width: 252px;
+          width: 100%;
+        }
+
+        &-report {
+          max-width: 152px;
+          width: 100%;
+        }
+
+        &-report-date {
+          max-width: 195px;
+          width: 100%;
+        }
+
+        &-status {
+          max-width: 185px;
+          width: 100%;
+        }
+
+        &-comment {
+          max-width: 254px;
+          width: 100%;
+        }
+
+      }
+
+      &__body {
+        &-item {
+          justify-content: flex-start;
+
+          a, p {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: $black-gray;
+          }
+
+          &-point-name {
+            max-width: 336px;
+            width: 100%;
+
+            p {
+              font-weight: 500;
+            }
+          }
+
+          &-point-date {
+            max-width: 252px;
+            width: 100%;
+          }
+
+          &-report {
+            max-width: 152px;
+            width: 100%;
+
+            a {
+              color: $blue-link;
+            }
+
+          }
+
+          &-report-date {
+            max-width: 195px;
+            width: 100%;
+          }
+
+          &-status {
+            max-width: 185px;
+            width: 100%;
+          }
+
+          &-comment {
+            max-width: 254px;
+            width: 100%;
+
+            p {
+              max-width: 204px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+
+          }
+
+          .status-card {
+            max-width: 121px;
+          }
+
+          .status-card--revision {
+            padding: 6px 6px 6px 8px;
+          }
+        }
+      }
+    }
+  }
+}

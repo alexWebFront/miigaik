@@ -1,0 +1,152 @@
+.role-page {
+  .content-case-request {
+    .content__top {
+      margin-bottom: 30px;
+    }
+
+    .table {
+      max-width: 1480px;
+      &__title {
+        justify-content: flex-start;
+
+        &-date {
+          max-width: 96px;
+          width: 100%;
+        }
+
+        &-accelerator-title {
+          max-width: 219px;
+          width: 100%;
+        }
+
+        &-case-description {
+          max-width: 206px;
+          width: 100%;
+        }
+
+        &-files {
+          max-width: 141px;
+          width: 100%;
+        }
+
+        &-participate {
+          max-width: 104px;
+          width: 100%;
+        }
+
+        &-group {
+          max-width: 237px;
+          width: 100%;
+        }
+
+        &-status {
+          max-width: 149px;
+          width: 100%;
+        }
+      }
+
+      &__body {
+        &-item {
+          align-items: flex-start;
+          justify-content: flex-start;
+
+          a, p {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: $link-text;
+          }
+
+          &-date {
+            max-width: 96px;
+            width: 100%;
+          }
+
+          &-accelerator-title {
+            max-width: 219px;
+            width: 100%;
+
+            p {
+              font-weight: 500;
+            }
+
+            span {
+              font-weight: 400;
+              font-size: 13px;
+              line-height: 16px;
+              color: $table-gray-text;
+            }
+          }
+
+          &-case-description {
+            max-width: 206px;
+            width: 100%;
+
+            p {
+              max-width: 179px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+
+          &-files {
+            max-width: 141px;
+            width: 100%;
+
+            a {
+              color: $blue-link;
+            }
+          }
+
+          &-participate {
+            max-width: 104px;
+            width: 100%;
+          }
+
+          &-group {
+            max-width: 237px;
+            width: 100%;
+          }
+
+          &-status {
+            max-width: 149px;
+            width: 100%;
+          }
+
+          &-comment {
+            max-width: 240px;
+            width: 100%;
+
+            &-input {
+              padding: 6px 40px 7px 10px;
+              max-width: 215px;
+              max-height: 32px;
+              font-weight: 400;
+              font-size: 13px;
+              line-height: 146.02%;
+              color: $black-gray;
+              background: $white;
+              border: 1px solid $border;
+              border-radius: 4px;
+            }
+          }
+
+          &-actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 13px;
+
+            svg {
+              cursor: pointer;
+            }
+          }
+          .status-card--revision {
+            padding: 6px 6px 6px 8px;
+          }
+        }
+      }
+    }
+  }
+}

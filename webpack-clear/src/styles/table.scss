@@ -1,0 +1,80 @@
+.table {
+  border: 1px solid $border;
+  border-radius: 4px;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $card-tags-bg;
+    border-radius: 4px 4px 0 0;
+    padding: 12px 0 12px 15px;
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      gap: 12px;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 106.9%;
+      letter-spacing: 0.025em;
+      text-transform: uppercase;
+      color: $table-title-item;
+      opacity: 0.8;
+    }
+
+  }
+
+  &__body {
+    .link-wrapper {
+      display: flex;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 10px 12px 15px;
+      border-bottom: 1px solid $border;
+
+    }
+  }
+
+  &__sort-svg {
+    width: 12px !important;
+    height: 12px !important;
+  }
+
+  &__pagination {
+    background: $card-tags-bg;
+    border-radius: 0 0 4px 4px;
+    padding: 9px 0 10px 15px;
+
+    .pagination__wrapper {
+      margin: 0;
+
+      .pagination__link {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        color: $blue-link;
+        background: none;
+        border: none;
+        width: auto;
+        height: auto;
+      }
+
+      .pagination__link--active {
+        color: $link-text;
+      }
+    }
+  }
+}

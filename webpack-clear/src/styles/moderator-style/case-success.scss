@@ -1,0 +1,113 @@
+.role-page {
+  .content-success-case {
+    .table {
+      max-width: 1480px;
+
+      &__title {
+        justify-content: flex-start;
+
+        &-accelerator-title {
+          max-width: 248px;
+          width: 100%;
+        }
+
+        &-case-title {
+          max-width: 185px;
+          width: 100%;
+        }
+
+        &-case-description {
+          max-width: 325px;
+          width: 100%;
+        }
+
+        &-score-point {
+          max-width: 228px;
+          width: 100%;
+        }
+
+        &-files {
+          max-width: 182px;
+          width: 100%;
+        }
+
+        &-score-expert {
+          max-width: 140px;
+          width: 100%;
+        }
+      }
+
+      &__body {
+        &-item {
+          justify-content: flex-start;
+          align-items: flex-start;
+
+          a, p {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: $link-text;
+          }
+
+          &-accelerator-title {
+            max-width: 248px;
+            width: 100%;
+
+            p {
+              font-weight: 500;
+            }
+          }
+
+          &-case-title {
+            max-width: 185px;
+            width: 100%;
+          }
+
+          &-case-description {
+            max-width: 325px;
+            width: 100%;
+
+            p {
+              max-width: 284px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+
+          &-score-point {
+            max-width: 228px;
+            width: 100%;
+          }
+
+          &-files {
+            max-width: 182px;
+            width: 100%;
+
+            a {
+              color: $blue-link;
+            }
+          }
+
+          &-score-expert {
+            max-width: 140px;
+            width: 100%;
+          }
+
+          &-score-post {
+            margin-top: -4px;
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 5px;
+              p{
+                color: $blue-link;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -74,7 +74,7 @@ module.exports = {
       title: 'Webpack5 Boilerplate',
       favicon: paths.src + '/images/favicon.png',
       template: paths.src + '/moderator/accelerators.html',
-      filename: 'accelerators.html' // output file
+      filename: 'expertAccelerators.html' // output file
     }),
 
     new HtmlWebpackPlugin({
@@ -137,6 +137,44 @@ module.exports = {
       favicon: paths.src + '/images/favicon.png',
       template: paths.src + '/moderator/personalData.html',
       filename: 'personalData.html' // output file
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/expert/expertMain.html',
+      filename: 'expertMain.html' // output file
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/expert/expertAccelerators.html',
+      filename: 'expertAccelerators.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/expert/expertAcceleratorsItem.html',
+      filename: 'expertAcceleratorsItem.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/expert/expertAcceleratorsCaseName.html',
+      filename: 'expertAcceleratorsCaseName.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/expert/expertBankProjects.html',
+      filename: 'expertBankProjects.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/expert/expertPersonalData.html',
+      filename: 'expertPersonalData.html' // output file
     }),
   ],
 

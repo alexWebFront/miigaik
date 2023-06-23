@@ -20,6 +20,9 @@
     }
   }
 
+  &__content-expert{
+    align-items: flex-start;
+  }
   &__content-item {
     display: flex;
     gap: 20px;

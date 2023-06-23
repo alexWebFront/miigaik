@@ -1,0 +1,120 @@
+.role-page {
+  .content-access-rights {
+    .button{
+      width: 250px;
+    }
+    .table {
+      &__title {
+        justify-content: flex-start;
+
+        &-name {
+          max-width: 190px;
+          width: 100%;
+        }
+
+        &-role {
+          max-width: 118px;
+          width: 100%;
+        }
+
+        &-register {
+          max-width: 188px;
+          width: 100%;
+        }
+
+        &-projects {
+          max-width: 229px;
+          width: 100%;
+        }
+
+        &-allowed {
+          max-width: 399px;
+          width: 100%;
+        }
+      }
+
+      &__body {
+        &-item {
+          justify-content: flex-start;
+          align-items: flex-start;
+
+          p {
+            color: $link-text;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 18.29px;
+          }
+
+          &-name {
+            max-width: 190px;
+            width: 100%;
+
+            p {
+              font-weight: 500;
+            }
+          }
+
+          &-role {
+            max-width: 118px;
+            width: 100%;
+          }
+
+          &-register {
+            max-width: 188px;
+            width: 100%;
+          }
+
+          &-projects {
+            max-width: 229px;
+            width: 100%;
+          }
+
+          &-allowed {
+            max-width: 399px;
+            width: 100%;
+
+            p {
+              max-width: 295px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+
+          &-activity {
+            max-width: 310px;
+            width: 100%;
+          }
+
+          &-actions {
+            svg {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sandwich-btn {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.7px 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.sandwich-btn:hover {
+  background: $card-tags-bg;
+}
+
+.sandwich-icon {
+  display: block;
+  width: 3px;
+  height: 3px;
+  margin: 3.5px auto;
+  background-color: #333;
+  border-radius: 3px;
+}

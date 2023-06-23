@@ -74,7 +74,7 @@ module.exports = {
       title: 'Webpack5 Boilerplate',
       favicon: paths.src + '/images/favicon.png',
       template: paths.src + '/moderator/accelerators.html',
-      filename: 'expertAccelerators.html' // output file
+      filename: 'accelerators.html' // output file
     }),
 
     new HtmlWebpackPlugin({
@@ -175,6 +175,66 @@ module.exports = {
       favicon: paths.src + '/images/favicon.png',
       template: paths.src + '/expert/expertPersonalData.html',
       filename: 'expertPersonalData.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/administrator/administratorMain.html',
+      filename: 'administratorMain.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/administrator/newsItem.html',
+      filename: 'newsItem.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/administrator/moduleManagement.html',
+      filename: 'moduleManagement.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/administrator/createNewsItem.html',
+      filename: 'createNewsItem.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/administrator/accessRights.html',
+      filename: 'accessRights.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/administrator/roles.html',
+      filename: 'roles.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/administrator/administratorAccelerators.html',
+      filename: 'administratorAccelerators.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/administrator/administratorCaseSuccess.html',
+      filename: 'administratorCaseSuccess.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/administrator/administratorBankProjects.html',
+      filename: 'administratorBankProjects.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/administrator/createRoles.html',
+      filename: 'createRoles.html' // output file
     }),
   ],
 

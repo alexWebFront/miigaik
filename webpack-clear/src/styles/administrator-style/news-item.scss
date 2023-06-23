@@ -1,0 +1,21 @@
+.role-page {
+  .content-news {
+    .accelerators-item {
+      max-width: 1480px;
+
+      &__wrapper-content {
+        .news-title {
+          margin-bottom: 26px;
+        }
+
+        .news-subtitle {
+          color: $black-gray;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 140.523%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

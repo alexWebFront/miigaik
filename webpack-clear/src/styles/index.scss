@@ -38,6 +38,15 @@
 @import './expert-style/expert-accelerators-case-name.scss';
 @import './expert-style/expert-bank-projects.scss';
 
+@import './administrator-style/news-item.scss';
+@import './administrator-style/module-management.scss';
+@import './administrator-style/create-news-item.scss';
+@import './administrator-style/access-rights.scss';
+@import './administrator-style/roles.scss';
+@import './administrator-style/administrator-accelerators.scss';
+@import './administrator-style/administrator-case-success.scss';
+@import './administrator-style/create-roles.scss';
+
 
 body, header, footer {
   font-family: "Montserrat";

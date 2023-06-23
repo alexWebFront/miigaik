@@ -1,0 +1,54 @@
+.role-page {
+  .administrator-tabs {
+    display: flex;
+    align-items: center;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 2px 2px 0;
+      border: 1px solid $border;
+      background: $white;
+      padding: 8px 20px;
+      gap: 5px;
+      cursor: pointer;
+
+      p {
+        color: $tabs-gray-text;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 146.023%;
+      }
+    }
+
+    .active {
+      background: $tabs-active-bg;
+      border: 1px solid $tabs-active-bg;
+
+      p {
+        color: $white;
+      }
+    }
+  }
+
+  .content-module-management {
+
+    .content__card {
+      position: relative;
+
+      &-actions {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+
+        svg {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

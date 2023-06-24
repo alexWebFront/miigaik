@@ -1,8 +1,20 @@
 .registration {
-  padding: 83px 0 60px 65px;
+  padding: 83px 20px 60px 65px;
   display: flex;
   align-items: flex-start;
   gap: 170px;
+
+  @media screen and (max-width: 950px) {
+    gap: 100px;
+    padding: 63px 20px 60px 20px;
+  }
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 38px 15px 40px 15px;
+    gap: 40px;
+  }
 
   &__title {
     display: flex;
@@ -17,6 +29,11 @@
       color: $link-text;
       margin-bottom: 27px;
       max-width: 483px;
+
+      @media screen and (max-width: 800px) {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
     }
 
     p {
@@ -25,6 +42,7 @@
       line-height: 133.52%;
       color: $black-gray;
       max-width: 454px;
+      
     }
   }
 
@@ -88,9 +106,18 @@
       align-items: center;
       justify-content: space-between;
 
+      @media screen and (max-width: 800px) {
+        flex-direction: column;
+      }
+
       &-send {
         width: 200px;
         height: 56px;
+        
+        @media screen and (max-width: 800px) {
+          width: 100%;
+          margin-bottom: 25px;
+        }
       }
 
       &-back {

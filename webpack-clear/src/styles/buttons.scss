@@ -12,19 +12,66 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 55.19%), #1b1bbb;
   border-radius: 4px;
   //padding: 15px 30px;
+
+  @media screen and (max-width: 800px) {
+    font-size: 14px;
+  }
 }
 
 .button-login {
   width: 164px;
   height: 56px;
+
+  &:hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 55.19%), #2626db;
+  }
+
+  &:active {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 55.19%), #0F0FA4;
+  }
+
+  &.disabled {
+    pointer-events: none;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: $white;
+      opacity: 0.8;
+    }
+  }
 }
 
 .button-register {
   width: 173px;
   height: 56px;
+  position: relative;
 
-  @media screen and (max-width: 375px) {
-    margin-bottom: 50px;
+  &:hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 55.19%), #2626db;
+  }
+
+  &:active {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 55.19%), #0F0FA4;
+  }
+
+  &.disabled {
+    pointer-events: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: $white;
+      opacity: 0.8;
+    }
   }
 }
 
@@ -32,10 +79,55 @@
   width: 265px;
   height: 56px;
   margin-bottom: 15px;
+
+  &:hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 55.19%), #2626db;
+  }
+
+  &:active {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 55.19%), #0F0FA4;
+  }
+
+  &.disabled {
+    pointer-events: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: $white;
+      opacity: 0.8;
+    }
+  }
 }
 
 .button-accelerator {
   width: 222px;
   height: 44px;
-}
 
+  &:hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 55.19%), #2626db;
+  }
+
+  &:active {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 55.19%), #0F0FA4;
+  }
+
+  &.disabled {
+    pointer-events: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: $white;
+      opacity: 0.8;
+    }
+  }
+}

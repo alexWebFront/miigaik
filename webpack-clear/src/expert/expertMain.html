@@ -16,6 +16,72 @@
 
     <!-- Меню слева-->
     <nav class="side-menu">
+      <div class="side-menu__info">
+        <div class="side-menu__info-wrapper">
+          <div class="side-menu__info-close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.53022 16.7834C6.23732 17.0763 6.23732 17.5512 6.53022 17.844C6.82311 18.1369 7.29798 18.1369 7.59088 17.844L12.1874 13.2475L16.784 17.8441C17.0769 18.1369 17.5518 18.1369 17.8447 17.8441C18.1376 17.5512 18.1376 17.0763 17.8447 16.7834L13.2481 12.1868L17.8439 7.591C18.1368 7.29811 18.1368 6.82323 17.8439 6.53034C17.551 6.23745 17.0762 6.23745 16.7833 6.53034L12.1874 11.1262L7.59162 6.53035C7.29873 6.23746 6.82385 6.23746 6.53096 6.53035C6.23807 6.82324 6.23807 7.29812 6.53096 7.59101L11.1268 12.1868L6.53022 16.7834Z" />
+            </svg>
+          </div>
+          <div class="side-menu__info-search">
+            <input type="text" class="input side-menu__info-search-input" placeholder="Поиск по сайту">
+            <svg class=" side-menu__info-search-image" width="26" height="26" viewBox="0 0 26 26" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.0236 7.40801C19.6788 10.0632 19.6788 14.3681 17.0236 17.0232C14.3684 19.6784 10.0635 19.6784 7.40837 17.0232C4.7532 14.3681 4.7532 10.0632 7.40837 7.40801C10.0635 4.75283 14.3684 4.75283 17.0236 7.40801"
+                stroke="#939393" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M20.5847 20.5833L17.0205 17.0192" stroke="#939393" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+          </div>
+          <div class="side-menu__info-logout">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11 19.392V7.50298C11 6.81298 10.645 6.17198 10.06 5.80698L6.06 3.30698C4.728 2.47498 3 3.43198 3 5.00298V16.891C3 17.581 3.355 18.222 3.94 18.587L7.94 21.087C9.272 21.92 11 20.962 11 19.392Z"
+                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M15 11H21" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M19 13L21 11L19 9" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M11 19H15C16.105 19 17 18.105 17 17V16" stroke="white" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M17 6V5C17 3.895 16.105 3 15 3H5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <p class="side-menu__info-logout-text">
+              Выход из аккаунта
+            </p>
+          </div>
+          <div class="side-menu__info-user">
+            <div class="side-menu__info-user-photo">
+              <img src="./assets/images/user-photo.svg" alt="img">
+            </div>
+            <div class="side-menu__info-user-name">Иван Сергеевич</div>
+          </div>
+          <div class="side-menu__info-notification">
+            <button class="side-menu__info-notification-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.6004 20H10.4004" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M17 10.032V10V10C17 7.239 14.761 5 12 5V5C9.239 5 7 7.239 7 10V10V10.032V12.504C7 12.828 6.817 13.123 6.528 13.268L6.025 13.519C5.397 13.834 5 14.476 5 15.178V15.178C5 16.202 5.83 17.032 6.854 17.032H17.146C18.17 17.032 19 16.202 19 15.178V15.178C19 14.476 18.603 13.834 17.975 13.52L17.472 13.269C17.183 13.123 17 12.828 17 12.504V10.032Z"
+                  stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="side-menu__info-notification-item-text">Уведомления</p>
+            </button>
+            <button class="side-menu__info-notification-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.1018 4.72937C11.4677 3.98257 12.5322 3.98264 12.8979 4.72949L14.7035 8.41621C14.8484 8.71215 15.1298 8.91769 15.4558 8.96571L19.5089 9.56272C20.3264 9.68314 20.6534 10.6869 20.0637 11.2657L17.1231 14.1518C16.8894 14.3812 16.7828 14.7105 16.8377 15.0333L17.5302 19.1015C17.6694 19.9195 16.8093 20.5414 16.0761 20.1529L12.4682 18.2411C12.1754 18.0859 11.8246 18.0859 11.5318 18.2411L7.92389 20.1529C7.19071 20.5414 6.33062 19.9195 6.46985 19.1015L7.16229 15.0333C7.21724 14.7105 7.11064 14.3812 6.87693 14.1518L3.9363 11.2657C3.34655 10.6869 3.67351 9.68312 4.49102 9.56268L8.54328 8.96571C8.86923 8.91769 9.15061 8.7122 9.29556 8.41633L11.1018 4.72937Z"
+                  stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+              <p class="side-menu__info-notification-item-text">Избранное</p>
+            </button>
+          </div>
+        </div>
+      </div>
       <div class="side-menu__logo">
         <a class="side-menu__logo-link" href="/">
           <img class="side-menu__logo-link-img" src="./assets/images/logo.svg" alt="logo">
@@ -113,11 +179,22 @@
           </a>
         </li>
       </ul>
+      <div class="side-menu__footer">
+        <div class="side-menu__footer-wrapper">
+          <a href="tel: 777785485848" class="side-menu__footer-phone">+7 777 854 858 48</a>
+          <a href="mailto: pochta@pochta.ru" class="side-menu__footer-mail">pochta@pochta.ru</a>
+        </div>
+      </div>
     </nav>
 
     <div class="page__wrapper">
       <header class="header">
         <div class="header__content">
+          <div class="header__logo">
+            <a class="header__logo-link" href="index.html">
+              <img class="header__logo-link-img" src="./assets/images/logo.svg" alt="logo">
+            </a>
+          </div>
           <div class="header__phone">
             <a class="header__phone-link" href="tel:+777785485848">+7 777 854 858 48</a>
           </div>
@@ -169,13 +246,31 @@
           <!-- Выпадающий список сортировки-->
           <div class="dropdown">
             <p class="dropdown__text">Сортировка по времени</p>
-            <select class="dropdown__select">
-              <option value="" hidden disabled selected>Сначала новые</option>
-              <option>Пункт 1</option>
-              <option>Пункт 2</option>
-              <option>Пункт 3</option>
-              <option>Пункт 4</option>
-            </select>
+            <!--active-->
+            <div class="dropdown__select error">
+              <p class="dropdown__select-value">Сначала новые</p>
+              <p class="dropdown__select-text-error">Опция не выбрана</p>
+              <svg class="dropdown__select-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.706 11.1326L16.9034 16.33C17.2484 16.675 17.8077 16.675 18.1527 16.33C18.4977 15.985 18.4977 15.4257 18.1527 15.0807L12.3309 9.25895C12.1738 9.1018 11.9721 9.01624 11.7666 9.00227C11.5204 8.98518 11.2684 9.07075 11.0801 9.25897L5.25883 15.0803C4.91372 15.4254 4.91372 15.9849 5.25883 16.33C5.60394 16.6751 6.16348 16.6751 6.50859 16.33L11.706 11.1326Z"
+                  fill="#777777" />
+              </svg>
+              <ul class="dropdown__select-list">
+                <li class="dropdown__select-item">
+                  <p class="dropdown__select-item-value">Пункт 1</p>
+                </li>
+                <li class="dropdown__select-item">
+                  <p class="dropdown__select-item-value">Пункт 2</p>
+                </li>
+                <li class="dropdown__select-item">
+                  <p class="dropdown__select-item-value">Пункт 3</p>
+                </li>
+                <li class="dropdown__select-item">
+                  <p class="dropdown__select-item-value">Пункт 4</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -283,7 +378,19 @@
         <!-- Пагинация-->
         <div class="pagination">
           <a href="#" class="pagination__link-arrow">
-            <img src="./assets/images/pagination-arrow-left.svg" alt="arrow-left">
+            <svg width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_98_31592)">
+                <rect x="0.529297" y="11.0098" width="40" height="1" rx="0.5" />
+                <rect x="9.75195" y="21.4092" width="14" height="1" rx="0.5"
+                  transform="rotate(-135 9.75195 21.4092)" />
+                <rect x="10.459" y="2.31738" width="14" height="1" rx="0.5" transform="rotate(135 10.459 2.31738)" />
+              </g>
+              <defs>
+                <clipPath id="clip0_98_31592">
+                  <rect width="43" height="22" fill="white" transform="translate(0 0.5)" />
+                </clipPath>
+              </defs>
+            </svg>
           </a>
           <div class="pagination__wrapper">
             <a href="#" class="pagination__link">1</a>
@@ -294,9 +401,25 @@
             <a href="#" class="pagination__link">12</a>
           </div>
           <a href="#" class="pagination__link-arrow">
-            <img src="./assets/images/pagination-arrow-right.svg" alt="arrow-right">
+            <svg width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_98_31552)">
+                <rect width="40" height="1" rx="0.5" transform="matrix(-1 0 0 1 42.4707 11.0098)" />
+                <rect width="14" height="1" rx="0.5"
+                  transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 33.248 21.4092)"  />
+                <rect width="14" height="1" rx="0.5"
+                  transform="matrix(0.707107 0.707107 0.707107 -0.707107 32.541 2.31738)"  />
+              </g>
+              <defs>
+                <clipPath id="clip0_98_31552">
+                  <rect width="43" height="22" fill="white" transform="matrix(-1 0 0 1 43 0.5)" />
+                </clipPath>
+              </defs>
+            </svg>
           </a>
         </div>
+
+        <!--disabled-->
+        <button class="pagination-show-more">Показать еще</button>
       </div>
     </div>
   </div>

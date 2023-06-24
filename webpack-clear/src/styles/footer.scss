@@ -7,7 +7,11 @@
     align-items: center;
     padding: 38px 103px 43px 65px;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 1200px) {
+      padding: 30px 23px 33px 25px;
+    }
+
+    @media screen and (max-width: 900px) {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
@@ -17,23 +21,32 @@
       padding: 22px 15px 18px 15px;
       position: relative;
       gap: 20px;
+      margin: 0 auto;
     }
   }
 
-  &__content-expert{
+  &__content-expert {
     align-items: flex-start;
   }
+
   &__content-item {
     display: flex;
     gap: 20px;
     flex-direction: column;
-    @media screen and (max-width: 375px) {
+
+    @media screen and (max-width: 900px) {
       gap: 2px;
     }
   }
 
+  &__content-item-link {
+    &:hover {
+      color: $blue-link;
+    }
+  }
+
   &__content-item--contacts {
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 900px) {
       position: absolute;
       top: 27px;
       right: 15px;
@@ -41,13 +54,13 @@
   }
 
   &__content-item-menu {
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 900px) {
       display: none;
     }
   }
 
   &__content-item--images {
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 900px) {
       flex-direction: row;
       width: 100%;
       position: relative;
@@ -55,14 +68,19 @@
   }
 
   &__content-item-img-second {
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 900px) {
       position: absolute;
       right: 64px;
     }
   }
 
   &__content-item--logo {
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 1200px) {
+      width: 154px;
+      height: 37px;
+    }
+
+    @media screen and (max-width: 900px) {
       width: 124px;
       height: 37px;
     }
@@ -81,6 +99,10 @@
     margin-bottom: 20px;
     opacity: 0.15;
     border: 1px solid $dark;
+
+    @media screen and (max-width: 900px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__policy {
@@ -89,10 +111,11 @@
     align-items: center;
     padding: 0 103px 26px 65px;
 
-    @media screen and (max-width: 375px) {
-      padding: 0 15px;
+    @media screen and (max-width: 900px) {
+      padding: 0 15px 15px 15px;
       gap: 90px;
     }
+
     @media screen and (max-width: 320px) {
       gap: 40px;
     }
@@ -108,5 +131,12 @@
 
   &__policy-item--policy {
     text-decoration: underline;
+  }
+
+  &__content-item-link {
+    @media screen and (max-width: 1200px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 }

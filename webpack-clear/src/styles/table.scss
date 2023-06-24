@@ -2,6 +2,11 @@
   border: 1px solid $border;
   border-radius: 4px;
 
+  @media screen and (max-width: 1200px) {
+    border: none;
+  }
+
+
   &__title {
     display: flex;
     align-items: center;
@@ -30,12 +35,20 @@
       color: $table-title-item;
       opacity: 0.8;
     }
-
   }
 
   &__body {
+
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 30px;
+    }
+
     .link-wrapper {
       display: flex;
+
+      @media screen and (max-width: 1200px) {
+        padding: 0 10px;
+      }
     }
 
     &-item {
@@ -45,6 +58,52 @@
       padding: 12px 10px 12px 15px;
       border-bottom: 1px solid $border;
 
+      @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        padding: 0;
+      }
+    }
+  }
+  &__body-item-title {
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      padding-bottom: 12px;
+    }
+  }
+
+  &__body-item-title-text {
+    @media screen and (max-width: 1200px) {
+      padding: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      background: $card-tags-bg;
+    }
+  }
+
+  &__body-item-title-text-hidden,
+  &__body-item-files-text-hidden,
+  &__body-item-owner-text-hidden,
+  &__body-item-type-text-hidden {
+    display: none !important;
+
+    @media screen and (max-width: 1200px) {
+      display: block !important;
+      font-size: 14px !important;
+      margin-bottom: 5px !important;
+      color: $select-text !important;
+    }
+  }
+
+  &__body-item-title-text-hidden {
+    padding: 10px 10px 0;
+  }
+
+  &__body-item-title-span {
+    @media screen and (max-width: 1200px) {
+      font-size: 14px !important;
+      color: $black-gray !important;
+      display: block;
+      padding: 0 10px;
     }
   }
 
@@ -58,6 +117,10 @@
     border-radius: 0 0 4px 4px;
     padding: 9px 0 10px 15px;
 
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+
     .pagination__wrapper {
       margin: 0;
 
@@ -70,6 +133,10 @@
         border: none;
         width: auto;
         height: auto;
+
+        &:hover {
+          color: $hover-input;
+        }
       }
 
       .pagination__link--active {

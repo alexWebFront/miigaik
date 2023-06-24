@@ -2,444 +2,594 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>
     <%= htmlWebpackPlugin.options.title %>
   </title>
 </head>
 
 <body>
-<div class="page">
-  <div class="role-page">
+  <div class="page">
+    <div class="role-page">
 
-    <!-- Меню слева-->
-    <nav class="side-menu">
-      <div class="side-menu__logo">
-        <a class="side-menu__logo-link" href="/">
-          <img class="side-menu__logo-link-img" src="./assets/images/logo.svg" alt="logo">
-        </a>
-      </div>
-      <ul class="side-menu__list">
-        <li class="side-menu__list-item side-menu__list-item--active">
-          <a href="/">
-            <svg class="side-menu__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_98_18845)">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M9.5 20.5V16C9.5 14.619 10.619 13.5 12 13.5V13.5C13.381 13.5 14.5 14.619 14.5 16V20.5H20V11.914C20 11.384 19.789 10.875 19.414 10.5L12.707 3.79301C12.316 3.40201 11.683 3.40201 11.293 3.79301L4.586 10.5C4.211 10.875 4 11.384 4 11.914V20.5H9.5Z"
-                      stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_98_18845">
-                  <rect width="24" height="24" fill="white"/>
-                </clipPath>
-              </defs>
-            </svg>
-            Главная страница
-          </a>
-        </li>
-        <li class="side-menu__list-item">
-          <a href="accelerators.html">
-            <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_98_18853)">
-                <path d="M17.0156 12H7.01562" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M17.0156 8H7.01562" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M21.0156 12V20C21.0156 20.552 20.5676 21 20.0156 21H4.01562C3.46363 21 3.01562 20.552 3.01562 20V12"
-                      stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M17.0156 16H7.01562" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M17.0156 12H7.01562" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M17.0156 8H7.01562" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M17.0156 4H7.01562" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_98_18853">
-                  <rect width="24" height="24" fill="white" transform="translate(0.015625)"/>
-                </clipPath>
-              </defs>
-            </svg>
-            Акселераторы
-          </a>
-        </li>
-        <li class="side-menu__list-item">
-          <a href="#">
-            <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_98_18869)">
-                <path d="M8.49936 16.1111L6.27736 18.3331L4.94336 17.0001" stroke="white" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round"/>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M6.7207 21V21C4.5117 21 2.7207 19.209 2.7207 17V17C2.7207 14.791 4.5117 13 6.7207 13V13C8.9297 13 10.7207 14.791 10.7207 17V17C10.7207 19.209 8.9297 21 6.7207 21Z"
-                      stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M4.94141 6L6.28141 7.33" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M8.50125 5.10999L6.28125 7.32999" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M8.49936 5.11108L6.27736 7.33308L4.94336 6.00008" stroke="white" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M19.4994 5.11108L17.2774 7.33308L15.9434 6.00008" stroke="white" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round"/>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M17.7207 10V10C15.5117 10 13.7207 8.209 13.7207 6V6C13.7207 3.791 15.5117 2 17.7207 2V2C19.9297 2 21.7207 3.791 21.7207 6V6C21.7207 8.209 19.9297 10 17.7207 10Z"
-                      stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M16.7351 20.937L14.7591 14.625C14.5501 13.959 15.2321 13.3631 15.8651 13.658L21.7581 16.4081C22.4561 16.7341 22.3391 17.7611 21.5851 17.9211L19.1591 18.4341L18.2591 20.9651C18.0001 21.6921 16.9661 21.673 16.7351 20.937V20.937Z"
-                      stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M6.7207 10V10C4.5117 10 2.7207 8.209 2.7207 6V6C2.7207 3.791 4.5117 2 6.7207 2V2C8.9297 2 10.7207 3.791 10.7207 6V6C10.7207 8.209 8.9297 10 6.7207 10Z"
-                      stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_98_18869">
-                  <rect width="24" height="24" fill="white" transform="translate(0.720703)"/>
-                </clipPath>
-              </defs>
-            </svg>
-            Заявки на кейсы
-          </a>
-        </li>
-        <li class="side-menu__list-item">
-          <a href="#">
-            <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_98_18886)">
-                <path d="M13.1897 3.02278C14.5534 4.38649 14.5534 6.5975 13.1897 7.96121C11.826 9.32492 9.61501 9.32492 8.2513 7.96121C6.88759 6.5975 6.88759 4.38649 8.2513 3.02278C9.61501 1.65907 11.826 1.65907 13.1897 3.02278"
-                      stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M15.0837 12.796C13.7847 12.277 12.2607 11.991 10.7207 11.991C6.6727 11.991 2.7207 13.958 2.7207 16.983V17.983C2.7207 18.535 3.1687 18.983 3.7207 18.983H13.1337"
-                      stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M17.7207 22C14.9597 22 12.7207 19.762 12.7207 17C12.7207 14.296 15.0207 11.997 17.7247 12C20.4847 12.002 22.7207 14.24 22.7207 17C22.7207 19.761 20.4827 22 17.7207 22"
-                      stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M17.7207 15V19" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M19.7207 17H15.7207" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_98_18886">
-                  <rect width="24" height="24" fill="white" transform="translate(0.720703)"/>
-                </clipPath>
-              </defs>
-            </svg>
-            Заявки в команду
-          </a>
-        </li>
-        <li class="side-menu__list-item">
-          <a href="#">
-            <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_98_18899)">
-                <path d="M8.7207 16H16.7207" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M16.2207 8.19995L11.8207 12.6L9.2207 9.99995" stroke="white" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round"/>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M17.7207 21H7.7207C5.5207 21 3.7207 19.2 3.7207 17V7C3.7207 4.8 5.5207 3 7.7207 3H17.7207C19.9207 3 21.7207 4.8 21.7207 7V17C21.7207 19.2 19.9207 21 17.7207 21Z"
-                      stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_98_18899">
-                  <rect width="24" height="24" fill="white" transform="translate(0.720703)"/>
-                </clipPath>
-              </defs>
-            </svg>
-            Решенные кейсы
-          </a>
-        </li>
-        <li class="side-menu__list-item">
-          <a href="#">
-            <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_98_18910)">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M19.7207 20.5H5.7207C4.6157 20.5 3.7207 19.605 3.7207 18.5V9.5C3.7207 8.395 4.6157 7.5 5.7207 7.5H19.7207C20.8257 7.5 21.7207 8.395 21.7207 9.5V18.5C21.7207 19.605 20.8257 20.5 19.7207 20.5Z"
-                      stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M16.8949 7.5V5.5C16.8949 4.395 15.9999 3.5 14.8949 3.5H10.5469C9.44187 3.5 8.54688 4.395 8.54688 5.5V7.5"
-                      stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M3.7207 9.5L10.0717 13.691C10.3987 13.907 10.7817 14.022 11.1737 14.022H14.2677C14.6597 14.022 15.0427 13.907 15.3697 13.691L21.7207 9.5"
-                      stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_98_18910">
-                  <rect width="24" height="24" fill="white" transform="translate(0.720703)"/>
-                </clipPath>
-              </defs>
-            </svg>
-            Банк проектов
-          </a>
-        </li>
-        <li class="side-menu__list-item">
-          <a href="#">
-            <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_98_18921)">
-                <path d="M19.085 5.63601C22.6 9.15101 22.6 14.849 19.085 18.364C15.57 21.879 9.87195 21.879 6.35695 18.364C2.84195 14.849 2.84195 9.15101 6.35695 5.63601C9.87195 2.12101 15.57 2.12101 19.085 5.63601"
-                      stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8.7207 15V9" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M12.3203 15H14.3203C15.9773 15 17.3203 13.657 17.3203 12V12C17.3203 10.343 15.9773 9 14.3203 9H12.3203V15"
-                      stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_98_18921">
-                  <rect width="24" height="24" fill="white" transform="translate(0.720703)"/>
-                </clipPath>
-              </defs>
-            </svg>
-            Личные данные
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="page__wrapper">
-      <header class="header">
-        <div class="header__content">
-          <div class="header__phone">
-            <a class="header__phone-link" href="tel:+777785485848">+7 777 854 858 48</a>
-          </div>
-          <div class="header__mail">
-            <a class="header__mail-link" href="mailto: pochta@pochta.ru">pochta@pochta.ru</a>
-          </div>
-          <div class="header__search">
-            <input type="text" class="header__search-input" placeholder="Поиск по сайту">
-            <img src="./assets/images/search-icon.svg" alt="" class="header__search-image">
-          </div>
-          <div class="header__account">
-            <div class="header__account-svg">
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17 25H13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.25 12.54V12.5V12.5C21.25 9.04875 18.4512 6.25 15 6.25V6.25C11.5488 6.25 8.75 9.04875 8.75 12.5V12.5V12.54V15.63C8.75 16.035 8.52125 16.4037 8.16 16.585L7.53125 16.8988C6.74625 17.2925 6.25 18.095 6.25 18.9725V18.9725C6.25 20.2525 7.2875 21.29 8.5675 21.29H21.4325C22.7125 21.29 23.75 20.2525 23.75 18.9725V18.9725C23.75 18.095 23.2538 17.2925 22.4688 16.9L21.84 16.5863C21.4788 16.4038 21.25 16.035 21.25 15.63V12.54Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1018 5.45337C14.4677 4.70657 15.5322 4.70664 15.8979 5.45349L18.4372 10.6385C18.5821 10.9344 18.8636 11.1399 19.1896 11.188L24.8839 12.0267C25.7014 12.1471 26.0284 13.1509 25.4387 13.7297L21.3106 17.7813C21.0769 18.0107 20.9703 18.34 21.0252 18.6628L21.9979 24.3775C22.1371 25.1955 21.277 25.8174 20.5439 25.4289L15.4682 22.7393C15.1754 22.5842 14.8246 22.5842 14.5318 22.7393L9.45614 25.4289C8.72296 25.8174 7.86287 25.1955 8.0021 24.3775L8.97479 18.6628C9.02973 18.34 8.92314 18.0107 8.68943 17.7813L4.5613 13.7297C3.97155 13.1509 4.29851 12.1471 5.11602 12.0267L10.8093 11.188C11.1352 11.1399 11.4166 10.9344 11.5616 10.6386L14.1018 5.45337Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <div class="header__account-person">
-              <div class="header__account-person-photo">
-                <img src="./assets/images/user-photo.svg" alt="">
-              </div>
-              <div class="header__account-person-name">Иван Сергеевич</div>
+      <!-- Меню слева-->
+      <nav class="side-menu">
+        <div class="side-menu__info">
+          <div class="side-menu__info-wrapper">
+            <div class="side-menu__info-close">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.706 14.4563L16.9034 9.25885C17.2484 8.91387 17.8077 8.91387 18.1527 9.25885C18.4977 9.60383 18.4977 10.1631 18.1527 10.5081L12.3309 16.3299C12.1738 16.4871 11.9721 16.5726 11.7666 16.5866C11.5204 16.6037 11.2684 16.5181 11.0801 16.3299L5.25883 10.5086C4.91372 10.1635 4.91372 9.60394 5.25883 9.25883C5.60394 8.91372 6.16348 8.91372 6.50859 9.25883L11.706 14.4563Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.53022 16.7834C6.23732 17.0763 6.23732 17.5512 6.53022 17.844C6.82311 18.1369 7.29798 18.1369 7.59088 17.844L12.1874 13.2475L16.784 17.8441C17.0769 18.1369 17.5518 18.1369 17.8447 17.8441C18.1376 17.5512 18.1376 17.0763 17.8447 16.7834L13.2481 12.1868L17.8439 7.591C18.1368 7.29811 18.1368 6.82323 17.8439 6.53034C17.551 6.23745 17.0762 6.23745 16.7833 6.53034L12.1874 11.1262L7.59162 6.53035C7.29873 6.23746 6.82385 6.23746 6.53096 6.53035C6.23807 6.82324 6.23807 7.29812 6.53096 7.59101L11.1268 12.1868L6.53022 16.7834Z" />
               </svg>
             </div>
-          </div>
-          <div class="header__mobile-menu">
-            <span class="header__mobile-menu-span">Меню</span>
-            <img class="header__mobile-menu-img" src="./assets/images/header-mobile-menu-icon.svg" alt="burger">
+            <div class="side-menu__info-search">
+              <input type="text" class="input side-menu__info-search-input" placeholder="Поиск по сайту">
+              <svg class=" side-menu__info-search-image" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.0236 7.40801C19.6788 10.0632 19.6788 14.3681 17.0236 17.0232C14.3684 19.6784 10.0635 19.6784 7.40837 17.0232C4.7532 14.3681 4.7532 10.0632 7.40837 7.40801C10.0635 4.75283 14.3684 4.75283 17.0236 7.40801"
+                  stroke="#939393" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M20.5847 20.5833L17.0205 17.0192" stroke="#939393" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
+            </div>
+            <div class="side-menu__info-logout">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11 19.392V7.50298C11 6.81298 10.645 6.17198 10.06 5.80698L6.06 3.30698C4.728 2.47498 3 3.43198 3 5.00298V16.891C3 17.581 3.355 18.222 3.94 18.587L7.94 21.087C9.272 21.92 11 20.962 11 19.392Z"
+                  stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15 11H21" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19 13L21 11L19 9" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M11 19H15C16.105 19 17 18.105 17 17V16" stroke="white" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M17 6V5C17 3.895 16.105 3 15 3H5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <p class="side-menu__info-logout-text">
+                Выход из аккаунта
+              </p>
+            </div>
+            <div class="side-menu__info-user">
+              <div class="side-menu__info-user-photo">
+                <img src="./assets/images/user-photo.svg" alt="img">
+              </div>
+              <div class="side-menu__info-user-name">Иван Сергеевич</div>
+            </div>
+            <div class="side-menu__info-notification">
+              <button class="side-menu__info-notification-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.6004 20H10.4004" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M17 10.032V10V10C17 7.239 14.761 5 12 5V5C9.239 5 7 7.239 7 10V10V10.032V12.504C7 12.828 6.817 13.123 6.528 13.268L6.025 13.519C5.397 13.834 5 14.476 5 15.178V15.178C5 16.202 5.83 17.032 6.854 17.032H17.146C18.17 17.032 19 16.202 19 15.178V15.178C19 14.476 18.603 13.834 17.975 13.52L17.472 13.269C17.183 13.123 17 12.828 17 12.504V10.032Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p class="side-menu__info-notification-item-text">Уведомления</p>
+              </button>
+              <button class="side-menu__info-notification-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.1018 4.72937C11.4677 3.98257 12.5322 3.98264 12.8979 4.72949L14.7035 8.41621C14.8484 8.71215 15.1298 8.91769 15.4558 8.96571L19.5089 9.56272C20.3264 9.68314 20.6534 10.6869 20.0637 11.2657L17.1231 14.1518C16.8894 14.3812 16.7828 14.7105 16.8377 15.0333L17.5302 19.1015C17.6694 19.9195 16.8093 20.5414 16.0761 20.1529L12.4682 18.2411C12.1754 18.0859 11.8246 18.0859 11.5318 18.2411L7.92389 20.1529C7.19071 20.5414 6.33062 19.9195 6.46985 19.1015L7.16229 15.0333C7.21724 14.7105 7.11064 14.3812 6.87693 14.1518L3.9363 11.2657C3.34655 10.6869 3.67351 9.68312 4.49102 9.56268L8.54328 8.96571C8.86923 8.91769 9.15061 8.7122 9.29556 8.41633L11.1018 4.72937Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <p class="side-menu__info-notification-item-text">Избранное</p>
+              </button>
+            </div>
           </div>
         </div>
-      </header>
-
-      <!-- Основной контент страницы-->
-      <div class="content">
-        <div class="content__top">
-          <h1>Главная страница</h1>
-
-          <!-- Выпадающий список сортировки-->
-          <div class="dropdown">
-            <p class="dropdown__text">Сортировка по времени</p>
-            <select class="dropdown__select">
-              <option value="" hidden disabled selected>Сначала новые</option>
-              <option>Пункт 1</option>
-              <option>Пункт 2</option>
-              <option>Пункт 3</option>
-              <option>Пункт 4</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- Карточки товаров-->
-        <div class="content__cards">
-          <div class="content__card">
-            <div class="content__card-image">
-              <img src="./assets/images/content-card-image.svg" alt="">
-            </div>
-            <p class="content__card-title">Название новости</p>
-            <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное</p>
-            <a href="#" class="content__card-link">Перейти</a>
-          </div>
-          <div class="content__card">
-            <div class="content__card-image">
-              <img src="./assets/images/content-card-image.svg" alt="">
-            </div>
-            <p class="content__card-title">Название новости</p>
-            <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное</p>
-            <a href="#" class="content__card-link">Перейти</a>
-          </div>
-          <div class="content__card">
-            <div class="content__card-image">
-              <img src="./assets/images/content-card-image.svg" alt="">
-            </div>
-            <p class="content__card-title">Название новости</p>
-            <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное</p>
-            <a href="#" class="content__card-link">Перейти</a>
-          </div>
-          <div class="content__card">
-            <div class="content__card-image">
-              <img src="./assets/images/content-card-image.svg" alt="">
-            </div>
-            <p class="content__card-title">Название новости</p>
-            <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное</p>
-            <a href="#" class="content__card-link">Перейти</a>
-          </div>
-          <div class="content__card">
-            <div class="content__card-image">
-              <img src="./assets/images/content-card-image.svg" alt="">
-            </div>
-            <p class="content__card-title">Название новости</p>
-            <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное</p>
-            <a href="#" class="content__card-link">Перейти</a>
-          </div>
-          <div class="content__card">
-            <div class="content__card-image">
-              <img src="./assets/images/content-card-image.svg" alt="">
-            </div>
-            <p class="content__card-title">Название новости</p>
-            <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное</p>
-            <a href="#" class="content__card-link">Перейти</a>
-          </div>
-          <div class="content__card">
-            <div class="content__card-image">
-              <img src="./assets/images/content-card-image.svg" alt="">
-            </div>
-            <p class="content__card-title">Название новости</p>
-            <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное</p>
-            <a href="#" class="content__card-link">Перейти</a>
-          </div>
-          <div class="content__card">
-            <div class="content__card-image">
-              <img src="./assets/images/content-card-image.svg" alt="">
-            </div>
-            <p class="content__card-title">Название новости</p>
-            <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное</p>
-            <a href="#" class="content__card-link">Перейти</a>
-          </div>
-          <div class="content__card">
-            <div class="content__card-image">
-              <img src="./assets/images/content-card-image.svg" alt="">
-            </div>
-            <p class="content__card-title">Название новости</p>
-            <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное</p>
-            <a href="#" class="content__card-link">Перейти</a>
-          </div>
-          <div class="content__card">
-            <div class="content__card-image">
-              <img src="./assets/images/content-card-image.svg" alt="">
-            </div>
-            <p class="content__card-title">Название новости</p>
-            <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное</p>
-            <a href="#" class="content__card-link">Перейти</a>
-          </div>
-          <div class="content__card">
-            <div class="content__card-image">
-              <img src="./assets/images/content-card-image.svg" alt="">
-            </div>
-            <p class="content__card-title">Название новости</p>
-            <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное</p>
-            <a href="#" class="content__card-link">Перейти</a>
-          </div>
-          <div class="content__card">
-            <div class="content__card-image">
-              <img src="./assets/images/content-card-image.svg" alt="">
-            </div>
-            <p class="content__card-title">Название новости</p>
-            <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное</p>
-            <a href="#" class="content__card-link">Перейти</a>
-          </div>
-        </div>
-        <div class="content__line"></div>
-
-        <!-- Пагинация-->
-        <div class="pagination">
-          <a href="#" class="pagination__link-arrow">
-            <img src="./assets/images/pagination-arrow-left.svg" alt="arrow-left">
+        <div class="side-menu__logo">
+          <a class="side-menu__logo-link" href="/">
+            <img class="side-menu__logo-link-img" src="./assets/images/logo.svg" alt="logo">
           </a>
-          <div class="pagination__wrapper">
-            <a href="#" class="pagination__link">1</a>
-            <a href="#" class="pagination__link pagination__link--active">2</a>
-            <a href="#" class="pagination__link">3</a>
-            <a href="#" class="pagination__link">4</a>
-            <a href="#" class="pagination__link">...</a>
-            <a href="#" class="pagination__link">12</a>
+        </div>
+        <ul class="side-menu__list">
+          <li class="side-menu__list-item side-menu__list-item--active">
+            <a href="/">
+              <svg class="side-menu__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_98_18845)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.5 20.5V16C9.5 14.619 10.619 13.5 12 13.5V13.5C13.381 13.5 14.5 14.619 14.5 16V20.5H20V11.914C20 11.384 19.789 10.875 19.414 10.5L12.707 3.79301C12.316 3.40201 11.683 3.40201 11.293 3.79301L4.586 10.5C4.211 10.875 4 11.384 4 11.914V20.5H9.5Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_98_18845">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Главная страница
+            </a>
+          </li>
+          <li class="side-menu__list-item">
+            <a href="accelerators.html">
+              <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_98_18853)">
+                  <path d="M17.0156 12H7.01562" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M17.0156 8H7.01562" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M21.0156 12V20C21.0156 20.552 20.5676 21 20.0156 21H4.01562C3.46363 21 3.01562 20.552 3.01562 20V12"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M17.0156 16H7.01562" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M17.0156 12H7.01562" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M17.0156 8H7.01562" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M17.0156 4H7.01562" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_98_18853">
+                    <rect width="24" height="24" fill="white" transform="translate(0.015625)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Акселераторы
+            </a>
+          </li>
+          <li class="side-menu__list-item">
+            <a href="#">
+              <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_98_18869)">
+                  <path d="M8.49936 16.1111L6.27736 18.3331L4.94336 17.0001" stroke="white" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6.7207 21V21C4.5117 21 2.7207 19.209 2.7207 17V17C2.7207 14.791 4.5117 13 6.7207 13V13C8.9297 13 10.7207 14.791 10.7207 17V17C10.7207 19.209 8.9297 21 6.7207 21Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M4.94141 6L6.28141 7.33" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M8.50125 5.10999L6.28125 7.32999" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M8.49936 5.11108L6.27736 7.33308L4.94336 6.00008" stroke="white" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M19.4994 5.11108L17.2774 7.33308L15.9434 6.00008" stroke="white" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M17.7207 10V10C15.5117 10 13.7207 8.209 13.7207 6V6C13.7207 3.791 15.5117 2 17.7207 2V2C19.9297 2 21.7207 3.791 21.7207 6V6C21.7207 8.209 19.9297 10 17.7207 10Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.7351 20.937L14.7591 14.625C14.5501 13.959 15.2321 13.3631 15.8651 13.658L21.7581 16.4081C22.4561 16.7341 22.3391 17.7611 21.5851 17.9211L19.1591 18.4341L18.2591 20.9651C18.0001 21.6921 16.9661 21.673 16.7351 20.937V20.937Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6.7207 10V10C4.5117 10 2.7207 8.209 2.7207 6V6C2.7207 3.791 4.5117 2 6.7207 2V2C8.9297 2 10.7207 3.791 10.7207 6V6C10.7207 8.209 8.9297 10 6.7207 10Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_98_18869">
+                    <rect width="24" height="24" fill="white" transform="translate(0.720703)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Заявки на кейсы
+            </a>
+          </li>
+          <li class="side-menu__list-item">
+            <a href="#">
+              <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_98_18886)">
+                  <path
+                    d="M13.1897 3.02278C14.5534 4.38649 14.5534 6.5975 13.1897 7.96121C11.826 9.32492 9.61501 9.32492 8.2513 7.96121C6.88759 6.5975 6.88759 4.38649 8.2513 3.02278C9.61501 1.65907 11.826 1.65907 13.1897 3.02278"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M15.0837 12.796C13.7847 12.277 12.2607 11.991 10.7207 11.991C6.6727 11.991 2.7207 13.958 2.7207 16.983V17.983C2.7207 18.535 3.1687 18.983 3.7207 18.983H13.1337"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M17.7207 22C14.9597 22 12.7207 19.762 12.7207 17C12.7207 14.296 15.0207 11.997 17.7247 12C20.4847 12.002 22.7207 14.24 22.7207 17C22.7207 19.761 20.4827 22 17.7207 22"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M17.7207 15V19" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M19.7207 17H15.7207" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_98_18886">
+                    <rect width="24" height="24" fill="white" transform="translate(0.720703)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Заявки в команду
+            </a>
+          </li>
+          <li class="side-menu__list-item">
+            <a href="#">
+              <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_98_18899)">
+                  <path d="M8.7207 16H16.7207" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M16.2207 8.19995L11.8207 12.6L9.2207 9.99995" stroke="white" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M17.7207 21H7.7207C5.5207 21 3.7207 19.2 3.7207 17V7C3.7207 4.8 5.5207 3 7.7207 3H17.7207C19.9207 3 21.7207 4.8 21.7207 7V17C21.7207 19.2 19.9207 21 17.7207 21Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_98_18899">
+                    <rect width="24" height="24" fill="white" transform="translate(0.720703)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Решенные кейсы
+            </a>
+          </li>
+          <li class="side-menu__list-item">
+            <a href="#">
+              <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_98_18910)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M19.7207 20.5H5.7207C4.6157 20.5 3.7207 19.605 3.7207 18.5V9.5C3.7207 8.395 4.6157 7.5 5.7207 7.5H19.7207C20.8257 7.5 21.7207 8.395 21.7207 9.5V18.5C21.7207 19.605 20.8257 20.5 19.7207 20.5Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M16.8949 7.5V5.5C16.8949 4.395 15.9999 3.5 14.8949 3.5H10.5469C9.44187 3.5 8.54688 4.395 8.54688 5.5V7.5"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M3.7207 9.5L10.0717 13.691C10.3987 13.907 10.7817 14.022 11.1737 14.022H14.2677C14.6597 14.022 15.0427 13.907 15.3697 13.691L21.7207 9.5"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_98_18910">
+                    <rect width="24" height="24" fill="white" transform="translate(0.720703)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Банк проектов
+            </a>
+          </li>
+          <li class="side-menu__list-item">
+            <a href="#">
+              <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_98_18921)">
+                  <path
+                    d="M19.085 5.63601C22.6 9.15101 22.6 14.849 19.085 18.364C15.57 21.879 9.87195 21.879 6.35695 18.364C2.84195 14.849 2.84195 9.15101 6.35695 5.63601C9.87195 2.12101 15.57 2.12101 19.085 5.63601"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M8.7207 15V9" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M12.3203 15H14.3203C15.9773 15 17.3203 13.657 17.3203 12V12C17.3203 10.343 15.9773 9 14.3203 9H12.3203V15"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_98_18921">
+                    <rect width="24" height="24" fill="white" transform="translate(0.720703)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Личные данные
+            </a>
+          </li>
+        </ul>
+        <div class="side-menu__footer">
+          <div class="side-menu__footer-wrapper">
+            <a href="tel: 777785485848" class="side-menu__footer-phone">+7 777 854 858 48</a>
+            <a href="mailto: pochta@pochta.ru" class="side-menu__footer-mail">pochta@pochta.ru</a>
           </div>
-          <a href="#" class="pagination__link-arrow">
-            <img src="./assets/images/pagination-arrow-right.svg" alt="arrow-right">
-          </a>
+        </div>
+      </nav>
+
+      <div class="page__wrapper">
+        <header class="header">
+          <div class="header__content">
+            <div class="header__logo">
+              <a class="header__logo-link" href="index.html">
+                <img class="header__logo-link-img" src="./assets/images/logo.svg" alt="logo">
+              </a>
+            </div>
+            <div class="header__phone">
+              <a class="header__phone-link" href="tel:+777785485848">+7 777 854 858 48</a>
+            </div>
+            <div class="header__mail">
+              <a class="header__mail-link" href="mailto: pochta@pochta.ru">pochta@pochta.ru</a>
+            </div>
+            <div class="header__search">
+              <input type="text" class="header__search-input" placeholder="Поиск по сайту">
+              <img src="./assets/images/search-icon.svg" alt="" class="header__search-image">
+            </div>
+            <div class="header__account">
+              <div class="header__account-svg">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 25H13" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M21.25 12.54V12.5V12.5C21.25 9.04875 18.4512 6.25 15 6.25V6.25C11.5488 6.25 8.75 9.04875 8.75 12.5V12.5V12.54V15.63C8.75 16.035 8.52125 16.4037 8.16 16.585L7.53125 16.8988C6.74625 17.2925 6.25 18.095 6.25 18.9725V18.9725C6.25 20.2525 7.2875 21.29 8.5675 21.29H21.4325C22.7125 21.29 23.75 20.2525 23.75 18.9725V18.9725C23.75 18.095 23.2538 17.2925 22.4688 16.9L21.84 16.5863C21.4788 16.4038 21.25 16.035 21.25 15.63V12.54Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14.1018 5.45337C14.4677 4.70657 15.5322 4.70664 15.8979 5.45349L18.4372 10.6385C18.5821 10.9344 18.8636 11.1399 19.1896 11.188L24.8839 12.0267C25.7014 12.1471 26.0284 13.1509 25.4387 13.7297L21.3106 17.7813C21.0769 18.0107 20.9703 18.34 21.0252 18.6628L21.9979 24.3775C22.1371 25.1955 21.277 25.8174 20.5439 25.4289L15.4682 22.7393C15.1754 22.5842 14.8246 22.5842 14.5318 22.7393L9.45614 25.4289C8.72296 25.8174 7.86287 25.1955 8.0021 24.3775L8.97479 18.6628C9.02973 18.34 8.92314 18.0107 8.68943 17.7813L4.5613 13.7297C3.97155 13.1509 4.29851 12.1471 5.11602 12.0267L10.8093 11.188C11.1352 11.1399 11.4166 10.9344 11.5616 10.6386L14.1018 5.45337Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="header__account-person">
+                <div class="header__account-person-photo">
+                  <img src="./assets/images/user-photo.svg" alt="">
+                </div>
+                <div class="header__account-person-name">Иван Сергеевич</div>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.706 14.4563L16.9034 9.25885C17.2484 8.91387 17.8077 8.91387 18.1527 9.25885C18.4977 9.60383 18.4977 10.1631 18.1527 10.5081L12.3309 16.3299C12.1738 16.4871 11.9721 16.5726 11.7666 16.5866C11.5204 16.6037 11.2684 16.5181 11.0801 16.3299L5.25883 10.5086C4.91372 10.1635 4.91372 9.60394 5.25883 9.25883C5.60394 8.91372 6.16348 8.91372 6.50859 9.25883L11.706 14.4563Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </div>
+            <div class="header__mobile-menu">
+              <span class="header__mobile-menu-span">Меню</span>
+              <img class="header__mobile-menu-img" src="./assets/images/header-mobile-menu-icon.svg" alt="burger">
+            </div>
+          </div>
+        </header>
+
+        <!-- Основной контент страницы-->
+        <div class="content">
+          <div class="content__top">
+            <h1>Главная страница</h1>
+
+            <!-- Выпадающий список сортировки-->
+            <div class="dropdown">
+              <p class="dropdown__text">Сортировка по времени</p>
+              <!--active-->
+              <div class="dropdown__select error">
+                <p class="dropdown__select-value">Сначала новые</p>
+                <p class="dropdown__select-text-error">Опция не выбрана</p>
+                <svg class="dropdown__select-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.706 11.1326L16.9034 16.33C17.2484 16.675 17.8077 16.675 18.1527 16.33C18.4977 15.985 18.4977 15.4257 18.1527 15.0807L12.3309 9.25895C12.1738 9.1018 11.9721 9.01624 11.7666 9.00227C11.5204 8.98518 11.2684 9.07075 11.0801 9.25897L5.25883 15.0803C4.91372 15.4254 4.91372 15.9849 5.25883 16.33C5.60394 16.6751 6.16348 16.6751 6.50859 16.33L11.706 11.1326Z"
+                    fill="#777777" />
+                </svg>
+                <ul class="dropdown__select-list">
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 1</p>
+                  </li>
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 2</p>
+                  </li>
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 3</p>
+                  </li>
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 4</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Карточки товаров-->
+          <div class="content__cards">
+            <div class="content__card">
+              <div class="content__card-image">
+                <img src="./assets/images/content-card-image.svg" alt="">
+              </div>
+              <p class="content__card-title">Название новости</p>
+              <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное
+              </p>
+              <a href="#" class="content__card-link">Перейти</a>
+            </div>
+            <div class="content__card">
+              <div class="content__card-image">
+                <img src="./assets/images/content-card-image.svg" alt="">
+              </div>
+              <p class="content__card-title">Название новости</p>
+              <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное
+              </p>
+              <a href="#" class="content__card-link">Перейти</a>
+            </div>
+            <div class="content__card">
+              <div class="content__card-image">
+                <img src="./assets/images/content-card-image.svg" alt="">
+              </div>
+              <p class="content__card-title">Название новости</p>
+              <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное
+              </p>
+              <a href="#" class="content__card-link">Перейти</a>
+            </div>
+            <div class="content__card">
+              <div class="content__card-image">
+                <img src="./assets/images/content-card-image.svg" alt="">
+              </div>
+              <p class="content__card-title">Название новости</p>
+              <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное
+              </p>
+              <a href="#" class="content__card-link">Перейти</a>
+            </div>
+            <div class="content__card">
+              <div class="content__card-image">
+                <img src="./assets/images/content-card-image.svg" alt="">
+              </div>
+              <p class="content__card-title">Название новости</p>
+              <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное
+              </p>
+              <a href="#" class="content__card-link">Перейти</a>
+            </div>
+            <div class="content__card">
+              <div class="content__card-image">
+                <img src="./assets/images/content-card-image.svg" alt="">
+              </div>
+              <p class="content__card-title">Название новости</p>
+              <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное
+              </p>
+              <a href="#" class="content__card-link">Перейти</a>
+            </div>
+            <div class="content__card">
+              <div class="content__card-image">
+                <img src="./assets/images/content-card-image.svg" alt="">
+              </div>
+              <p class="content__card-title">Название новости</p>
+              <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное
+              </p>
+              <a href="#" class="content__card-link">Перейти</a>
+            </div>
+            <div class="content__card">
+              <div class="content__card-image">
+                <img src="./assets/images/content-card-image.svg" alt="">
+              </div>
+              <p class="content__card-title">Название новости</p>
+              <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное
+              </p>
+              <a href="#" class="content__card-link">Перейти</a>
+            </div>
+            <div class="content__card">
+              <div class="content__card-image">
+                <img src="./assets/images/content-card-image.svg" alt="">
+              </div>
+              <p class="content__card-title">Название новости</p>
+              <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное
+              </p>
+              <a href="#" class="content__card-link">Перейти</a>
+            </div>
+            <div class="content__card">
+              <div class="content__card-image">
+                <img src="./assets/images/content-card-image.svg" alt="">
+              </div>
+              <p class="content__card-title">Название новости</p>
+              <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное
+              </p>
+              <a href="#" class="content__card-link">Перейти</a>
+            </div>
+            <div class="content__card">
+              <div class="content__card-image">
+                <img src="./assets/images/content-card-image.svg" alt="">
+              </div>
+              <p class="content__card-title">Название новости</p>
+              <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное
+              </p>
+              <a href="#" class="content__card-link">Перейти</a>
+            </div>
+            <div class="content__card">
+              <div class="content__card-image">
+                <img src="./assets/images/content-card-image.svg" alt="">
+              </div>
+              <p class="content__card-title">Название новости</p>
+              <p class="content__card-description">Здесь будет текстовое описание акселератора, небольшое но уместное
+              </p>
+              <a href="#" class="content__card-link">Перейти</a>
+            </div>
+          </div>
+          <div class="content__line"></div>
+
+          <!-- Пагинация-->
+          <div class="pagination">
+            <a href="#" class="pagination__link-arrow">
+              <svg width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_98_31592)">
+                  <rect x="0.529297" y="11.0098" width="40" height="1" rx="0.5" />
+                  <rect x="9.75195" y="21.4092" width="14" height="1" rx="0.5"
+                    transform="rotate(-135 9.75195 21.4092)" />
+                  <rect x="10.459" y="2.31738" width="14" height="1" rx="0.5" transform="rotate(135 10.459 2.31738)" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_98_31592">
+                    <rect width="43" height="22" fill="white" transform="translate(0 0.5)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <div class="pagination__wrapper">
+              <a href="#" class="pagination__link">1</a>
+              <a href="#" class="pagination__link pagination__link--active">2</a>
+              <a href="#" class="pagination__link">3</a>
+              <a href="#" class="pagination__link">4</a>
+              <a href="#" class="pagination__link">...</a>
+              <a href="#" class="pagination__link">12</a>
+            </div>
+            <a href="#" class="pagination__link-arrow">
+              <svg width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_98_31552)">
+                  <rect width="40" height="1" rx="0.5" transform="matrix(-1 0 0 1 42.4707 11.0098)" />
+                  <rect width="14" height="1" rx="0.5"
+                    transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 33.248 21.4092)" />
+                  <rect width="14" height="1" rx="0.5"
+                    transform="matrix(0.707107 0.707107 0.707107 -0.707107 32.541 2.31738)" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_98_31552">
+                    <rect width="43" height="22" fill="white" transform="matrix(-1 0 0 1 43 0.5)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+
+          <!--disabled-->
+          <button class="pagination-show-more">Показать еще</button>
         </div>
       </div>
     </div>
-  </div>
-  <footer class="footer">
-    <div class="footer__content">
-      <div class="footer__content-item footer__content-item--logo">
-        <img src="./assets/images/footer-logo.svg"/>
-      </div>
-      <div class="footer__content-item footer__content-item-menu">
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__content-item footer__content-item--logo">
+          <img src="./assets/images/footer-logo.svg" />
+        </div>
+        <div class="footer__content-item footer__content-item-menu">
           <span class="footer__content-item-span">
             <a class="footer__content-item-link" href="#">Акселераторы</a>
           </span>
-        <span class="footer__content-item-span">
+          <span class="footer__content-item-span">
             <a class="footer__content-item-link" href="#">
               Заявки на кейсы
             </a>
           </span>
-      </div>
-      <div class="footer__content-item footer__content-item-menu">
+        </div>
+        <div class="footer__content-item footer__content-item-menu">
           <span class="footer__content-item-span">
             <a class="footer__content-item-link" href="#">Решение кейсов</a>
           </span>
-        <span class="footer__content-item-span">
+          <span class="footer__content-item-span">
             <a class="footer__content-item-link" href="#">
               Участие в команде
             </a>
           </span>
-      </div>
-      <div class="footer__content-item footer__content-item-menu">
+        </div>
+        <div class="footer__content-item footer__content-item-menu">
           <span class="footer__content-item-span">
             <a class="footer__content-item-link" href="#">Банк проектов</a>
           </span>
-        <span class="footer__content-item-span">
+          <span class="footer__content-item-span">
             <a class="footer__content-item-link" href="#">
               Регистрация и вход
             </a>
           </span>
-      </div>
-      <div class="footer__content-item footer__content-item--images">
-        <img alt="img" class="footer__content-item-img" src="./assets/images/footer-image-1.svg"/>
-        <img alt="img" class="footer__content-item-img footer__content-item-img-second"
-             src="./assets/images/footer-image-2.svg"/>
-      </div>
-      <div class="footer__content-item footer__content-item--contacts">
+        </div>
+        <div class="footer__content-item footer__content-item--images">
+          <img alt="img" class="footer__content-item-img" src="./assets/images/footer-image-1.svg" />
+          <img alt="img" class="footer__content-item-img footer__content-item-img-second"
+            src="./assets/images/footer-image-2.svg" />
+        </div>
+        <div class="footer__content-item footer__content-item--contacts">
           <span class="footer__content-item-span">
             <a class="footer__content-item-link footer__content-item-link--phone" href="tel:+777785485848">
               7 777 854 858 48
             </a>
           </span>
-        <span class="footer__content-item-span">
+          <span class="footer__content-item-span">
             <a class="footer__content-item-link footer__content-item-link--mail" href="mailto: pochta@pochta.ru">
               pochta@pochta.ru
             </a>
           </span>
+        </div>
       </div>
-    </div>
-    <div class="footer__line"></div>
-    <div class="footer__policy">
-      <span class="footer__policy-item">All rights reserved 2023</span>
-      <a class="footer__policy-item-link" href="#">
-        <span class="footer__policy-item footer__policy-item--policy">Политика конфиденциальности</span>
-      </a>
-    </div>
-  </footer>
-</div>
+      <div class="footer__line"></div>
+      <div class="footer__policy">
+        <span class="footer__policy-item">All rights reserved 2023</span>
+        <a class="footer__policy-item-link" href="#">
+          <span class="footer__policy-item footer__policy-item--policy">Политика конфиденциальности</span>
+        </a>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>

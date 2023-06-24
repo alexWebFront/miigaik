@@ -8,6 +8,21 @@
   .content {
     padding: 40px 40px 60px 38px;
     height: auto;
+    
+    @media screen and (max-width: 1800px) {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 1200px) {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 800px) {
+      padding: 9px 15px 40px 15px;
+      max-width: 375px;
+    }
 
     &__top {
       display: flex;
@@ -16,11 +31,21 @@
       margin-bottom: 30px;
       margin-right: 10px;
 
+      @media screen and (max-width: 800px) {
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
+
       h1 {
         font-weight: 700;
         font-size: 34px;
         line-height: 41px;
         color: $link-text;
+
+        @media screen and (max-width: 800px) {
+          font-size: 24px;
+          line-height: 31px;
+        }
       }
     }
 

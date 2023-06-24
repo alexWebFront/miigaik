@@ -11,6 +11,24 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 25px;
+    }
+    
+    .button-accelerator {
+      @media screen and (max-width: 800px) {
+        margin-top: 20px;
+      }
+    }
+
+    .dropdown__text {
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+    }
   }
 
   .content__card-accelerator {
@@ -44,6 +62,13 @@
       line-height: 140.52%;
       letter-spacing: 0.02em;
       color: $select-text;
+      cursor: pointer;
+
+      &:hover {
+        background: $white;
+        border: 1px solid $tags-hover;
+        padding: 4px 9px;
+      }
     }
   }
 }

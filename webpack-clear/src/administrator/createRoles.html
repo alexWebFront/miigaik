@@ -213,13 +213,46 @@
               Название роли
               <input class="input create-roles__input" type="text" placeholder="Введите название роли">
             </label>
-            <label class="form-create-roles__add-role-inputs-label form-create-roles__add-role-inputs-label-textarea">
+            <label class="form-create-roles__add-role-inputs-label">
               Описание
-              <textarea class="form-create-roles__add-role__textarea" placeholder="Краткое описание"></textarea>
+              <textarea class="form-create-roles__add-role-textarea" placeholder="Краткое описание"></textarea>
             </label>
 
             <div class="designated-users">
-
+              <div class="designated-users__title">
+                <p>Назначенные пользователи</p>
+              </div>
+              <div class="designated-users__body">
+                <div class="user-items">
+                  <div class="user-item">
+                    <p>Герман Сергеев</p>
+                    <svg class="user-item__close" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.1698 10.8571C10.3598 11.0471 10.6678 11.0471 10.8578 10.8571C11.0479 10.6671 11.0479 10.359 10.8578 10.169L7.87603 7.18722L10.8576 4.20564C11.0476 4.01563 11.0476 3.70756 10.8576 3.51755C10.6676 3.32754 10.3595 3.32754 10.1695 3.51755L7.18794 6.49913L4.20631 3.51751C4.0163 3.3275 3.70824 3.3275 3.51822 3.51751C3.32821 3.70752 3.32821 4.01559 3.51822 4.2056L6.49985 7.18722L3.518 10.1691C3.32799 10.3591 3.32799 10.6672 3.518 10.8572C3.70801 11.0472 4.01607 11.0472 4.20608 10.8572L7.18794 7.87531L10.1698 10.8571Z"
+                            fill="#838795"/>
+                    </svg>
+                  </div>
+                  <div class="user-item">
+                    <p>Алексей Лукин</p>
+                    <svg class="user-item__close" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.1698 10.8571C10.3598 11.0471 10.6678 11.0471 10.8578 10.8571C11.0479 10.6671 11.0479 10.359 10.8578 10.169L7.87603 7.18722L10.8576 4.20564C11.0476 4.01563 11.0476 3.70756 10.8576 3.51755C10.6676 3.32754 10.3595 3.32754 10.1695 3.51755L7.18794 6.49913L4.20631 3.51751C4.0163 3.3275 3.70824 3.3275 3.51822 3.51751C3.32821 3.70752 3.32821 4.01559 3.51822 4.2056L6.49985 7.18722L3.518 10.1691C3.32799 10.3591 3.32799 10.6672 3.518 10.8572C3.70801 11.0472 4.01607 11.0472 4.20608 10.8572L7.18794 7.87531L10.1698 10.8571Z"
+                            fill="#838795"/>
+                    </svg>
+                  </div>
+                  <div class="user-item">
+                    <p>Деонисий Мить</p>
+                    <svg class="user-item__close" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.1698 10.8571C10.3598 11.0471 10.6678 11.0471 10.8578 10.8571C11.0479 10.6671 11.0479 10.359 10.8578 10.169L7.87603 7.18722L10.8576 4.20564C11.0476 4.01563 11.0476 3.70756 10.8576 3.51755C10.6676 3.32754 10.3595 3.32754 10.1695 3.51755L7.18794 6.49913L4.20631 3.51751C4.0163 3.3275 3.70824 3.3275 3.51822 3.51751C3.32821 3.70752 3.32821 4.01559 3.51822 4.2056L6.49985 7.18722L3.518 10.1691C3.32799 10.3591 3.32799 10.6672 3.518 10.8572C3.70801 11.0472 4.01607 11.0472 4.20608 10.8572L7.18794 7.87531L10.1698 10.8571Z"
+                            fill="#838795"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="add-user-actions">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -229,13 +262,150 @@
                 <path d="M12 8V16" stroke="#0B16CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M16 12H8" stroke="#0B16CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <p>Добавить пользователя</p>
+              <p class="add-user-actions-button">Добавить пользователя</p>
             </div>
           </div>
-          <div class="form-create-roles__user-rights">
-
+          <div class="user-rights">
+            <p class="user-rights__title">Права доступа пользователя</p>
+            <div class="user-rights__checkbox">
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="edit-role">
+                <label for="edit-role">Просмотр, создание, изменение и удаление ролей и прав</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="assignment-rights">
+                <label for="assignment-rights">Назначение прав</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="edit-data" checked>
+                <label for="edit-data">Создание, изменение, удаление и просмотр данных пользователей</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="edit-news">
+                <label for="edit-news">Создание, изменение и удаление новостей</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="view-news">
+                <label for="view-news">Просмотр новостей</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="request-password" checked>
+                <label for="request-password">Запрос на восстановление пароля</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="edit-tags-accelerators" checked>
+                <label for="edit-tags-accelerators">Создание, изменение и удаление тегов акселераторов и наборов
+                  изображений к ним</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="create-accelerators" checked>
+                <label for="create-accelerators">Создание и изменение акселераторов</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="view-status-case">
+                <label for="view-status-case">Просмотр и установка статусов для заявок на размещение кейса</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="case-request">
+                <label for="case-request">Отправка заявки на размещение кейса</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="view-case-info">
+                <label for="view-case-info">Просмотр сводной информации по завершенному кейсу и публикация в банке
+                  проектов</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="view-status-request" checked>
+                <label for="view-status-request">Просмотр статуса заявки и комментария при наличии</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="view-case-and-accelerators" checked>
+                <label for="view-case-and-accelerators">Просмотр акселераторов и кейсов</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="send-reports">
+                <label for="send-reports">Отправка отчетов в контрольных точках, отправка заявки на участие в команду и
+                  выход из команды</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="get-team-status" checked>
+                <label for="get-team-status">Получение и установка статуса для заявок на участие в команде</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="get-role-owner-case" checked>
+                <label for="get-role-owner-case">Назначение роли «Обучающийся-владелец кейса»</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="edit-team">
+                <label for="edit-team">Просмотр состава команды и удаление участника из команды</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="send-comment-case">
+                <label for="send-comment-case">Отправка комментариев в кейсах</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="add-case-favorite">
+                <label for="add-case-favorite">Добавление кейса в список избранного</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="view-report-control-points">
+                <label for="view-report-control-points">Просмотр отчетов контрольных точек</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="evaluation-presentation">
+                <label for="evaluation-presentation">Оценка итоговой презентации</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="view-bank-projects">
+                <label for="view-bank-projects">Просмотр банка проектов</label>
+              </div>
+              <div class="user-rights__checkbox-item">
+                <input type="checkbox" id="edit-personal-data">
+                <label for="edit-personal-data">Изменение личных данных</label>
+              </div>
+            </div>
+          </div>
+          <div class="create-roles__links">
+            <a href="#" class="button ">Создать роль</a>
+            <a href="./roles.html" class="registration__form-links-back">Отмена</a>
           </div>
         </form>
+
+        <!-- Попап добавления пользователя-->
+        <div class="popup-overlay">
+          <div class="popup accelerators-popup">
+            <p class="popup__title accelerators-item__title">Добавление пользователя</p>
+            <svg class="popup__close" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6.53022 16.7835C6.23732 17.0764 6.23732 17.5513 6.53022 17.8442C6.82311 18.1371 7.29798 18.1371 7.59088 17.8442L12.1874 13.2476L16.784 17.8442C17.0769 18.1371 17.5518 18.1371 17.8447 17.8442C18.1376 17.5513 18.1376 17.0764 17.8447 16.7835L13.2481 12.1869L17.8439 7.59112C18.1368 7.29823 18.1368 6.82335 17.8439 6.53046C17.551 6.23757 17.0762 6.23757 16.7833 6.53046L12.1874 11.1263L7.59162 6.53047C7.29873 6.23758 6.82385 6.23758 6.53096 6.53047C6.23807 6.82336 6.23807 7.29824 6.53096 7.59113L11.1268 12.1869L6.53022 16.7835Z"
+                    fill="#777777"/>
+            </svg>
+            <div class="popup__body">
+              <div class="popup__search">
+                <input type="text" class="input popup__input" placeholder="Поиск по пользователям">
+                <img src="./assets/images/search-icon.svg" alt="" class="popup__search-img">
+              </div>
+              <div class="popup__users">
+                <div class="popup__users-title">
+                  <div class="title-wrapper">
+                    <p>Имя</p>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 4.5L6 1.5L9 4.5" stroke="#6D7A86" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9 7.5L6 10.5L3 7.5" stroke="#6D7A86" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="popup__users-list">
+                  <div class="popup__users-list-item">
+                    <p>Сергей Матвеев</p>
+                    <input type="checkbox">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -294,5 +464,19 @@
 </div>
 
 </body>
+<script>
+  const popupOverlay = document.querySelector('.popup-overlay')
+  const popupClose = popupOverlay.querySelector('.popup__close')
+  const addUser = document.querySelector('.add-user-actions-button')
 
+  // Клик по первому элементу ссылки
+  addUser.addEventListener('click', function () {
+    popupOverlay.classList.add('active')
+  })
+
+  popupClose.addEventListener('click', function () {
+    popupOverlay.classList.remove('active')
+  })
+
+</script>
 </html>

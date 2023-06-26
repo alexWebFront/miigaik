@@ -257,6 +257,19 @@
             color: $link-text;
           }
 
+          &-hidden {
+            display: none;
+
+            @media screen and (max-width: 1200px) {
+              display: block;
+              font-size: 14px !important;
+              color: $select-text !important;
+              margin-bottom: 5px;
+              margin-top: 12px;
+              margin-left: 10px;
+            }
+          }
+
           span {
             width: 352px;
             display: block;
@@ -273,6 +286,18 @@
         &-files {
           max-width: 123px;
           width: 100%;
+
+          &-hidden {
+            display: none;
+
+            @media screen and (max-width: 1200px) {
+              display: block;
+              font-size: 14px;
+              color: $select-text !important;
+              margin-bottom: 5px;
+              margin-top: 12px;
+            }
+          }
 
           @media screen and (max-width: 1200px) {
             max-width: 100%;
@@ -295,6 +320,18 @@
           max-width: 116px;
           width: 100%;
 
+          &-hidden {
+            display: none;
+
+            @media screen and (max-width: 1200px) {
+              display: block;
+              font-size: 14px;
+              color: $select-text !important;
+              margin-bottom: 5px;
+              margin-top: 12px;
+            }
+          }
+
           @media screen and (max-width: 1200px) {
             max-width: 100%;
             padding: 0 10px 12px;
@@ -311,6 +348,18 @@
         &-type {
           max-width: 114px;
           width: 100%;
+
+          &-hidden {
+            display: none;
+
+            @media screen and (max-width: 1200px) {
+              display: block;
+              font-size: 14px;
+              color: $select-text !important;
+              margin-bottom: 5px;
+              margin-top: 12px;
+            }
+          }
 
           @media screen and (max-width: 1200px) {
             max-width: 100%;

@@ -2,5 +2,9 @@
   .content__top--actions{
     justify-content: flex-start;
     gap: 25px;
+
+    @media screen and (max-width: 800px) {
+      gap: 0;
+    }
   }
 }

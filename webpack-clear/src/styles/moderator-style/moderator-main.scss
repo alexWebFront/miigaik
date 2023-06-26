@@ -10,7 +10,7 @@
     height: auto;
     
     @media screen and (max-width: 1800px) {
-      max-width: 1200px;
+      max-width: 1440px;
       margin: 0 auto;
     }
 
@@ -21,7 +21,7 @@
 
     @media screen and (max-width: 800px) {
       padding: 9px 15px 40px 15px;
-      max-width: 375px;
+      max-width: 380px;
     }
 
     &__top {
@@ -34,6 +34,7 @@
       @media screen and (max-width: 800px) {
         margin-bottom: 20px;
         margin-right: 0;
+        flex-direction: column;
       }
 
       h1 {

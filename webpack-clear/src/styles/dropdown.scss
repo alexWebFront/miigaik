@@ -2,9 +2,9 @@
   display: flex;
   align-items: center;
   gap: 25px;
-  
+
   @media screen and (max-width: 800px) {
-   width: 100%;
+    width: 100%;
   }
 
   &__text {
@@ -12,24 +12,33 @@
     font-size: 14px;
     line-height: 17px;
     color: $link-text;
+
+    @media screen and (max-width: 800px) {
+     display: none;
+    }
   }
 
   &__select-mobile {
     display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: $dropdow-mobile;
+    border-radius: 4px;
+    padding: 9px 12px;
+
     @media screen and (max-width: 800px) {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      background: $dropdow-mobile;
-      border-radius: 4px;
-      padding: 9px 12px;
     }
   }
   &__select-mobile-wrapper {
     display: flex;
     align-items: center;
     margin-right: 10px;
+  }
+
+  &__select-mobile-expert-main {
+    margin-top: 10px;
   }
 
   &__select-mobile-text {
@@ -136,5 +145,15 @@
     top: 44px;
     left: 0;
     display: none;
+  }
+}
+
+
+.accelerators-case-name {
+  .dropdown__select-mobile {
+    @media screen and (max-width: 1200px) {
+      display: flex;
+      margin-bottom: 20px;
+    }
   }
 }

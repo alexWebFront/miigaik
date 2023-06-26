@@ -20,3 +20,5 @@ import './styles/index.scss'
 
 //const app = document.querySelector('#root')
 //app.append(logo, section)
+console.log(window)
+document.cookie = "user=John; domain=http://217.67.179.251/"

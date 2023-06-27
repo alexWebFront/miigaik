@@ -33,3 +33,129 @@
     display: block;
   }
 }
+
+.field-date {
+  position: relative;
+
+  &.active {
+    .field-date__calendar {
+      display: block;
+    }
+
+    .field-date__input {
+      svg {
+        stroke: $blue-link;
+      }
+    }
+  }
+
+  &__input {
+    position: relative;
+
+    svg {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      stroke: $select-text;
+    }
+  }
+  &__calendar {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 256px;
+    height: 348px;
+    border-radius: 5px;
+    border: 1px solid $drag-field-border;
+    background: $white;
+    box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.08);
+    z-index: 2;
+  }
+  &__year {
+    padding-top: 12px;
+    padding-left: 11px;
+    padding-bottom: 4px;
+    color: $calendar-year;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0.61px;
+  }
+  &__day {
+    padding-left: 11px;
+    padding-bottom: 13px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0.61px;
+    color: $calendar-year;
+  }
+  &__month {
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.61px;
+    color: $calendar-year;
+    margin: 0 12px;
+    width: calc(100% - 24px);
+    height: 35px;
+    border-radius: 4px;
+    background: $selected-hover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  &__table {
+    padding: 24px 15px 0;
+  }
+  &__table-weekdays {
+    color: $calendar-week;
+    text-align: center;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 19px;
+    letter-spacing: 0.61px;
+    gap: 14px;
+    display: flex;
+  }
+  &__weekday {
+    min-width: 20px;
+    min-height: 20px;
+    margin-bottom: 16px;
+  }
+  &__table-days {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    color: $calendar-year;
+    text-align: center;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.61px;
+  }
+  &__table-day {
+    min-width: 20px;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2px;
+    cursor: pointer;
+
+    &:hover {
+      border-radius: 2px;
+      background: rgba($blue-link, 0.1);
+    }
+
+    &.active {
+      border-radius: 2px;
+      background: $blue-link;
+      color: $white;
+    }
+
+    &.gray {
+      color: $calendar-gray;
+    }
+  }
+}

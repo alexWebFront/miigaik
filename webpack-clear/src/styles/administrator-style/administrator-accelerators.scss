@@ -3,6 +3,33 @@
     .content__top--actions{
       justify-content: flex-start;
       gap: 30px;
+      flex-wrap: wrap;
     }
+
+    .dropdown {
+      @media screen and (max-width: 1200px) {
+       display: none;
+      }
+    }
+
+    .administrator-accelerators {
+      display: none;
+
+      @media screen and (max-width: 1200px) {
+        display: block;
+        margin-bottom: 0;
+        width: 100%;
+      }
+
+      .dropdown__select-mobile {
+        @media screen and (max-width: 1200px) {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .administrator-main {
+    margin-top: 20px;
   }
 }

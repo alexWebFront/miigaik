@@ -119,6 +119,10 @@
   .header__content {
     max-width: 1558px;
     padding: 0 40px 0 38px;
+
+    @media screen and (max-width: 800px) {
+      padding: 0 15px;
+    }
   }
 
   .header__logo {

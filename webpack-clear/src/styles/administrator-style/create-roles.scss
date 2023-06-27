@@ -159,6 +159,7 @@
       .popup {
         width: 614px;
         height: 698px;
+        overflow-y: hidden;
 
         &__search {
           position: relative;
@@ -170,9 +171,6 @@
             right: 9px;
             cursor: pointer;
           }
-        }
-
-        &__body {
         }
 
         &__users {
@@ -198,21 +196,76 @@
               text-transform: uppercase;
             }
 
-            &-list {
-              border-radius: 4px;
-              border: 1px solid $border;
 
-              &-item {
-                border-bottom: 1px solid $border;
-                padding: 13px 15px;
+          }
 
-                p {
-                  color: $link-text;
-                  font-size: 15px;
-                  font-weight: 500;
-                }
+          &-list {
+            border-radius: 4px;
+            border-right: 1px solid $border;
+            border-bottom: 1px solid $border;
+            border-left: 1px solid $border;
+            overflow-y: scroll;
+            max-height: 396px;
+
+            &::-webkit-scrollbar {
+              width: 6px; /* ширина scrollbar */
+            }
+
+            &::-webkit-scrollbar-track {
+              background: rgba(217, 217, 217, 0.3);
+            }
+
+            &::-webkit-scrollbar-thumb {
+              background-color: #D9D9D9;
+              border-radius: 14px;
+            }
+
+            &-item {
+              border-bottom: 1px solid $border;
+              padding: 13px 15px;
+              cursor: pointer;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              p {
+                color: $link-text;
+                font-size: 15px;
+                font-weight: 500;
+              }
+
+              input {
+                min-width: 18px;
+                min-height: 18px;
               }
             }
+
+            &-item-label {
+              cursor: pointer;
+            }
+          }
+        }
+
+        &__body {
+          margin-bottom: 20px;
+        }
+
+        .create-roles__links {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 44px;
+
+          .registration__form-links-back {
+            color: $black-gray;
+            font-size: 16px;
+            line-height: 146.023%;
+            text-decoration: none;
+          }
+
+          .button {
+            width: 212px;
+            height: 56px;
           }
         }
       }

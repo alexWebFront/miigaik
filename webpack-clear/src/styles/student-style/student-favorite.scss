@@ -1,0 +1,177 @@
+.role-page {
+  .student-favorite {
+    .table {
+      max-width: 1480px;
+      min-width: 1480px;
+      width: 100%;
+
+      @media screen and (max-width: 1200px) {
+        min-width: 742px;
+      }
+
+      &__title {
+        justify-content: flex-start;
+
+        @media screen and (max-width: 1200px) {
+          display: none;
+        }
+
+        &-title {
+          max-width: 248px;
+          width: 100%;
+        }
+
+        &-case-title {
+          max-width: 184px;
+          width: 100%;
+        }
+
+        &-case-description {
+          max-width: 325px;
+          width: 100%;
+        }
+
+        &-files {
+          max-width: 162px;
+          width: 100%;
+        }
+
+        &-owner {
+          max-width: 182px;
+          width: 100%;
+        }
+
+        &-type {
+          max-width: 197px;
+          width: 100%;
+        }
+      }
+
+      &__body {
+        &-item {
+          align-items: flex-start;
+          justify-content: flex-start;
+          color: $link-text;
+          font-size: 15px;
+          font-weight: 400;
+
+          @media screen and (max-width: 1200px) {
+            border: 1px solid $border;
+            border-radius: 4px;
+          }
+
+          &:not(:last-child) {
+            @media screen and (max-width: 1200px) {
+              margin-bottom: 21px;
+            }
+          }
+
+          &-title {
+            max-width: 248px;
+            width: 100%;
+
+            p {
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 18px;
+              color: $link-text;
+            }
+
+            &-hidden {
+              display: none;
+
+              @media screen and (max-width: 1200px) {
+                display: block;
+                font-size: 14px !important;
+                color: $select-text !important;
+                margin-bottom: 5px;
+                margin-top: 12px;
+                margin-left: 10px;
+              }
+            }
+          }
+
+          &-case-title {
+            max-width: 184px;
+            width: 100%;
+          }
+
+          &-case-description {
+            max-width: 325px;
+            width: 100%;
+            p{
+              width: 284px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+
+          &-files {
+            max-width: 162px;
+            width: 100%;
+
+            &-hidden {
+              display: none;
+
+              @media screen and (max-width: 1200px) {
+                display: block;
+                font-size: 14px;
+                color: $select-text !important;
+                margin-bottom: 5px;
+                margin-top: 12px;
+              }
+            }
+
+            @media screen and (max-width: 1200px) {
+              max-width: 100%;
+              padding: 0 10px 12px;
+            }
+
+            a {
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 18px;
+              color: $blue-link;
+
+              @media screen and (max-width: 1200px) {
+                text-decoration: underline;
+              }
+            }
+          }
+
+          &-owner {
+            max-width: 182px;
+            width: 100%;
+          }
+
+          &-type {
+            max-width: 197px;
+            width: 100%;
+          }
+
+          &-favorite {
+            max-width: 62px;
+            width: 100%;
+          }
+
+          &-report {
+            .link-wrapper-link{
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              p{
+                color: $blue-link;
+                font-size: 15px;
+              }
+            }
+          }
+
+          &-show {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

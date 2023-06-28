@@ -2,6 +2,10 @@
   border: 1px solid $border;
   border-radius: 4px;
 
+  &-wrapper {
+    overflow: auto;
+  }
+
   @media screen and (max-width: 1200px) {
     border: none;
   }
@@ -64,6 +68,7 @@
       }
     }
   }
+
   &__body-item-title {
     @media screen and (max-width: 1200px) {
       width: 100%;
@@ -83,7 +88,10 @@
   &__body-item-title-text-hidden,
   &__body-item-files-text-hidden,
   &__body-item-owner-text-hidden,
-  &__body-item-type-text-hidden {
+  &__body-item-type-text-hidden,
+  &__body-item-case-description-hidden,
+  &__body-item-case-title-hidden,
+  {
     display: none !important;
 
     @media screen and (max-width: 1200px) {

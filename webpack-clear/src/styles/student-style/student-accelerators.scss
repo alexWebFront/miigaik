@@ -1,0 +1,47 @@
+.role-page {
+  .student-accelerators {
+    padding-top: 0;
+
+    @media screen and (max-width: 800px) {
+      max-width: 100%;
+    }
+
+    .breadcrumb {
+      margin-bottom: 10px;
+      padding-left: 0;
+    }
+
+    .content__top--actions {
+      justify-content: flex-start;
+      gap: 30px;
+    }
+
+    .dropdown-tags {
+      .dropdown__select {
+        background: #EEE;
+        padding: 9px 47px 9px 12px;
+      }
+    }
+
+    .dropdown {
+      .content__card-tags {
+        margin-bottom: 0;
+
+        &-item {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          border: 1px solid rgba(156, 156, 156, 0.50);
+
+          svg {
+            cursor: pointer;
+          }
+        }
+
+        &-item-more {
+          border: none;
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,17 @@
 .role-page {
-  .administrator-content-success-case {
+  .student-content-success-case {
+    padding-top: 0;
+
+    @media screen and (max-width: 1200px) {
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .breadcrumb {
+      padding-left: 0;
+      margin-bottom: 10px;
+    }
+
     .table {
       max-width: 1480px;
       width: 100%;
@@ -11,33 +23,28 @@
           display: none;
         }
 
-        &-accelerator-title {
-          max-width: 248px;
-          width: 100%;
-        }
-
         &-case-title {
-          max-width: 185px;
+          max-width: 204px;
           width: 100%;
         }
 
         &-case-description {
-          max-width: 325px;
+          max-width: 465px;
           width: 100%;
         }
 
         &-files {
-          max-width: 182px;
+          max-width: 213px;
           width: 100%;
         }
 
         &-participate {
-          max-width: 144px;
+          max-width: 180px;
           width: 100%;
         }
 
         &-indication {
-          max-width: 214px;
+          max-width: 235px;
           width: 100%;
         }
       }
@@ -68,28 +75,8 @@
             }
           }
 
-          &-accelerator-title {
-            max-width: 248px;
-            width: 100%;
-
-            @media screen and (max-width: 1200px) {
-              max-width: 100%;
-            }
-
-            p {
-              font-weight: 500;
-
-              @media screen and (max-width: 1200px) {
-                font-size: 16px;
-                font-weight: 600;
-                padding: 10px;
-                background: $card-tags-bg;
-              }
-            }
-          }
-
           &-case-title {
-            max-width: 185px;
+            max-width: 204px;
             width: 100%;
 
             @media screen and (max-width: 1200px) {
@@ -111,7 +98,7 @@
           }
 
           &-case-description {
-            max-width: 325px;
+            max-width: 465px;
             width: 100%;
 
             @media screen and (max-width: 1200px) {
@@ -132,7 +119,7 @@
             }
 
             p {
-              max-width: 284px;
+              max-width: 400px;
               white-space: nowrap;
               overflow: hidden;
               text-overflow: ellipsis;
@@ -140,7 +127,7 @@
           }
 
           &-files {
-            max-width: 182px;
+            max-width: 213px;
             width: 100%;
 
             @media screen and (max-width: 1200px) {
@@ -162,11 +149,12 @@
 
             a {
               color: $blue-link;
+              border-bottom: 1px solid rgba(79, 85, 189, 0.25);
             }
           }
 
           &-participate {
-            max-width: 144px;
+            max-width: 180px;
             width: 100%;
 
             @media screen and (max-width: 1200px) {
@@ -188,7 +176,7 @@
           }
 
           &-indication {
-            max-width: 214px;
+            max-width: 235px;
             width: 100%;
 
             @media screen and (max-width: 1200px) {

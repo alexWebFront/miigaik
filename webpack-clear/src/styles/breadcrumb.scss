@@ -16,18 +16,29 @@
 
     @media screen and (max-width: 1200px) {
       max-width: 770px;
-      margin: 0 auto;
+      //margin: 0 auto;
+      margin-left: 0;
     }
 
     @media screen and (max-width: 800px) {
       max-width: 375px;
+      padding-right: 0;
     }
+
+    @media screen and (max-width: 375px) {
+      gap: 3px;
+    }
+
 
     &__item, a {
       font-weight: 400;
       font-size: 13px;
       line-height: 16px;
       color: $select-text;
+
+      @media screen and (max-width: 375px) {
+        font-size: 11px;
+      }
     }
   }
 }

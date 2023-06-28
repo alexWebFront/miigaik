@@ -236,6 +236,42 @@ module.exports = {
       template: paths.src + '/administrator/createRoles.html',
       filename: 'createRoles.html' // output file
     }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/student/studentBankProjects.html',
+      filename: 'studentBankProjects.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/student/myCase.html',
+      filename: 'myCase.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/student/studentMain.html',
+      filename: 'studentMain.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/student/studentAccelerators.html',
+      filename: 'studentAccelerators.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/student/studentAcceleratorsItem.html',
+      filename: 'studentAcceleratorsItem.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/student/studentFavorite.html',
+      filename: 'studentFavorite.html' // output file
+    }),
   ],
 
   // Determine how modules within the project are treated

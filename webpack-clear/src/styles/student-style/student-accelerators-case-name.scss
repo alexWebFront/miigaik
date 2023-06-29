@@ -106,7 +106,6 @@
             font-size: 15px;
             line-height: 18px;
             color: $black-gray;
-            white-space: nowrap;
 
             @media screen and (max-width: 1200px) {
               font-size: 14px;
@@ -250,23 +249,25 @@
               padding-left: 10px;
             }
 
+            p {
+              max-width: 256px;
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              line-clamp: 2;
+              -webkit-box-orient: vertical;
+            }
+
             &-hidden {
-              display: none;
+             display: none !important;
 
               @media screen and (max-width: 1200px) {
-                display: block;
+                display: block !important;
                 font-size: 14px;
                 color: $select-text !important;
                 margin-bottom: 5px;
                 margin-top: 12px;
               }
-            }
-
-            p {
-              max-width: 256px;
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
             }
           }
 
@@ -410,12 +411,29 @@
     }
 
     .popup-edit-report {
-      width: 620px;
-      height: 371px;
+      max-width: 620px;
+      min-height: 371px;
+      width: 100%;
       border-radius: 8px;
       background: $white;
       padding: 30px;
       position: relative;
+
+      @media screen and (max-width: 767px) {
+        max-width: 420px;
+        padding: 12px;
+      }
+
+      @media screen and (max-width: 426px) {
+        max-width: 390px;
+        padding: 12px;
+      }
+
+      @media screen and (max-width: 376px) {
+        max-width: 300px;
+        padding: 12px;
+      }
+
 
       .popup__close {
         position: absolute;
@@ -485,13 +503,21 @@
 
       .popup__textarea {
         resize: none;
-        width: 560px;
-        height: 124px;
+        max-width: 560px;
+        width: 100%;
+        min-height: 124px;
         border-radius: 4px;
         border: 1px solid $border;
         background: $white;
         padding: 12px 24px 0 12px;
         margin-bottom: 15px;
+
+        @media screen and (max-width: 767px) {
+        }
+
+        @media screen and (max-width: 426px) {
+          min-height: 132px;
+        }
 
         &::placeholder {
           color: $black-gray;

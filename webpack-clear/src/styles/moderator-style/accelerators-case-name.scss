@@ -17,6 +17,7 @@
 
     &__line {
       border: 1px solid $pagination-border;
+      max-width: 1480px;
       width: 100%;
     }
 
@@ -90,7 +91,6 @@
             font-size: 15px;
             line-height: 18px;
             color: $black-gray;
-            white-space: nowrap;
 
             @media screen and (max-width: 1200px) {
               font-size: 14px;
@@ -233,23 +233,25 @@
               padding-left: 10px;
             }
 
+            p {
+              max-width: 204px;
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              line-clamp: 2;
+              -webkit-box-orient: vertical;
+            }
+
             &-hidden {
-              display: none;
+              display: none !important;
 
               @media screen and (max-width: 1200px) {
-                display: block;
+                display: block !important;
                 font-size: 14px;
                 color: $select-text !important;
                 margin-bottom: 5px;
                 margin-top: 12px;
               }
-            }
-
-            p {
-              max-width: 204px;
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
             }
           }
 

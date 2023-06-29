@@ -39,6 +39,8 @@
         &-case-title {
           max-width: 204px;
           width: 100%;
+
+
         }
 
         &-case-description {
@@ -94,8 +96,20 @@
 
             @media screen and (max-width: 1200px) {
               max-width: 100%;
-              padding-left: 10px;
+              padding-left: 0;
             }
+
+            p {
+              font-weight: 500;
+
+              @media screen and (max-width: 1200px) {
+                font-size: 16px;
+                font-weight: 600;
+                padding: 10px;
+                background: #EBEEF2;
+              }
+            }
+
 
             &-hidden {
               display: none;
@@ -133,9 +147,15 @@
 
             p {
               max-width: 400px;
-              white-space: nowrap;
+              display: -webkit-box;
               overflow: hidden;
-              text-overflow: ellipsis;
+              -webkit-line-clamp: 2;
+              line-clamp: 2;
+              -webkit-box-orient: vertical;
+
+              @media screen and (max-width: 1200px) {
+                max-width: 344px;
+              }
             }
           }
 

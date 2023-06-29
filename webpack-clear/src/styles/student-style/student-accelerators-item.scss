@@ -420,6 +420,7 @@
           font-weight: 400;
           line-height: 146.023%;
 
+
           .popup__form-input {
             margin-bottom: 11px;
           }
@@ -451,7 +452,8 @@
 
         &-participate {
           margin-top: 7px;
-          .accelerators-item__title{
+
+          .accelerators-item__title {
             font-weight: 600;
           }
         }
@@ -513,7 +515,7 @@
           justify-content: flex-end;
           gap: 44px;
 
-          .popup__form-links-back{
+          .popup__form-links-back {
             color: $black-gray;
             font-size: 16px;
             font-weight: 500;
@@ -523,6 +525,7 @@
           .button {
             width: 270px;
             height: 56px;
+
             &:hover {
               background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 55.19%), #2626db;
             }

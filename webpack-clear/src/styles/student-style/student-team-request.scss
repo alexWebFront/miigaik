@@ -1,0 +1,74 @@
+.role-page {
+  .student-team-request {
+    padding-top: 0;
+
+    @media screen and (max-width: 1200px) {
+      max-width: 100%;
+    }
+
+    .breadcrumb {
+      padding-left: 0;
+      margin-bottom: 10px;
+    }
+
+    .table-wrapper {
+      @media screen and (max-width: 1200px) {
+        overflow: hidden;
+      }
+    }
+
+    .table {
+      max-width: 1480px;
+      min-width: 1480px;
+      width: 100%;
+
+      @media screen and (max-width: 1200px) {
+        min-width: 722px;
+      }
+      @media screen and (max-width: 767px) {
+        min-width: 290px;
+      }
+
+      &__title {
+        @media screen and (max-width: 1200px) {
+          display: none;
+        }
+      }
+
+      &__body {
+        &-item {
+          @media screen and (max-width: 1200px) {
+            border: 1px solid $border;
+            border-radius: 4px;
+          }
+
+          &:not(:last-child) {
+            @media screen and (max-width: 1200px) {
+              margin-bottom: 21px;
+            }
+          }
+
+          &-accelerator-title {
+
+            @media screen and (max-width: 1200px) {
+              max-width: 100%;
+            }
+
+            &-hidden {
+              display: none;
+
+              @media screen and (max-width: 1200px) {
+                display: block;
+                font-size: 14px !important;
+                color: $select-text !important;
+                margin-bottom: 5px;
+                margin-top: 12px;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

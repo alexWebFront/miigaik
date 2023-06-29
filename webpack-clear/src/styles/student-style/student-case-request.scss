@@ -1,5 +1,5 @@
 .role-page {
-  .student-favorite {
+  .student-case-request {
     padding-top: 0;
 
     @media screen and (max-width: 1200px) {
@@ -30,51 +30,54 @@
       }
 
       &__title {
-        justify-content: flex-start;
 
         @media screen and (max-width: 1200px) {
           display: none;
         }
 
-        &-title {
-          max-width: 248px;
+        &-date {
+          max-width: 96px;
           width: 100%;
         }
 
-        &-case-title {
-          max-width: 184px;
+        &-accelerator-title {
+          max-width: 219px;
           width: 100%;
         }
 
         &-case-description {
-          max-width: 325px;
+          max-width: 166px;
           width: 100%;
         }
 
         &-files {
-          max-width: 162px;
+          max-width: 126px;
           width: 100%;
         }
 
-        &-owner {
-          max-width: 182px;
+        &-participate {
+          max-width: 102px;
           width: 100%;
         }
 
-        &-type {
-          max-width: 197px;
+        &-username {
+          max-width: 158px;
+          width: 100%;
+        }
+
+        &-group {
+          max-width: 227px;
+          width: 100%;
+        }
+
+        &-status {
+          max-width: 142px;
           width: 100%;
         }
       }
 
       &__body {
         &-item {
-          align-items: flex-start;
-          justify-content: flex-start;
-          color: $link-text;
-          font-size: 15px;
-          font-weight: 400;
-
           @media screen and (max-width: 1200px) {
             border: 1px solid $border;
             border-radius: 4px;
@@ -86,20 +89,17 @@
             }
           }
 
-          &-title {
-            max-width: 248px;
+          &-date {
+            max-width: 96px;
+            width: 100%;
+          }
+
+          &-accelerator-title {
+            max-width: 219px;
             width: 100%;
             @media screen and (max-width: 1200px) {
               max-width: 100%;
             }
-
-            p {
-              font-weight: 500;
-              font-size: 15px;
-              line-height: 18px;
-              color: $link-text;
-            }
-
             &-hidden {
               display: none;
 
@@ -114,17 +114,12 @@
             }
           }
 
-          &-case-title {
-            max-width: 184px;
-            width: 100%;
-          }
-
           &-case-description {
-            max-width: 325px;
+            max-width: 166px;
             width: 100%;
 
             p {
-              width: 284px;
+              width: 136px;
               white-space: nowrap;
               overflow: hidden;
               text-overflow: ellipsis;
@@ -132,7 +127,7 @@
           }
 
           &-files {
-            max-width: 162px;
+            max-width: 126px;
             width: 100%;
 
             &-hidden {
@@ -153,47 +148,41 @@
             }
 
             a {
-              font-weight: 400;
-              font-size: 15px;
-              line-height: 18px;
-              color: $blue-link;
-
-              @media screen and (max-width: 1200px) {
-                text-decoration: underline;
-              }
+              border-bottom: 1px solid rgba(79, 85, 189, 0.25);
             }
           }
 
-          &-owner {
-            max-width: 182px;
+          &-participate {
+            max-width: 102px;
             width: 100%;
           }
 
-          &-type {
-            max-width: 197px;
+          &-username {
+            max-width: 158px;
             width: 100%;
           }
 
-          &-favorite {
-            max-width: 62px;
+          &-group {
+            max-width: 227px;
             width: 100%;
-          }
 
-          &-report {
-            .link-wrapper-link {
-              display: flex;
-              align-items: center;
-              gap: 8px;
-
-              p {
-                color: $blue-link;
-                font-size: 15px;
-              }
+            p {
+              max-width: 201px;
             }
           }
 
-          &-show {
-            display: none;
+          &-status {
+            max-width: 142px;
+            width: 100%;
+          }
+
+          &-comment {
+            max-width: 194px;
+            width: 100%;
+
+            .table__body-item-comment-input {
+              padding-right: 10px;
+            }
           }
         }
       }

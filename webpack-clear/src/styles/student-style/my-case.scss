@@ -4,7 +4,6 @@
 
     @media screen and (max-width: 1200px) {
       max-width: 100%;
-      margin: 0;
     }
 
     .breadcrumb {
@@ -12,9 +11,23 @@
       margin-bottom: 10px;
     }
 
+    .table-wrapper {
+      @media screen and (max-width: 1200px) {
+        overflow: hidden;
+      }
+    }
+
     .table {
       max-width: 1480px;
+      min-width: 1480px;
       width: 100%;
+
+      @media screen and (max-width: 1200px) {
+        min-width: 722px;
+      }
+      @media screen and (max-width: 767px) {
+        min-width: 290px;
+      }
 
       &__title {
         justify-content: flex-start;

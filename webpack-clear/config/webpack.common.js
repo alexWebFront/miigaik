@@ -272,6 +272,24 @@ module.exports = {
       template: paths.src + '/student/studentFavorite.html',
       filename: 'studentFavorite.html' // output file
     }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/student/studentCaseRequest.html',
+      filename: 'studentCaseRequest.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/student/studentTeamRequest.html',
+      filename: 'studentTeamRequest.html' // output file
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack5 Boilerplate',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/student/studentAcceleratorsCaseName.html',
+      filename: 'studentAcceleratorsCaseName.html' // output file
+    }),
   ],
 
   // Determine how modules within the project are treated

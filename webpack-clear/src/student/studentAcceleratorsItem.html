@@ -1012,6 +1012,7 @@
             <button class="pagination-show-more">Показать еще</button>
           </div>
         </div>
+
         <!-- Попап таблицы кейса акселератора-->
         <div class="popup-overlay">
           <div class="popup accelerators-popup">
@@ -1054,8 +1055,6 @@
                     </svg>
                   </div>
                 </div>
-                <div class="table__title-item table__title-empty-item"></div>
-                <div class="table__title-item table__title-empty-item"></div>
               </div>
               <div class="table__body">
                 <div class="table__body-item">
@@ -1626,6 +1625,64 @@
             </div>
           </div>
         </div>
+
+        <!-- Попап заявки в команду-->
+        <div class="popup-overlay popup-overlay-team-request">
+          <div class="popup popup-team-request">
+            <p class="popup__title accelerators-item__title">Подать заявку в команду</p>
+            <svg class="popup__close popup__close-team" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6.53022 16.7835C6.23732 17.0764 6.23732 17.5513 6.53022 17.8442C6.82311 18.1371 7.29798 18.1371 7.59088 17.8442L12.1874 13.2476L16.784 17.8442C17.0769 18.1371 17.5518 18.1371 17.8447 17.8442C18.1376 17.5513 18.1376 17.0764 17.8447 16.7835L13.2481 12.1869L17.8439 7.59112C18.1368 7.29823 18.1368 6.82335 17.8439 6.53046C17.551 6.23757 17.0762 6.23757 16.7833 6.53046L12.1874 11.1263L7.59162 6.53047C7.29873 6.23758 6.82385 6.23758 6.53096 6.53047C6.23807 6.82336 6.23807 7.29824 6.53096 7.59113L11.1268 12.1869L6.53022 16.7835Z"
+                    fill="#777777"/>
+            </svg>
+            <form class="popup__form">
+              <label class="popup__form-label">
+                Название акселератора
+                <input type="text" class="input popup__form-input" placeholder="Название акселератора">
+              </label>
+              <label class="popup__form-label">
+                Описание
+                <textarea class="popup__form-textarea" placeholder="Описание кейса"></textarea>
+              </label>
+              <div class="popup__form-load">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.9995 8.0005L11.7935 11.2065C10.8025 12.1975 10.8025 13.8035 11.7935 14.7945V14.7945C12.7845 15.7855 14.3905 15.7855 15.3815 14.7945L19.7195 10.4565C21.4255 8.7505 21.4255 5.9855 19.7195 4.2795V4.2795C18.0135 2.5735 15.2485 2.5735 13.5425 4.2795L4.27755 13.5445C2.57155 15.2505 2.57155 18.0155 4.27755 19.7215V19.7215C5.98355 21.4275 8.74855 21.4275 10.4545 19.7215L12.0865 18.0895"
+                        stroke="#0B16CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p>Загрузить файл</p>
+              </div>
+              <label class="popup__form-label">
+                Название кейса
+                <input type="text" class="input popup__form-input" placeholder="Название кейса">
+              </label>
+              <div class="popup__form-participate">
+                <p class="popup__title accelerators-item__title">Участие</p>
+
+                <div class="popup__form-checkbox">
+                  <div class="popup__form-checkbox-item">
+                    <label class="checkbox__label">
+                      <input class="checkbox__input" type="checkbox">
+                      <span class="checkbox__success"></span>
+                    </label>
+                    <p>Командное</p>
+                  </div>
+                  <div class="popup__form-checkbox-item">
+                    <label class="checkbox__label">
+                      <input class="checkbox__input" type="checkbox">
+                      <span class="checkbox__success"></span>
+                    </label>
+                    <p>Единоличное</p>
+                  </div>
+                </div>
+                <div class="popup__form-links">
+                  <a href="#" class="popup__form-links-back">Отмена</a>
+                  <a href="#" class="button">Подать заявку</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1695,16 +1752,32 @@
 </body>
 <script>
   const popupOverlay = document.querySelector('.popup-overlay')
-  const popupClose = popupOverlay.querySelector('.popup__close')
+  const popupOverlayTeamRequest = document.querySelector('.popup-overlay-team-request')
+  const popupClose = document.querySelector('.popup__close')
+  const popupCloseTeam = document.querySelector('.popup__close-team')
   const listUsersPopup = document.querySelector('.list-users-popup')
+  const bodyPopup = document.querySelector('body');
+  const sendRequestTeam = document.querySelector('.date-ended__button');
 
   // Клик по первому элементу ссылки
   listUsersPopup.addEventListener('click', function () {
     popupOverlay.classList.add('active')
+    bodyPopup.classList.add('body-popup-active');
   })
 
   popupClose.addEventListener('click', function () {
     popupOverlay.classList.remove('active')
+    bodyPopup.classList.remove('body-popup-active')
+  })
+
+  // Попап добавления в команду
+  sendRequestTeam.addEventListener('click', function () {
+    popupOverlayTeamRequest.classList.add('active')
+    bodyPopup.classList.add('body-popup-active');
+  })
+  popupCloseTeam.addEventListener('click', function () {
+    popupOverlayTeamRequest.classList.remove('active')
+    bodyPopup.classList.remove('body-popup-active')
   })
 
 </script>

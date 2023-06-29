@@ -107,7 +107,7 @@
           </a>
         </li>
         <li class="side-menu__list-item">
-          <a href="accelerators.html">
+          <a href="#">
             <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_98_18853)">
@@ -135,7 +135,7 @@
             Акселераторы
           </a>
         </li>
-        <li class="side-menu__list-item">
+        <li class="side-menu__list-item side-menu__list-item--active">
           <a href="#">
             <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
@@ -197,7 +197,7 @@
             Заявки в команду
           </a>
         </li>
-        <li class="side-menu__list-item side-menu__list-item--active">
+        <li class="side-menu__list-item">
           <a href="#">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.4706 20.373H20.7206" stroke="white" stroke-width="1.5" stroke-linecap="round"
@@ -308,23 +308,22 @@
         </div>
       </header>
 
-      <!-- Основной контент страницы-->
-      <div class="content administrator-content-success-case student-content-success-case">
 
+      <!-- Основной контент страницы-->
+      <div class="content content-case-request student-case-request">
         <!-- Хлебные крошки-->
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb__item"><a href="/">Главная</a></li>
             <li class="breadcrumb__point">•</li>
-            <li class="breadcrumb__item active" aria-current="page">Мои кейсы</li>
+            <li class="breadcrumb__item active" aria-current="page">Заявки на кейсы</li>
           </ol>
         </nav>
 
         <div class="content__top">
-          <h1>Мои кейсы</h1>
+          <h1>Заявки на кейсы</h1>
         </div>
 
-        <!-- Дропдаун моего кейса-->
         <div class="dropdown accelerators-case-name">
           <button class="dropdown__select-mobile">
             <div class="dropdown__select-mobile-wrapper">
@@ -353,13 +352,23 @@
           </button>
         </div>
 
-        <!-- Таблица моего кейса-->
+        <!-- Таблица заявок на кейсы-->
         <div class="table-wrapper">
           <div class="table">
             <div class="table__title">
-              <div class="table__title-item table__title-case-title">
+              <div class="table__title-item table__title-date">
                 <div class="title-wrapper">
-                  <p>Название кейса</p>
+                  <p>Дата <br> подачи </p>
+                  <svg class="table__sort-svg" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 4.5L6 1.5L9 4.5" stroke="#6D7A86" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 7.5L6 10.5L3 7.5" stroke="#6D7A86" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="table__title-item table__title-accelerator-title">
+                <div class="title-wrapper">
+                  <p>Название <br>акселератора</p>
                   <svg class="table__sort-svg" width="12" height="12" viewBox="0 0 12 12" fill="none"
                        xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 4.5L6 1.5L9 4.5" stroke="#6D7A86" stroke-linecap="round" stroke-linejoin="round"/>
@@ -379,7 +388,7 @@
               </div>
               <div class="table__title-item table__title-files">
                 <div class="title-wrapper">
-                  <p>ЗАГРУЖЕННЫЕ <br>ФАЙЛЫ</p>
+                  <p>файлы</p>
                   <svg class="table__sort-svg" width="12" height="12" viewBox="0 0 12 12" fill="none"
                        xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 4.5L6 1.5L9 4.5" stroke="#6D7A86" stroke-linecap="round" stroke-linejoin="round"/>
@@ -397,9 +406,29 @@
                   </svg>
                 </div>
               </div>
-              <div class="table__title-item table__title-indication">
+              <div class="table__title-item table__title-username">
                 <div class="title-wrapper">
-                  <p>иДЕНТИФИКАЦИЯ <br>ЭТАПА ВЫПОЛНЕНИЯ</p>
+                  <p>ФИО <br> обучающегося</p>
+                  <svg class="table__sort-svg" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 4.5L6 1.5L9 4.5" stroke="#6D7A86" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 7.5L6 10.5L3 7.5" stroke="#6D7A86" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="table__title-item table__title-group">
+                <div class="title-wrapper">
+                  <p>Факультет, курс, <br>группа владельца кейса</p>
+                  <svg class="table__sort-svg" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 4.5L6 1.5L9 4.5" stroke="#6D7A86" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 7.5L6 10.5L3 7.5" stroke="#6D7A86" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="table__title-item table__title-status">
+                <div class="title-wrapper">
+                  <p>Статус</p>
                   <svg class="table__sort-svg" width="12" height="12" viewBox="0 0 12 12" fill="none"
                        xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 4.5L6 1.5L9 4.5" stroke="#6D7A86" stroke-linecap="round" stroke-linejoin="round"/>
@@ -410,36 +439,59 @@
             </div>
             <div class="table__body">
               <div class="table__body-item">
-                <div class="table__body-item-case-title">
-                  <p class="table__body-item-case-title-hidden">Название кейса</p>
-                  <p>Название кейса</p>
+                <div class="table__body-item-date">
+                  <p class="table__body-item-date-hidden">Дата подачи</p>
+                  <p>12.01.2023</p>
+                </div>
+                <div class="table__body-item-accelerator-title">
+                  <p>Название акселератора</p>
+                  <span>Название кейса</span>
                 </div>
                 <div class="table__body-item-case-description">
                   <p class="table__body-item-case-description-hidden">Описание кейса</p>
-                  <p>Описание кейса которое довольно небольшое и <br> может быть разной длинны и количества слов ...</p>
+                  <p>Описание кейса,<br> здесь будет описание описание описание описание</p>
                 </div>
                 <div class="table__body-item-files">
-                  <p class="table__body-item-files-hidden">Загруженные файлы</p>
+                  <p class="table__body-item-files-hidden">Файлы</p>
                   <a href="#" download>Аттестат.doc</a>
                 </div>
                 <div class="table__body-item-participate">
                   <p class="table__body-item-participate-hidden">Участие</p>
                   <p>Да</p>
                 </div>
-                <div class="table__body-item-indication">
-                  <p class="table__body-item-indication-hidden">Индикация этапа выполнения</p>
-                  <p>3 из 10</p>
+                <div class="table__body-item-username">
+                  <p class="table__body-item-username-hidden">ФИО обучающегося</p>
+                  <p>Маймуратов А.В.</p>
                 </div>
-                <div class="table__body-item-get-case">
+                <div class="table__body-item-group">
+                  <p class="table__body-item-group-hidden">Факультет, курс, группа владельца кейса</p>
+                  <p>Радиоэлектроники и связи ГРЭУ-11-2, 3 курс</p>
+                </div>
+                <div class="table__body-item-status">
                   <div class="link-wrapper">
-                    <a href="#">
-                      <p>Перейти к кейсу</p>
-                      <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464465C6.97631 0.269203 6.65973 0.269203 6.46447 0.464466C6.2692 0.659728 6.2692 0.97631 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM4.37114e-08 4.5L10 4.5L10 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
-                              fill="#0B15CC"/>
+                    <div class="status-card status-card--success">
+                      <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1 7.5C1 10.8137 3.68629 13.5 7 13.5C10.3137 13.5 13 10.8137 13 7.5C13 4.18629 10.3137 1.5 7 1.5C3.68629 1.5 1 4.18629 1 7.5ZM7 0.5C3.13401 0.5 0 3.63401 0 7.5C0 11.366 3.13401 14.5 7 14.5C10.866 14.5 14 11.366 14 7.5C14 3.63401 10.866 0.5 7 0.5Z"
+                              fill="#0E8454"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.1271 6.79102C10.4225 6.49568 10.4225 6.01684 10.1271 5.7215C9.83179 5.42617 9.35295 5.42616 9.05761 5.7215L6.50845 8.27067L5.27701 7.03923C4.98465 6.74687 4.51065 6.74687 4.21829 7.03923C3.92593 7.33158 3.92593 7.80559 4.21829 8.09794L5.988 9.86765C6.23116 10.1108 6.59999 10.1517 6.88544 9.9904C6.94664 9.95675 7.00416 9.91399 7.05603 9.86213L10.1271 6.79102Z"
+                              fill="#0E8454"/>
                       </svg>
-                    </a>
+                      <span class="status-card__text">Одобрено</span>
+                    </div>
                   </div>
+                </div>
+                <div class="table__body-item-comment">
+                  <input type="text" class="input table__body-item-comment-input" placeholder="Введите комментарий">
+                </div>
+                <div class="table__body-item-actions">
+                  <svg class="status-action" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.5564 6.55556C13.5564 7.41467 12.86 8.11111 12.0009 8.11111C11.1418 8.11111 10.4453 7.41467 10.4453 6.55556C10.4453 5.69645 11.1418 5 12.0009 5C12.86 5 13.5564 5.69645 13.5564 6.55556ZM13.5564 12C13.5564 12.8591 12.86 13.5556 12.0009 13.5556C11.1418 13.5556 10.4453 12.8591 10.4453 12C10.4453 11.1409 11.1418 10.4444 12.0009 10.4444C12.86 10.4444 13.5564 11.1409 13.5564 12ZM12.0009 19C12.86 19 13.5564 18.3036 13.5564 17.4444C13.5564 16.5853 12.86 15.8889 12.0009 15.8889C11.1418 15.8889 10.4453 16.5853 10.4453 17.4444C10.4453 18.3036 11.1418 19 12.0009 19Z"
+                          fill="#777777"/>
+                  </svg>
                 </div>
                 <div class="table__body-item-show">
                   <p class="table__body-item-show-text">Свернуть</p>
@@ -450,36 +502,59 @@
                 </div>
               </div>
               <div class="table__body-item">
-                <div class="table__body-item-case-title">
-                  <p class="table__body-item-case-title-hidden">Название кейса</p>
-                  <p>Название кейса</p>
+                <div class="table__body-item-date">
+                  <p class="table__body-item-date-hidden">Дата подачи</p>
+                  <p>12.01.2023</p>
+                </div>
+                <div class="table__body-item-accelerator-title">
+                  <p>Название акселератора</p>
+                  <span>Название кейса</span>
                 </div>
                 <div class="table__body-item-case-description">
                   <p class="table__body-item-case-description-hidden">Описание кейса</p>
-                  <p>Описание кейса которое довольно небольшое и <br> может быть разной длинны и количества слов ...</p>
+                  <p>Описание кейса,<br> здесь будет описание описание описание описание</p>
                 </div>
                 <div class="table__body-item-files">
-                  <p class="table__body-item-files-hidden">Загруженные файлы</p>
+                  <p class="table__body-item-files-hidden">Файлы</p>
                   <a href="#" download>Аттестат.doc</a>
                 </div>
                 <div class="table__body-item-participate">
                   <p class="table__body-item-participate-hidden">Участие</p>
                   <p>Да</p>
                 </div>
-                <div class="table__body-item-indication">
-                  <p class="table__body-item-indication-hidden">Индикация этапа выполнения</p>
-                  <p>3 из 10</p>
+                <div class="table__body-item-username">
+                  <p class="table__body-item-username-hidden">ФИО обучающегося</p>
+                  <p>Маймуратов А.В.</p>
                 </div>
-                <div class="table__body-item-get-case">
+                <div class="table__body-item-group">
+                  <p class="table__body-item-group-hidden">Факультет, курс, группа владельца кейса</p>
+                  <p>Радиоэлектроники и связи ГРЭУ-11-2, 3 курс</p>
+                </div>
+                <div class="table__body-item-status">
                   <div class="link-wrapper">
-                    <a href="#">
-                      <p>Перейти к кейсу</p>
-                      <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464465C6.97631 0.269203 6.65973 0.269203 6.46447 0.464466C6.2692 0.659728 6.2692 0.97631 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM4.37114e-08 4.5L10 4.5L10 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
-                              fill="#0B15CC"/>
+                    <div class="status-card status-card--success">
+                      <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1 7.5C1 10.8137 3.68629 13.5 7 13.5C10.3137 13.5 13 10.8137 13 7.5C13 4.18629 10.3137 1.5 7 1.5C3.68629 1.5 1 4.18629 1 7.5ZM7 0.5C3.13401 0.5 0 3.63401 0 7.5C0 11.366 3.13401 14.5 7 14.5C10.866 14.5 14 11.366 14 7.5C14 3.63401 10.866 0.5 7 0.5Z"
+                              fill="#0E8454"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.1271 6.79102C10.4225 6.49568 10.4225 6.01684 10.1271 5.7215C9.83179 5.42617 9.35295 5.42616 9.05761 5.7215L6.50845 8.27067L5.27701 7.03923C4.98465 6.74687 4.51065 6.74687 4.21829 7.03923C3.92593 7.33158 3.92593 7.80559 4.21829 8.09794L5.988 9.86765C6.23116 10.1108 6.59999 10.1517 6.88544 9.9904C6.94664 9.95675 7.00416 9.91399 7.05603 9.86213L10.1271 6.79102Z"
+                              fill="#0E8454"/>
                       </svg>
-                    </a>
+                      <span class="status-card__text">Одобрено</span>
+                    </div>
                   </div>
+                </div>
+                <div class="table__body-item-comment">
+                  <input type="text" class="input table__body-item-comment-input" placeholder="Введите комментарий">
+                </div>
+                <div class="table__body-item-actions">
+                  <svg class="status-action" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.5564 6.55556C13.5564 7.41467 12.86 8.11111 12.0009 8.11111C11.1418 8.11111 10.4453 7.41467 10.4453 6.55556C10.4453 5.69645 11.1418 5 12.0009 5C12.86 5 13.5564 5.69645 13.5564 6.55556ZM13.5564 12C13.5564 12.8591 12.86 13.5556 12.0009 13.5556C11.1418 13.5556 10.4453 12.8591 10.4453 12C10.4453 11.1409 11.1418 10.4444 12.0009 10.4444C12.86 10.4444 13.5564 11.1409 13.5564 12ZM12.0009 19C12.86 19 13.5564 18.3036 13.5564 17.4444C13.5564 16.5853 12.86 15.8889 12.0009 15.8889C11.1418 15.8889 10.4453 16.5853 10.4453 17.4444C10.4453 18.3036 11.1418 19 12.0009 19Z"
+                          fill="#777777"/>
+                  </svg>
                 </div>
                 <div class="table__body-item-show">
                   <p class="table__body-item-show-text">Свернуть</p>
@@ -490,36 +565,59 @@
                 </div>
               </div>
               <div class="table__body-item">
-                <div class="table__body-item-case-title">
-                  <p class="table__body-item-case-title-hidden">Название кейса</p>
-                  <p>Название кейса</p>
+                <div class="table__body-item-date">
+                  <p class="table__body-item-date-hidden">Дата подачи</p>
+                  <p>12.01.2023</p>
+                </div>
+                <div class="table__body-item-accelerator-title">
+                  <p>Название акселератора</p>
+                  <span>Название кейса</span>
                 </div>
                 <div class="table__body-item-case-description">
                   <p class="table__body-item-case-description-hidden">Описание кейса</p>
-                  <p>Описание кейса которое довольно небольшое и <br> может быть разной длинны и количества слов ...</p>
+                  <p>Описание кейса,<br> здесь будет описание описание описание описание</p>
                 </div>
                 <div class="table__body-item-files">
-                  <p class="table__body-item-files-hidden">Загруженные файлы</p>
+                  <p class="table__body-item-files-hidden">Файлы</p>
                   <a href="#" download>Аттестат.doc</a>
                 </div>
                 <div class="table__body-item-participate">
                   <p class="table__body-item-participate-hidden">Участие</p>
                   <p>Да</p>
                 </div>
-                <div class="table__body-item-indication">
-                  <p class="table__body-item-indication-hidden">Индикация этапа выполнения</p>
-                  <p>3 из 10</p>
+                <div class="table__body-item-username">
+                  <p class="table__body-item-username-hidden">ФИО обучающегося</p>
+                  <p>Маймуратов А.В.</p>
                 </div>
-                <div class="table__body-item-get-case">
+                <div class="table__body-item-group">
+                  <p class="table__body-item-group-hidden">Факультет, курс, группа владельца кейса</p>
+                  <p>Радиоэлектроники и связи ГРЭУ-11-2, 3 курс</p>
+                </div>
+                <div class="table__body-item-status">
                   <div class="link-wrapper">
-                    <a href="#">
-                      <p>Перейти к кейсу</p>
-                      <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464465C6.97631 0.269203 6.65973 0.269203 6.46447 0.464466C6.2692 0.659728 6.2692 0.97631 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM4.37114e-08 4.5L10 4.5L10 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
-                              fill="#0B15CC"/>
+                    <div class="status-card status-card--success">
+                      <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M1 7.5C1 10.8137 3.68629 13.5 7 13.5C10.3137 13.5 13 10.8137 13 7.5C13 4.18629 10.3137 1.5 7 1.5C3.68629 1.5 1 4.18629 1 7.5ZM7 0.5C3.13401 0.5 0 3.63401 0 7.5C0 11.366 3.13401 14.5 7 14.5C10.866 14.5 14 11.366 14 7.5C14 3.63401 10.866 0.5 7 0.5Z"
+                              fill="#0E8454"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.1271 6.79102C10.4225 6.49568 10.4225 6.01684 10.1271 5.7215C9.83179 5.42617 9.35295 5.42616 9.05761 5.7215L6.50845 8.27067L5.27701 7.03923C4.98465 6.74687 4.51065 6.74687 4.21829 7.03923C3.92593 7.33158 3.92593 7.80559 4.21829 8.09794L5.988 9.86765C6.23116 10.1108 6.59999 10.1517 6.88544 9.9904C6.94664 9.95675 7.00416 9.91399 7.05603 9.86213L10.1271 6.79102Z"
+                              fill="#0E8454"/>
                       </svg>
-                    </a>
+                      <span class="status-card__text">Одобрено</span>
+                    </div>
                   </div>
+                </div>
+                <div class="table__body-item-comment">
+                  <input type="text" class="input table__body-item-comment-input" placeholder="Введите комментарий">
+                </div>
+                <div class="table__body-item-actions">
+                  <svg class="status-action" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.5564 6.55556C13.5564 7.41467 12.86 8.11111 12.0009 8.11111C11.1418 8.11111 10.4453 7.41467 10.4453 6.55556C10.4453 5.69645 11.1418 5 12.0009 5C12.86 5 13.5564 5.69645 13.5564 6.55556ZM13.5564 12C13.5564 12.8591 12.86 13.5556 12.0009 13.5556C11.1418 13.5556 10.4453 12.8591 10.4453 12C10.4453 11.1409 11.1418 10.4444 12.0009 10.4444C12.86 10.4444 13.5564 11.1409 13.5564 12ZM12.0009 19C12.86 19 13.5564 18.3036 13.5564 17.4444C13.5564 16.5853 12.86 15.8889 12.0009 15.8889C11.1418 15.8889 10.4453 16.5853 10.4453 17.4444C10.4453 18.3036 11.1418 19 12.0009 19Z"
+                          fill="#777777"/>
+                  </svg>
                 </div>
                 <div class="table__body-item-show">
                   <p class="table__body-item-show-text">Свернуть</p>
@@ -530,36 +628,59 @@
                 </div>
               </div>
               <div class="table__body-item">
-                <div class="table__body-item-case-title">
-                  <p class="table__body-item-case-title-hidden">Название кейса</p>
-                  <p>Название кейса</p>
+                <div class="table__body-item-date">
+                  <p class="table__body-item-date-hidden">Дата подачи</p>
+                  <p>12.01.2023</p>
+                </div>
+                <div class="table__body-item-accelerator-title">
+                  <p>Название акселератора</p>
+                  <span>Название кейса</span>
                 </div>
                 <div class="table__body-item-case-description">
                   <p class="table__body-item-case-description-hidden">Описание кейса</p>
-                  <p>Описание кейса которое довольно небольшое и <br> может быть разной длинны и количества слов ...</p>
+                  <p>Описание кейса,<br> здесь будет описание описание описание описание</p>
                 </div>
                 <div class="table__body-item-files">
-                  <p class="table__body-item-files-hidden">Загруженные файлы</p>
+                  <p class="table__body-item-files-hidden">Файлы</p>
                   <a href="#" download>Аттестат.doc</a>
                 </div>
                 <div class="table__body-item-participate">
                   <p class="table__body-item-participate-hidden">Участие</p>
                   <p>Да</p>
                 </div>
-                <div class="table__body-item-indication">
-                  <p class="table__body-item-indication-hidden">Индикация этапа выполнения</p>
-                  <p>3 из 10</p>
+                <div class="table__body-item-username">
+                  <p class="table__body-item-username-hidden">ФИО обучающегося</p>
+                  <p>Маймуратов А.В.</p>
                 </div>
-                <div class="table__body-item-get-case">
+                <div class="table__body-item-group">
+                  <p class="table__body-item-group-hidden">Факультет, курс, группа владельца кейса</p>
+                  <p>Радиоэлектроники и связи ГРЭУ-11-2, 3 курс</p>
+                </div>
+                <div class="table__body-item-status">
                   <div class="link-wrapper">
-                    <a href="#">
-                      <p>Перейти к кейсу</p>
-                      <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464465C6.97631 0.269203 6.65973 0.269203 6.46447 0.464466C6.2692 0.659728 6.2692 0.97631 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM4.37114e-08 4.5L10 4.5L10 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
-                              fill="#0B15CC"/>
+                    <div class="status-card status-card--revision">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.9498 2.55026C15.6834 5.28393 15.6834 9.71609 12.9498 12.4498C10.2161 15.1834 5.78392 15.1834 3.05026 12.4498C0.316581 9.71608 0.316581 5.28392 3.05026 2.55026C5.78393 -0.183419 10.2161 -0.183419 12.9498 2.55026"
+                              stroke="#FFC01E" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.44445 8.27769L4.5 6.33324L6.44445 4.38879" stroke="#FFC01E" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.61112 10.6112H8.58334C9.76479 10.6112 10.7222 9.65371 10.7222 8.47227V8.47227C10.7222 7.29082 9.76479 6.33337 8.58334 6.33337H7.61112H4.5"
+                              stroke="#FFC01E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
-                    </a>
+                      <span class="status-card__text">На доработку</span>
+                    </div>
                   </div>
+                </div>
+                <div class="table__body-item-comment">
+                  <input type="text" class="input table__body-item-comment-input" placeholder="Введите комментарий">
+                </div>
+                <div class="table__body-item-actions">
+                  <svg class="status-action" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.5564 6.55556C13.5564 7.41467 12.86 8.11111 12.0009 8.11111C11.1418 8.11111 10.4453 7.41467 10.4453 6.55556C10.4453 5.69645 11.1418 5 12.0009 5C12.86 5 13.5564 5.69645 13.5564 6.55556ZM13.5564 12C13.5564 12.8591 12.86 13.5556 12.0009 13.5556C11.1418 13.5556 10.4453 12.8591 10.4453 12C10.4453 11.1409 11.1418 10.4444 12.0009 10.4444C12.86 10.4444 13.5564 11.1409 13.5564 12ZM12.0009 19C12.86 19 13.5564 18.3036 13.5564 17.4444C13.5564 16.5853 12.86 15.8889 12.0009 15.8889C11.1418 15.8889 10.4453 16.5853 10.4453 17.4444C10.4453 18.3036 11.1418 19 12.0009 19Z"
+                          fill="#777777"/>
+                  </svg>
                 </div>
                 <div class="table__body-item-show">
                   <p class="table__body-item-show-text">Свернуть</p>
@@ -570,36 +691,55 @@
                 </div>
               </div>
               <div class="table__body-item">
-                <div class="table__body-item-case-title">
-                  <p class="table__body-item-case-title-hidden">Название кейса</p>
-                  <p>Название кейса</p>
+                <div class="table__body-item-date">
+                  <p class="table__body-item-date-hidden">Дата подачи</p>
+                  <p>12.01.2023</p>
+                </div>
+                <div class="table__body-item-accelerator-title">
+                  <p>Название акселератора</p>
+                  <span>Название кейса</span>
                 </div>
                 <div class="table__body-item-case-description">
                   <p class="table__body-item-case-description-hidden">Описание кейса</p>
-                  <p>Описание кейса которое довольно небольшое и <br> может быть разной длинны и количества слов ...</p>
+                  <p>Описание кейса,<br> здесь будет описание описание описание описание</p>
                 </div>
                 <div class="table__body-item-files">
-                  <p class="table__body-item-files-hidden">Загруженные файлы</p>
+                  <p class="table__body-item-files-hidden">Файлы</p>
                   <a href="#" download>Аттестат.doc</a>
                 </div>
                 <div class="table__body-item-participate">
                   <p class="table__body-item-participate-hidden">Участие</p>
                   <p>Да</p>
                 </div>
-                <div class="table__body-item-indication">
-                  <p class="table__body-item-indication-hidden">Индикация этапа выполнения</p>
-                  <p>3 из 10</p>
+                <div class="table__body-item-username">
+                  <p class="table__body-item-username-hidden">ФИО обучающегося</p>
+                  <p>Маймуратов А.В.</p>
                 </div>
-                <div class="table__body-item-get-case">
+                <div class="table__body-item-group">
+                  <p class="table__body-item-group-hidden">Факультет, курс, группа владельца кейса</p>
+                  <p>Радиоэлектроники и связи ГРЭУ-11-2, 3 курс</p>
+                </div>
+                <div class="table__body-item-status">
                   <div class="link-wrapper">
-                    <a href="#">
-                      <p>Перейти к кейсу</p>
-                      <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464465C6.97631 0.269203 6.65973 0.269203 6.46447 0.464466C6.2692 0.659728 6.2692 0.97631 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM4.37114e-08 4.5L10 4.5L10 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
-                              fill="#0B15CC"/>
+                    <div class="status-card status-card--rejected">
+                      <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7" cy="7.5" r="6.5" stroke="#DB3C55"/>
+                        <rect x="4" y="6.5" width="6" height="1.5" rx="0.75" fill="#DB3C55"/>
                       </svg>
-                    </a>
+                      <span class="status-card__text">Отклонено</span>
+                    </div>
                   </div>
+                </div>
+                <div class="table__body-item-comment">
+                  <input type="text" class="input table__body-item-comment-input" placeholder="Введите комментарий">
+                </div>
+                <div class="table__body-item-actions">
+                  <svg class="status-action" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.5564 6.55556C13.5564 7.41467 12.86 8.11111 12.0009 8.11111C11.1418 8.11111 10.4453 7.41467 10.4453 6.55556C10.4453 5.69645 11.1418 5 12.0009 5C12.86 5 13.5564 5.69645 13.5564 6.55556ZM13.5564 12C13.5564 12.8591 12.86 13.5556 12.0009 13.5556C11.1418 13.5556 10.4453 12.8591 10.4453 12C10.4453 11.1409 11.1418 10.4444 12.0009 10.4444C12.86 10.4444 13.5564 11.1409 13.5564 12ZM12.0009 19C12.86 19 13.5564 18.3036 13.5564 17.4444C13.5564 16.5853 12.86 15.8889 12.0009 15.8889C11.1418 15.8889 10.4453 16.5853 10.4453 17.4444C10.4453 18.3036 11.1418 19 12.0009 19Z"
+                          fill="#777777"/>
+                  </svg>
                 </div>
                 <div class="table__body-item-show">
                   <p class="table__body-item-show-text">Свернуть</p>
@@ -610,36 +750,55 @@
                 </div>
               </div>
               <div class="table__body-item">
-                <div class="table__body-item-case-title">
-                  <p class="table__body-item-case-title-hidden">Название кейса</p>
-                  <p>Название кейса</p>
+                <div class="table__body-item-date">
+                  <p class="table__body-item-date-hidden">Дата подачи</p>
+                  <p>12.01.2023</p>
+                </div>
+                <div class="table__body-item-accelerator-title">
+                  <p>Название акселератора</p>
+                  <span>Название кейса</span>
                 </div>
                 <div class="table__body-item-case-description">
                   <p class="table__body-item-case-description-hidden">Описание кейса</p>
-                  <p>Описание кейса которое довольно небольшое и <br> может быть разной длинны и количества слов ...</p>
+                  <p>Описание кейса,<br> здесь будет описание описание описание описание</p>
                 </div>
                 <div class="table__body-item-files">
-                  <p class="table__body-item-files-hidden">Загруженные файлы</p>
+                  <p class="table__body-item-files-hidden">Файлы</p>
                   <a href="#" download>Аттестат.doc</a>
                 </div>
                 <div class="table__body-item-participate">
                   <p class="table__body-item-participate-hidden">Участие</p>
                   <p>Да</p>
                 </div>
-                <div class="table__body-item-indication">
-                  <p class="table__body-item-indication-hidden">Индикация этапа выполнения</p>
-                  <p>3 из 10</p>
+                <div class="table__body-item-username">
+                  <p class="table__body-item-username-hidden">ФИО обучающегося</p>
+                  <p>Маймуратов А.В.</p>
                 </div>
-                <div class="table__body-item-get-case">
+                <div class="table__body-item-group">
+                  <p class="table__body-item-group-hidden">Факультет, курс, группа владельца кейса</p>
+                  <p>Радиоэлектроники и связи ГРЭУ-11-2, 3 курс</p>
+                </div>
+                <div class="table__body-item-status">
                   <div class="link-wrapper">
-                    <a href="#">
-                      <p>Перейти к кейсу</p>
-                      <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464465C6.97631 0.269203 6.65973 0.269203 6.46447 0.464466C6.2692 0.659728 6.2692 0.97631 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM4.37114e-08 4.5L10 4.5L10 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
-                              fill="#0B15CC"/>
+                    <div class="status-card status-card--rejected">
+                      <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7" cy="7.5" r="6.5" stroke="#DB3C55"/>
+                        <rect x="4" y="6.5" width="6" height="1.5" rx="0.75" fill="#DB3C55"/>
                       </svg>
-                    </a>
+                      <span class="status-card__text">Отклонено</span>
+                    </div>
                   </div>
+                </div>
+                <div class="table__body-item-comment">
+                  <input type="text" class="input table__body-item-comment-input" placeholder="Введите комментарий">
+                </div>
+                <div class="table__body-item-actions">
+                  <svg class="status-action" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.5564 6.55556C13.5564 7.41467 12.86 8.11111 12.0009 8.11111C11.1418 8.11111 10.4453 7.41467 10.4453 6.55556C10.4453 5.69645 11.1418 5 12.0009 5C12.86 5 13.5564 5.69645 13.5564 6.55556ZM13.5564 12C13.5564 12.8591 12.86 13.5556 12.0009 13.5556C11.1418 13.5556 10.4453 12.8591 10.4453 12C10.4453 11.1409 11.1418 10.4444 12.0009 10.4444C12.86 10.4444 13.5564 11.1409 13.5564 12ZM12.0009 19C12.86 19 13.5564 18.3036 13.5564 17.4444C13.5564 16.5853 12.86 15.8889 12.0009 15.8889C11.1418 15.8889 10.4453 16.5853 10.4453 17.4444C10.4453 18.3036 11.1418 19 12.0009 19Z"
+                          fill="#777777"/>
+                  </svg>
                 </div>
                 <div class="table__body-item-show">
                   <p class="table__body-item-show-text">Свернуть</p>
@@ -650,36 +809,55 @@
                 </div>
               </div>
               <div class="table__body-item">
-                <div class="table__body-item-case-title">
-                  <p class="table__body-item-case-title-hidden">Название кейса</p>
-                  <p>Название кейса</p>
+                <div class="table__body-item-date">
+                  <p class="table__body-item-date-hidden">Дата подачи</p>
+                  <p>12.01.2023</p>
+                </div>
+                <div class="table__body-item-accelerator-title">
+                  <p>Название акселератора</p>
+                  <span>Название кейса</span>
                 </div>
                 <div class="table__body-item-case-description">
                   <p class="table__body-item-case-description-hidden">Описание кейса</p>
-                  <p>Описание кейса которое довольно небольшое и <br> может быть разной длинны и количества слов ...</p>
+                  <p>Описание кейса,<br> здесь будет описание описание описание описание</p>
                 </div>
                 <div class="table__body-item-files">
-                  <p class="table__body-item-files-hidden">Загруженные файлы</p>
+                  <p class="table__body-item-files-hidden">Файлы</p>
                   <a href="#" download>Аттестат.doc</a>
                 </div>
                 <div class="table__body-item-participate">
                   <p class="table__body-item-participate-hidden">Участие</p>
                   <p>Да</p>
                 </div>
-                <div class="table__body-item-indication">
-                  <p class="table__body-item-indication-hidden">Индикация этапа выполнения</p>
-                  <p>3 из 10</p>
+                <div class="table__body-item-username">
+                  <p class="table__body-item-username-hidden">ФИО обучающегося</p>
+                  <p>Маймуратов А.В.</p>
                 </div>
-                <div class="table__body-item-get-case">
+                <div class="table__body-item-group">
+                  <p class="table__body-item-group-hidden">Факультет, курс, группа владельца кейса</p>
+                  <p>Радиоэлектроники и связи ГРЭУ-11-2, 3 курс</p>
+                </div>
+                <div class="table__body-item-status">
                   <div class="link-wrapper">
-                    <a href="#">
-                      <p>Перейти к кейсу</p>
-                      <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464465C6.97631 0.269203 6.65973 0.269203 6.46447 0.464466C6.2692 0.659728 6.2692 0.97631 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM4.37114e-08 4.5L10 4.5L10 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
-                              fill="#0B15CC"/>
+                    <div class="status-card status-card--rejected">
+                      <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7" cy="7.5" r="6.5" stroke="#DB3C55"/>
+                        <rect x="4" y="6.5" width="6" height="1.5" rx="0.75" fill="#DB3C55"/>
                       </svg>
-                    </a>
+                      <span class="status-card__text">Отклонено</span>
+                    </div>
                   </div>
+                </div>
+                <div class="table__body-item-comment">
+                  <input type="text" class="input table__body-item-comment-input" placeholder="Введите комментарий">
+                </div>
+                <div class="table__body-item-actions">
+                  <svg class="status-action" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.5564 6.55556C13.5564 7.41467 12.86 8.11111 12.0009 8.11111C11.1418 8.11111 10.4453 7.41467 10.4453 6.55556C10.4453 5.69645 11.1418 5 12.0009 5C12.86 5 13.5564 5.69645 13.5564 6.55556ZM13.5564 12C13.5564 12.8591 12.86 13.5556 12.0009 13.5556C11.1418 13.5556 10.4453 12.8591 10.4453 12C10.4453 11.1409 11.1418 10.4444 12.0009 10.4444C12.86 10.4444 13.5564 11.1409 13.5564 12ZM12.0009 19C12.86 19 13.5564 18.3036 13.5564 17.4444C13.5564 16.5853 12.86 15.8889 12.0009 15.8889C11.1418 15.8889 10.4453 16.5853 10.4453 17.4444C10.4453 18.3036 11.1418 19 12.0009 19Z"
+                          fill="#777777"/>
+                  </svg>
                 </div>
                 <div class="table__body-item-show">
                   <p class="table__body-item-show-text">Свернуть</p>
@@ -690,36 +868,55 @@
                 </div>
               </div>
               <div class="table__body-item">
-                <div class="table__body-item-case-title">
-                  <p class="table__body-item-case-title-hidden">Название кейса</p>
-                  <p>Название кейса</p>
+                <div class="table__body-item-date">
+                  <p class="table__body-item-date-hidden">Дата подачи</p>
+                  <p>12.01.2023</p>
+                </div>
+                <div class="table__body-item-accelerator-title">
+                  <p>Название акселератора</p>
+                  <span>Название кейса</span>
                 </div>
                 <div class="table__body-item-case-description">
                   <p class="table__body-item-case-description-hidden">Описание кейса</p>
-                  <p>Описание кейса которое довольно небольшое и <br> может быть разной длинны и количества слов ...</p>
+                  <p>Описание кейса,<br> здесь будет описание описание описание описание</p>
                 </div>
                 <div class="table__body-item-files">
-                  <p class="table__body-item-files-hidden">Загруженные файлы</p>
+                  <p class="table__body-item-files-hidden">Файлы</p>
                   <a href="#" download>Аттестат.doc</a>
                 </div>
                 <div class="table__body-item-participate">
                   <p class="table__body-item-participate-hidden">Участие</p>
                   <p>Да</p>
                 </div>
-                <div class="table__body-item-indication">
-                  <p class="table__body-item-indication-hidden">Индикация этапа выполнения</p>
-                  <p>3 из 10</p>
+                <div class="table__body-item-username">
+                  <p class="table__body-item-username-hidden">ФИО обучающегося</p>
+                  <p>Маймуратов А.В.</p>
                 </div>
-                <div class="table__body-item-get-case">
+                <div class="table__body-item-group">
+                  <p class="table__body-item-group-hidden">Факультет, курс, группа владельца кейса</p>
+                  <p>Радиоэлектроники и связи ГРЭУ-11-2, 3 курс</p>
+                </div>
+                <div class="table__body-item-status">
                   <div class="link-wrapper">
-                    <a href="#">
-                      <p>Перейти к кейсу</p>
-                      <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464465C6.97631 0.269203 6.65973 0.269203 6.46447 0.464466C6.2692 0.659728 6.2692 0.97631 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM4.37114e-08 4.5L10 4.5L10 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
-                              fill="#0B15CC"/>
+                    <div class="status-card status-card--rejected">
+                      <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7" cy="7.5" r="6.5" stroke="#DB3C55"/>
+                        <rect x="4" y="6.5" width="6" height="1.5" rx="0.75" fill="#DB3C55"/>
                       </svg>
-                    </a>
+                      <span class="status-card__text">Отклонено</span>
+                    </div>
                   </div>
+                </div>
+                <div class="table__body-item-comment">
+                  <input type="text" class="input table__body-item-comment-input" placeholder="Введите комментарий">
+                </div>
+                <div class="table__body-item-actions">
+                  <svg class="status-action" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.5564 6.55556C13.5564 7.41467 12.86 8.11111 12.0009 8.11111C11.1418 8.11111 10.4453 7.41467 10.4453 6.55556C10.4453 5.69645 11.1418 5 12.0009 5C12.86 5 13.5564 5.69645 13.5564 6.55556ZM13.5564 12C13.5564 12.8591 12.86 13.5556 12.0009 13.5556C11.1418 13.5556 10.4453 12.8591 10.4453 12C10.4453 11.1409 11.1418 10.4444 12.0009 10.4444C12.86 10.4444 13.5564 11.1409 13.5564 12ZM12.0009 19C12.86 19 13.5564 18.3036 13.5564 17.4444C13.5564 16.5853 12.86 15.8889 12.0009 15.8889C11.1418 15.8889 10.4453 16.5853 10.4453 17.4444C10.4453 18.3036 11.1418 19 12.0009 19Z"
+                          fill="#777777"/>
+                  </svg>
                 </div>
                 <div class="table__body-item-show">
                   <p class="table__body-item-show-text">Свернуть</p>
@@ -730,36 +927,55 @@
                 </div>
               </div>
               <div class="table__body-item">
-                <div class="table__body-item-case-title">
-                  <p class="table__body-item-case-title-hidden">Название кейса</p>
-                  <p>Название кейса</p>
+                <div class="table__body-item-date">
+                  <p class="table__body-item-date-hidden">Дата подачи</p>
+                  <p>12.01.2023</p>
+                </div>
+                <div class="table__body-item-accelerator-title">
+                  <p>Название акселератора</p>
+                  <span>Название кейса</span>
                 </div>
                 <div class="table__body-item-case-description">
                   <p class="table__body-item-case-description-hidden">Описание кейса</p>
-                  <p>Описание кейса которое довольно небольшое и <br> может быть разной длинны и количества слов ...</p>
+                  <p>Описание кейса,<br> здесь будет описание описание описание описание</p>
                 </div>
                 <div class="table__body-item-files">
-                  <p class="table__body-item-files-hidden">Загруженные файлы</p>
+                  <p class="table__body-item-files-hidden">Файлы</p>
                   <a href="#" download>Аттестат.doc</a>
                 </div>
                 <div class="table__body-item-participate">
                   <p class="table__body-item-participate-hidden">Участие</p>
                   <p>Да</p>
                 </div>
-                <div class="table__body-item-indication">
-                  <p class="table__body-item-indication-hidden">Индикация этапа выполнения</p>
-                  <p>3 из 10</p>
+                <div class="table__body-item-username">
+                  <p class="table__body-item-username-hidden">ФИО обучающегося</p>
+                  <p>Маймуратов А.В.</p>
                 </div>
-                <div class="table__body-item-get-case">
+                <div class="table__body-item-group">
+                  <p class="table__body-item-group-hidden">Факультет, курс, группа владельца кейса</p>
+                  <p>Радиоэлектроники и связи ГРЭУ-11-2, 3 курс</p>
+                </div>
+                <div class="table__body-item-status">
                   <div class="link-wrapper">
-                    <a href="#">
-                      <p>Перейти к кейсу</p>
-                      <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464465C6.97631 0.269203 6.65973 0.269203 6.46447 0.464466C6.2692 0.659728 6.2692 0.97631 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM4.37114e-08 4.5L10 4.5L10 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
-                              fill="#0B15CC"/>
+                    <div class="status-card status-card--rejected">
+                      <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7" cy="7.5" r="6.5" stroke="#DB3C55"/>
+                        <rect x="4" y="6.5" width="6" height="1.5" rx="0.75" fill="#DB3C55"/>
                       </svg>
-                    </a>
+                      <span class="status-card__text">Отклонено</span>
+                    </div>
                   </div>
+                </div>
+                <div class="table__body-item-comment">
+                  <input type="text" class="input table__body-item-comment-input" placeholder="Введите комментарий">
+                </div>
+                <div class="table__body-item-actions">
+                  <svg class="status-action" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.5564 6.55556C13.5564 7.41467 12.86 8.11111 12.0009 8.11111C11.1418 8.11111 10.4453 7.41467 10.4453 6.55556C10.4453 5.69645 11.1418 5 12.0009 5C12.86 5 13.5564 5.69645 13.5564 6.55556ZM13.5564 12C13.5564 12.8591 12.86 13.5556 12.0009 13.5556C11.1418 13.5556 10.4453 12.8591 10.4453 12C10.4453 11.1409 11.1418 10.4444 12.0009 10.4444C12.86 10.4444 13.5564 11.1409 13.5564 12ZM12.0009 19C12.86 19 13.5564 18.3036 13.5564 17.4444C13.5564 16.5853 12.86 15.8889 12.0009 15.8889C11.1418 15.8889 10.4453 16.5853 10.4453 17.4444C10.4453 18.3036 11.1418 19 12.0009 19Z"
+                          fill="#777777"/>
+                  </svg>
                 </div>
                 <div class="table__body-item-show">
                   <p class="table__body-item-show-text">Свернуть</p>
@@ -770,36 +986,114 @@
                 </div>
               </div>
               <div class="table__body-item">
-                <div class="table__body-item-case-title">
-                  <p class="table__body-item-case-title-hidden">Название кейса</p>
-                  <p>Название кейса</p>
+                <div class="table__body-item-date">
+                  <p class="table__body-item-date-hidden">Дата подачи</p>
+                  <p>12.01.2023</p>
+                </div>
+                <div class="table__body-item-accelerator-title">
+                  <p>Название акселератора</p>
+                  <span>Название кейса</span>
                 </div>
                 <div class="table__body-item-case-description">
                   <p class="table__body-item-case-description-hidden">Описание кейса</p>
-                  <p>Описание кейса которое довольно небольшое и <br> может быть разной длинны и количества слов ...</p>
+                  <p>Описание кейса,<br> здесь будет описание описание описание описание</p>
                 </div>
                 <div class="table__body-item-files">
-                  <p class="table__body-item-files-hidden">Загруженные файлы</p>
+                  <p class="table__body-item-files-hidden">Файлы</p>
                   <a href="#" download>Аттестат.doc</a>
                 </div>
                 <div class="table__body-item-participate">
                   <p class="table__body-item-participate-hidden">Участие</p>
                   <p>Да</p>
                 </div>
-                <div class="table__body-item-indication">
-                  <p class="table__body-item-indication-hidden">Индикация этапа выполнения</p>
-                  <p>3 из 10</p>
+                <div class="table__body-item-username">
+                  <p class="table__body-item-username-hidden">ФИО обучающегося</p>
+                  <p>Маймуратов А.В.</p>
                 </div>
-                <div class="table__body-item-get-case">
+                <div class="table__body-item-group">
+                  <p class="table__body-item-group-hidden">Факультет, курс, группа владельца кейса</p>
+                  <p>Радиоэлектроники и связи ГРЭУ-11-2, 3 курс</p>
+                </div>
+                <div class="table__body-item-status">
                   <div class="link-wrapper">
-                    <a href="#">
-                      <p>Перейти к кейсу</p>
-                      <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464465C6.97631 0.269203 6.65973 0.269203 6.46447 0.464466C6.2692 0.659728 6.2692 0.97631 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM4.37114e-08 4.5L10 4.5L10 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
-                              fill="#0B15CC"/>
+                    <div class="status-card status-card--rejected">
+                      <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7" cy="7.5" r="6.5" stroke="#DB3C55"/>
+                        <rect x="4" y="6.5" width="6" height="1.5" rx="0.75" fill="#DB3C55"/>
                       </svg>
-                    </a>
+                      <span class="status-card__text">Отклонено</span>
+                    </div>
                   </div>
+                </div>
+                <div class="table__body-item-comment">
+                  <input type="text" class="input table__body-item-comment-input" placeholder="Введите комментарий">
+                </div>
+                <div class="table__body-item-actions">
+                  <svg class="status-action" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.5564 6.55556C13.5564 7.41467 12.86 8.11111 12.0009 8.11111C11.1418 8.11111 10.4453 7.41467 10.4453 6.55556C10.4453 5.69645 11.1418 5 12.0009 5C12.86 5 13.5564 5.69645 13.5564 6.55556ZM13.5564 12C13.5564 12.8591 12.86 13.5556 12.0009 13.5556C11.1418 13.5556 10.4453 12.8591 10.4453 12C10.4453 11.1409 11.1418 10.4444 12.0009 10.4444C12.86 10.4444 13.5564 11.1409 13.5564 12ZM12.0009 19C12.86 19 13.5564 18.3036 13.5564 17.4444C13.5564 16.5853 12.86 15.8889 12.0009 15.8889C11.1418 15.8889 10.4453 16.5853 10.4453 17.4444C10.4453 18.3036 11.1418 19 12.0009 19Z"
+                          fill="#777777"/>
+                  </svg>
+                </div>
+                <div class="table__body-item-show">
+                  <p class="table__body-item-show-text">Свернуть</p>
+                  <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 3.50012L4 0.500122L1 3.50012" stroke="#0B15CC" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="table__body-item">
+                <div class="table__body-item-date">
+                  <p class="table__body-item-date-hidden">Дата подачи</p>
+                  <p>12.01.2023</p>
+                </div>
+                <div class="table__body-item-accelerator-title">
+                  <p>Название акселератора</p>
+                  <span>Название кейса</span>
+                </div>
+                <div class="table__body-item-case-description">
+                  <p class="table__body-item-case-description-hidden">Описание кейса</p>
+                  <p>Описание кейса,<br> здесь будет описание описание описание описание</p>
+                </div>
+                <div class="table__body-item-files">
+                  <p class="table__body-item-files-hidden">Файлы</p>
+                  <a href="#" download>Аттестат.doc</a>
+                </div>
+                <div class="table__body-item-participate">
+                  <p class="table__body-item-participate-hidden">Участие</p>
+                  <p>Да</p>
+                </div>
+                <div class="table__body-item-username">
+                  <p class="table__body-item-username-hidden">ФИО обучающегося</p>
+                  <p>Маймуратов А.В.</p>
+                </div>
+                <div class="table__body-item-group">
+                  <p class="table__body-item-group-hidden">Факультет, курс, группа владельца кейса</p>
+                  <p>Радиоэлектроники и связи ГРЭУ-11-2, 3 курс</p>
+                </div>
+                <div class="table__body-item-status">
+                  <div class="link-wrapper">
+                    <div class="status-card status-card--rejected">
+                      <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7" cy="7.5" r="6.5" stroke="#DB3C55"/>
+                        <rect x="4" y="6.5" width="6" height="1.5" rx="0.75" fill="#DB3C55"/>
+                      </svg>
+                      <span class="status-card__text">Отклонено</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="table__body-item-comment">
+                  <input type="text" class="input table__body-item-comment-input" placeholder="Введите комментарий">
+                </div>
+                <div class="table__body-item-actions">
+                  <svg class="status-action" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.5564 6.55556C13.5564 7.41467 12.86 8.11111 12.0009 8.11111C11.1418 8.11111 10.4453 7.41467 10.4453 6.55556C10.4453 5.69645 11.1418 5 12.0009 5C12.86 5 13.5564 5.69645 13.5564 6.55556ZM13.5564 12C13.5564 12.8591 12.86 13.5556 12.0009 13.5556C11.1418 13.5556 10.4453 12.8591 10.4453 12C10.4453 11.1409 11.1418 10.4444 12.0009 10.4444C12.86 10.4444 13.5564 11.1409 13.5564 12ZM12.0009 19C12.86 19 13.5564 18.3036 13.5564 17.4444C13.5564 16.5853 12.86 15.8889 12.0009 15.8889C11.1418 15.8889 10.4453 16.5853 10.4453 17.4444C10.4453 18.3036 11.1418 19 12.0009 19Z"
+                          fill="#777777"/>
+                  </svg>
                 </div>
                 <div class="table__body-item-show">
                   <p class="table__body-item-show-text">Свернуть</p>
@@ -811,7 +1105,7 @@
               </div>
             </div>
             <div class="table__pagination">
-              <div class="pagination__wrapper">F
+              <div class="pagination__wrapper">
                 <a href="#" class="pagination__link pagination__link--active">1</a>
                 <a href="#" class="pagination__link">2</a>
                 <a href="#" class="pagination__link">3</a>
@@ -828,16 +1122,18 @@
     </div>
   </div>
   <footer class="footer">
-    <div class="footer__content footer__content-expert">
+    <div class="footer__content">
       <div class="footer__content-item footer__content-item--logo">
         <img src="./assets/images/footer-logo.svg"/>
       </div>
       <div class="footer__content-item footer__content-item-menu">
           <span class="footer__content-item-span">
-            <a class="footer__content-item-link" href="#">Управление модулем</a>
+            <a class="footer__content-item-link" href="#">Акселераторы</a>
           </span>
         <span class="footer__content-item-span">
-            <a class="footer__content-item-link" href="#">Акселераторы</a>
+            <a class="footer__content-item-link" href="#">
+              Заявки на кейсы
+            </a>
           </span>
       </div>
       <div class="footer__content-item footer__content-item-menu">
@@ -845,12 +1141,19 @@
             <a class="footer__content-item-link" href="#">Решение кейсов</a>
           </span>
         <span class="footer__content-item-span">
-            <a class="footer__content-item-link" href="#">Банк проектов</a>
+            <a class="footer__content-item-link" href="#">
+              Участие в команде
+            </a>
           </span>
       </div>
       <div class="footer__content-item footer__content-item-menu">
           <span class="footer__content-item-span">
-            <a class="footer__content-item-link" href="#">Личный кабинет</a>
+            <a class="footer__content-item-link" href="#">Банк проектов</a>
+          </span>
+        <span class="footer__content-item-span">
+            <a class="footer__content-item-link" href="#">
+              Регистрация и вход
+            </a>
           </span>
       </div>
       <div class="footer__content-item footer__content-item--images">

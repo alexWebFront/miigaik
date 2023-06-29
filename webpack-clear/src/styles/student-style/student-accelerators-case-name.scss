@@ -1,7 +1,6 @@
 .role-page {
-  .content-case-name {
+  .student-case-name {
     padding-top: 0;
-
     @media screen and (max-width: 1200px) {
       max-width: 100%;
     }
@@ -9,28 +8,38 @@
       max-width: 100%;
     }
 
-    .content__top {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 30px;
-    }
-
-    &__line {
-      border: 1px solid $pagination-border;
-      width: 100%;
+    .breadcrumb {
+      padding-left: 0;
+      margin-bottom: 10px;
     }
 
     .accelerators-item {
-      margin-bottom: 50px;
+      margin-bottom: 23px;
+
+      &__description {
+        margin-bottom: 30px;
+      }
+
+      &__file {
+        color: $blue-link;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: normal;
+        border-bottom: 1px solid rgba(79, 85, 189, 0.25);
+      }
     }
 
     .table {
       max-width: 1480px;
       min-width: 1480px;
       width: 100%;
+      margin-bottom: 20px;
 
       @media screen and (max-width: 1200px) {
-        min-width: 742px;
+        min-width: 722px;
+      }
+      @media screen and (max-width: 767px) {
+        min-width: 290px;
       }
 
       &__title {
@@ -41,46 +50,53 @@
         }
 
         &-point-name {
-          max-width: 336px;
+          max-width: 275px;
           width: 100%;
         }
 
         &-point-date {
-          max-width: 252px;
+          max-width: 221px;
           width: 100%;
         }
 
         &-report {
-          max-width: 152px;
+          max-width: 167px;
           width: 100%;
         }
 
         &-report-date {
-          max-width: 195px;
+          max-width: 178px;
           width: 100%;
         }
 
         &-status {
-          max-width: 185px;
+          max-width: 169px;
           width: 100%;
         }
 
         &-comment {
-          max-width: 254px;
+          max-width: 299px;
+          width: 100%;
+        }
+
+        &-score {
+          max-width: 112px;
           width: 100%;
         }
       }
 
       &__body {
         &-item {
-          justify-content: flex-start;
 
           @media screen and (max-width: 1200px) {
             border-radius: 4px;
             border: 1px solid $border;
+            position: relative;
+          }
 
-            &:not(:last-child) {
-              margin-bottom: 20px;
+          &:not(:last-child) {
+            @media screen and (max-width: 1200px) {
+              margin-bottom: 21px;
             }
           }
 
@@ -98,12 +114,12 @@
           }
 
           &-point-name {
-            max-width: 336px;
+            max-width: 275px;
             width: 100%;
 
             @media screen and (max-width: 1200px) {
               max-width: 100%;
-              order: 1;
+              order: -1;
             }
 
             &-hidden {
@@ -131,7 +147,7 @@
           }
 
           &-point-date {
-            max-width: 252px;
+            max-width: 221px;
             width: 100%;
 
             @media screen and (max-width: 1200px) {
@@ -153,7 +169,7 @@
           }
 
           &-report {
-            max-width: 152px;
+            max-width: 167px;
             width: 100%;
 
             @media screen and (max-width: 1200px) {
@@ -176,11 +192,12 @@
 
             a {
               color: $blue-link;
+              border-bottom: 1px solid rgba(79, 85, 189, 0.25);
             }
           }
 
           &-report-date {
-            max-width: 195px;
+            max-width: 178px;
             width: 100%;
 
             @media screen and (max-width: 1200px) {
@@ -203,7 +220,7 @@
           }
 
           &-status {
-            max-width: 185px;
+            max-width: 169px;
             width: 100%;
 
             @media screen and (max-width: 1200px) {
@@ -224,7 +241,7 @@
           }
 
           &-comment {
-            max-width: 254px;
+            max-width: 299px;
             width: 100%;
 
             @media screen and (max-width: 1200px) {
@@ -246,7 +263,7 @@
             }
 
             p {
-              max-width: 204px;
+              max-width: 256px;
               white-space: nowrap;
               overflow: hidden;
               text-overflow: ellipsis;
@@ -254,8 +271,11 @@
           }
 
           &-score {
+            max-width: 112px;
+            width: 100%;
+
             @media screen and (max-width: 1200px) {
-              width: 100%;
+              max-width: 100%;
               order: 8;
               padding-left: 10px;
             }
@@ -292,6 +312,18 @@
             }
           }
 
+          &-actions {
+            svg {
+              cursor: pointer;
+            }
+
+            @media screen and (max-width: 1200px) {
+              position: absolute;
+              right: 8px;
+              top: 8px;
+            }
+          }
+
           &-show {
             display: none;
 
@@ -324,6 +356,148 @@
           .status-card--revision {
             padding: 6px 6px 6px 8px;
           }
+        }
+      }
+    }
+
+    &__button {
+      max-width: 300px;
+      width: 100%;
+      height: 56px;
+      border-radius: 4px;
+      border: 2px solid $tabs-active-bg;
+      background: $white;
+      color: $tabs-active-bg;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 146.023%;
+
+      @media screen and (max-width: 1200px) {
+        margin-bottom: 10px;
+      }
+      @media screen and (max-width: 426px) {
+        max-width: 100%;
+        max-height: 44px;
+        margin-bottom: 10px;
+      }
+
+      &:hover {
+        color: $white;
+        border: none;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 55.19%), #2626db;
+      }
+
+      &:active {
+        border: 2px solid #1B1BBB;
+        background: $white;
+        color: $tabs-active-bg;
+      }
+
+      &.disabled {
+        pointer-events: none;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: $white;
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .popup-edit-report {
+      width: 620px;
+      height: 371px;
+      border-radius: 8px;
+      background: $white;
+      padding: 30px;
+      position: relative;
+
+      .popup__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+      }
+
+      .popup__title {
+        margin-bottom: 11px;
+      }
+
+      .popup__label {
+        color: $select-text;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 146.023%;
+      }
+
+      .popup__load {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 33px;
+        cursor: pointer;
+      }
+
+      .popup__form-links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 44px;
+
+        .button {
+          width: 270px;
+          height: 56px;
+          &:hover {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 55.19%), #2626db;
+          }
+
+          &:active {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 55.19%), #0F0FA4;
+          }
+
+          &.disabled {
+            pointer-events: none;
+
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              background: $white;
+              opacity: 0.8;
+            }
+          }
+        }
+        .popup__form-links-back{
+          color: $black-gray;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 146.023%;
+        }
+      }
+
+      .popup__textarea {
+        resize: none;
+        width: 560px;
+        height: 124px;
+        border-radius: 4px;
+        border: 1px solid $border;
+        background: $white;
+        padding: 12px 24px 0 12px;
+        margin-bottom: 15px;
+
+        &::placeholder {
+          color: $black-gray;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 146.023%;
         }
       }
     }

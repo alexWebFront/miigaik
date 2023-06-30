@@ -16,7 +16,7 @@
       justify-content: space-between;
       align-items: flex-end;
       flex-direction: row;
-      max-width: 375px;
+      max-width: 100%;
       flex-wrap: wrap;
       padding: 22px 15px 18px 15px;
       position: relative;
@@ -70,7 +70,7 @@
   &__content-item-img-second {
     @media screen and (max-width: 900px) {
       position: absolute;
-      right: 64px;
+      right: 45px;
     }
   }
 

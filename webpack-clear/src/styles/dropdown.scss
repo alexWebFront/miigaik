@@ -14,7 +14,7 @@
     color: $link-text;
 
     @media screen and (max-width: 800px) {
-     display: none;
+      display: none;
     }
   }
 
@@ -148,12 +148,137 @@
   }
 }
 
-
 .accelerators-case-name {
   .dropdown__select-mobile {
     @media screen and (max-width: 1200px) {
       display: flex;
       margin-bottom: 20px;
     }
+  }
+}
+
+.dropdown-folder {
+  display: none;
+  position: relative;
+
+  &.active {
+    .dropdown-folder__select {
+      background: $selected-hover;
+
+      .dropdown-folder__select-arrow {
+        transform: rotate(180deg);
+      }
+    }
+
+    .dropdown-folder__dropdown {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 1800px) {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    height: 42px;
+    width: 100%;
+    max-width: 332px;
+    border: 1px solid $border;
+    background: $white;
+    padding: 0 16px 0 12px;
+  }
+  &__input {
+    display: flex;
+    align-items: center;
+    color: $black-gray;
+    font-size: 14px;
+    font-weight: 600;
+
+    span {
+      margin-left: 8px;
+    }
+  }
+
+  &__dropdown-input {
+    margin: 8px 12px 9px;
+    width: calc(100% - 24px);
+    padding: 7px 12px 9px;
+    font-size: 14px;
+    line-height: 146.023%;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 146.023%;
+    }
+  }
+  &__dropdown {
+    position: absolute;
+    top: 44px;
+    left: 0;
+    border-radius: 5px;
+    border: 1px solid $border;
+    background: $white;
+    box-shadow: 0px 2px 24px 0px rgba(11, 18, 24, 0.08);
+    width: 100%;
+    max-width: 332px;
+    z-index: 4;
+    display: none;
+  }
+  &__list-wrapper {
+    margin-right: 12px;
+  }
+  &__list {
+    max-height: 147px;
+    overflow: auto;
+    margin-bottom: 13px;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 14px;
+      opacity: 0.30000001192092896;
+      background: rgba($scrollbar, 0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 14px;
+      background: $scrollbar;
+    }
+  }
+  &__list-item {
+    display: flex;
+    align-items: center;
+    height: 37px;
+    padding: 0 12px;
+    cursor: pointer;
+    position: relative;
+
+    &:not(:last-child) {
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 12px;
+        bottom: 0;
+        height: 1px;
+        width: calc(100% - 24px);
+        background: $selected-hover;
+        box-shadow: 0px -0.5px 0px 0px #d8d9da inset;
+      }
+    }
+
+    &:hover {
+      background: $selected-hover;
+    }
+  }
+  &__list-item-text {
+    margin-left: 8px;
   }
 }

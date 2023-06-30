@@ -2,6 +2,7 @@
 
   .projects-bank {
     display: flex;
+    justify-content: center;
 
     @media screen and (max-width: 1200px) {
       display: block !important;

@@ -28,8 +28,7 @@
 
   @media screen and (max-width: 800px) {
     max-width: 375px;
-    padding: 40px 15px 50px 15px;
-    height: 50%;
+    padding: 19px 15px 50px 15px;
   }
 
   &__title {
@@ -76,5 +75,39 @@
 
   &__info p:not(:last-child) {
     margin-bottom: 15px;
+  }
+}
+
+.page-main {
+  .breadcrumb {
+    z-index: 2;
+    display: none;
+    list-style-type: none;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 15px 0px 15px;
+
+    @media screen and (max-width: 800px) {
+      max-width: 345px;
+      margin: 0 auto;
+      padding-right: 0;
+      display: flex;
+    }
+
+    @media screen and (max-width: 375px) {
+      gap: 3px;
+    }
+
+
+    &__item, a {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      color: $select-text;
+
+      @media screen and (max-width: 375px) {
+        font-size: 11px;
+      }
+    }
   }
 }

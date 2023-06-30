@@ -31,7 +31,8 @@
       color: $select-text;
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 800px) {
+      height: 69px;
       font-size: 18px;
       line-height: 22px;
     }

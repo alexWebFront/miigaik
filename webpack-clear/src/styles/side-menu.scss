@@ -186,6 +186,8 @@
     justify-content: center;
     flex-direction: column;
     gap: 40px;
+    width: 100%;
+    padding-left: 65px;
 
     @media screen and (max-width: 1800px) {
       padding: 38px 15px 0;
@@ -213,6 +215,21 @@
   }
 
   &__list-item--active {
+    width: 100%;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 11px;
+      height: 11px;
+      position: absolute;
+      right: -5px;
+      top: 5px;
+      background: $white;
+      transform: rotate(45deg);
+
+    }
+
     a {
       color: $white;
     }

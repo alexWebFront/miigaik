@@ -6,6 +6,11 @@
     gap: 20px;
     margin-bottom: 26px;
     max-width: 1480px;
+
+    //@media screen and (max-width: 1800px) {
+    //  max-width: 100%;
+    //  justify-content: flex-start;
+    //}
   }
 
   &__card {

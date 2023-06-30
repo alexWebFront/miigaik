@@ -67,7 +67,7 @@
           margin-bottom: 5px;
 
           @media screen and (max-width: 800px) {
-           font-size: 20px;
+            font-size: 20px;
           }
         }
 
@@ -91,6 +91,10 @@
       line-height: 140.52%;
       color: $black-gray;
       margin-bottom: 14px;
+
+      @media screen and (max-width: 1200px) {
+        font-size: 14px;
+      }
     }
 
     &__description p:not(:last-child) {
@@ -310,9 +314,6 @@
             line-height: 18px;
             color: $blue-link;
 
-            @media screen and (max-width: 1200px) {
-              text-decoration: underline;
-            }
           }
         }
 

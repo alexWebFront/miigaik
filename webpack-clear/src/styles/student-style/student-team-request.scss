@@ -40,6 +40,7 @@
           @media screen and (max-width: 1200px) {
             border: 1px solid $border;
             border-radius: 4px;
+            position: relative;
           }
 
           &:not(:last-child) {
@@ -68,9 +69,28 @@
             }
           }
 
-          &-group {
-            p {
+          &-actions {
+            position: relative;
 
+            @media screen and (max-width: 1200px) {
+              position: absolute;
+              top: 9px;
+              right: 9px;
+            }
+
+            .status-action {
+              background: $card-tags-bg;
+              width: 24px;
+              height: 24px;
+              @media screen and (max-width: 1200px){
+                background: $actions-bg-mobile;
+              }
+            }
+
+            .actions-menu {
+              position: absolute;
+              top: 25px;
+              right: 0;
             }
           }
         }

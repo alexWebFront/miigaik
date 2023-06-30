@@ -1,10 +1,26 @@
 .role-page {
   .expert-projects-bank {
     display: flex;
+    justify-content: flex-start;
 
     .expert-content-bank-projects {
       max-width: 1290px;
       width: 100%;
+      padding-top: 0;
+
+      @media screen and (max-width: 1800px) {
+        max-width: 100%;
+        margin: 0;
+      }
+
+      @media screen and (max-width: 1200px) {
+        max-width: 100%;
+      }
+
+      .breadcrumb{
+        padding-left: 0;
+        margin-bottom: 10px;
+      }
 
       .content__top {
         display: flex;
@@ -17,6 +33,14 @@
       .table {
         max-width: 1188px;
         width: 100%;
+        min-width: 1188px;
+
+        @media screen and (max-width: 1200px) {
+          min-width: 722px;
+        }
+        @media screen and (max-width: 767px) {
+          min-width: 290px;
+        }
 
         &__title {
           justify-content: flex-start;
@@ -128,9 +152,11 @@
 
               p {
                 max-width: 198px;
-                white-space: nowrap;
                 overflow: hidden;
-                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+                -webkit-box-orient: vertical;
               }
             }
 

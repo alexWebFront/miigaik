@@ -1,5 +1,24 @@
-.content-personal-data{
-  .content__top{
-    margin-bottom: 11px;
+.role-page{
+  .content-personal-data {
+    padding-top: 0;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1800px){
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0px 15px 60px 15px;
+    }
+
+    .breadcrumb {
+      padding-left: 0;
+      margin-bottom: 10px;
+    }
+
+    .content__top {
+      margin-bottom: 11px;
+    }
   }
 }
+
+

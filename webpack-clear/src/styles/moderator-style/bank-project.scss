@@ -2,7 +2,7 @@
 
   .projects-bank {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 
     @media screen and (max-width: 1200px) {
       display: block !important;

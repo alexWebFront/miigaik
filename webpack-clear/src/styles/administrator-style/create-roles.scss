@@ -1,5 +1,13 @@
 .role-page {
   .administrator-content-roles-create {
+    padding-top: 0;
+
+    .breadcrumb {
+      padding-left: 0;
+      margin-bottom: 10px;
+
+    }
+
     .form-create-roles {
       max-width: 480px;
       width: 100%;
@@ -157,9 +165,15 @@
 
     .popup-overlay {
       .popup {
-        width: 614px;
+        max-width: 614px;
         height: 698px;
         overflow-y: hidden;
+
+        @media screen and (max-width: 426px) {
+          width: calc(100% - 30px);
+          padding: 12px;
+          margin: 0 20px;
+        }
 
         &__search {
           position: relative;
@@ -256,16 +270,30 @@
           justify-content: flex-end;
           gap: 44px;
 
+          @media screen and (max-width: 426px) {
+            gap: 26px;
+          }
+
           .registration__form-links-back {
             color: $black-gray;
             font-size: 16px;
             line-height: 146.023%;
             text-decoration: none;
+
+            @media screen and (max-width: 426px) {
+
+            }
+
           }
 
           .button {
             width: 212px;
             height: 56px;
+            @media screen and (max-width: 426px) {
+              width: 146px;
+              height: 44px;
+            }
+
           }
         }
       }

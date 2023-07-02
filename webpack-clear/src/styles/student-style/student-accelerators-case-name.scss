@@ -1,6 +1,7 @@
 .role-page {
   .student-case-name {
     padding-top: 0;
+
     @media screen and (max-width: 1200px) {
       max-width: 100%;
     }
@@ -435,18 +436,21 @@
       position: relative;
 
       @media screen and (max-width: 767px) {
-        max-width: 420px;
+        //max-width: 420px;
+        margin: 0 20px;
         padding: 12px;
       }
 
       @media screen and (max-width: 426px) {
-        max-width: 390px;
+        width: calc(100% - 30px);
         padding: 12px;
+        margin: 0 20px;
       }
 
       @media screen and (max-width: 376px) {
-        max-width: 300px;
+        //max-width: 300px;
         padding: 12px;
+        margin: 0 20px;
       }
 
 

@@ -1,5 +1,22 @@
 .role-page {
   .expert-content-case-name {
+    padding-top: 0;
+    max-width: 100%;
+    margin: 0;
+
+    .breadcrumb {
+      padding-left: 0;
+      margin-bottom: 10px;
+
+      @media screen and (max-width: 800px) {
+        max-width: 100%;
+      }
+
+      @media screen and (max-width: 500px) {
+        flex-wrap: wrap;
+      }
+    }
+
     .content__top {
       flex-direction: column;
       align-items: flex-start;
@@ -67,6 +84,7 @@
       .active {
         background: $tabs-active-bg;
         border: 1px solid $tabs-active-bg;
+
         p {
           color: $white;
         }
@@ -326,9 +344,11 @@
 
             p {
               max-width: 204px;
-              white-space: nowrap;
               overflow: hidden;
-              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              line-clamp: 2;
+              -webkit-box-orient: vertical;
             }
           }
 

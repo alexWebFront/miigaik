@@ -1,6 +1,35 @@
 .role-page {
   .content-roles {
+    padding-top: 0;
+
+    @media screen and (max-width: 1200px) {
+      max-width: 100%;
+    }
+
+    .breadcrumb {
+      padding-left: 0;
+      margin-bottom: 10px;
+    }
+
+    .table-wrapper {
+      @media screen and (max-width: 1200px) {
+        overflow: hidden;
+      }
+    }
+
     .table {
+
+      max-width: 1480px;
+      min-width: 1480px;
+      width: 100%;
+
+      @media screen and (max-width: 1200px) {
+        min-width: 722px;
+      }
+      @media screen and (max-width: 767px) {
+        min-width: 290px;
+      }
+
       &__title {
         justify-content: flex-start;
 
@@ -107,10 +136,10 @@
             }
 
             &-hidden {
-              display: none;
+              display: none !important;
 
               @media screen and (max-width: 1200px) {
-                display: block;
+                display: block !important;
                 font-size: 14px;
                 color: $select-text !important;
                 margin-bottom: 5px;
@@ -120,9 +149,11 @@
 
             p {
               max-width: 428px;
-              white-space: nowrap;
               overflow: hidden;
-              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              line-clamp: 2;
+              -webkit-box-orient: vertical;
             }
           }
 
@@ -137,10 +168,10 @@
             }
 
             &-hidden {
-              display: none;
+              display: none !important;
 
               @media screen and (max-width: 1200px) {
-                display: block;
+                display: block !important;
                 font-size: 14px;
                 color: $select-text !important;
                 margin-bottom: 5px;
@@ -150,17 +181,41 @@
 
             p {
               max-width: 274px;
-              white-space: nowrap;
               overflow: hidden;
-              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              line-clamp: 2;
+              -webkit-box-orient: vertical;
             }
           }
 
           &-actions {
+            position: relative;
+
+            svg{
+              cursor: pointer;
+            }
+
             @media screen and (max-width: 1200px) {
               position: absolute;
               right: 6px;
               top: 6px;
+            }
+
+            .status-action {
+              background: $card-tags-bg;
+              width: 24px;
+              height: 24px;
+
+              @media screen and (max-width: 1200px){
+                background: $actions-bg-mobile;
+              }
+            }
+
+            .actions-menu {
+              position: absolute;
+              top: 25px;
+              right: 0;
             }
           }
         }

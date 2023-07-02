@@ -18,19 +18,21 @@
   }
 
   &.error {
-    border: 1px solid rgba(255, 0, 0, 0.35);
-    background: $input-error;
+    border: 1px solid rgba(255, 0, 0, 0.35) !important;
+    background: $input-error !important;
   }
 }
 
 .input-error-message {
-  color: $red;
-  font-size: 12px;
-  font-weight: 500;
-  display: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  color: $red !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  display: none !important;
 
   &.active {
-    display: block;
+    display: block !important;
   }
 }
 
@@ -158,4 +160,11 @@
       color: $calendar-gray;
     }
   }
+}
+
+.field-description {
+  color: $select-text;
+  font-size: 13px;
+  line-height: 146.023%;
+  margin-bottom: 5px;
 }

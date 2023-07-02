@@ -77,8 +77,12 @@
     padding: 12px 40px 12px 12px;
     font-size: 14px;
     line-height: 146.02%;
-    color: $purple;
+    color: $input-placeholde;
     font-weight: 400;
+
+    &::placeholder {
+      color: $input-placeholde !important;
+    }
   }
 
   &__registration-link {
@@ -117,10 +121,11 @@
   justify-content: space-between;
 
   .header__content {
-    max-width: 1558px;
+    margin: 0 auto;
+    //max-width: 1558px;
     padding: 0 40px 0 38px;
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1800px) {
       padding: 0 15px;
     }
   }

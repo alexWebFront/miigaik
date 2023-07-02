@@ -80,11 +80,19 @@
           <form class="auth-form__body">
             <div class="auth-form__inputs">
               <label class="auth-form__inputs-label">Логин
-                <input name="login" class="auth-form__inputs-item" type="text" placeholder="Введите логин">
+                error
+                <input name="login" class="input auth-form__inputs-item" type="text" placeholder="Введите логин">
+
+                <!--active-->
+                <p class="input-error-message">Логин не введен</p>
               </label>
               <label class="auth-form__inputs-label">
                 Пароль
-                <input class="auth-form__inputs-item" name="password" type="password" placeholder="Введите пароль">
+                <!--error-->
+                <input class="input auth-form__inputs-item" name="password" type="password" placeholder="Введите пароль">
+
+                <!--active-->
+                <p class="input-error-message">Логин не введен</p>
               </label>
               <span class="auth-form__reset-password">
                   <a class="auth-form__reset-password-link" href="restorePassword.html">Забыли пароль?</a>

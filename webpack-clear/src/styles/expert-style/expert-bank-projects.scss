@@ -36,10 +36,7 @@
         min-width: 1188px;
 
         @media screen and (max-width: 1200px) {
-          min-width: 722px;
-        }
-        @media screen and (max-width: 767px) {
-          min-width: 290px;
+          min-width: auto;
         }
 
         &__title {

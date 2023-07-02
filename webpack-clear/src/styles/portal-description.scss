@@ -85,7 +85,7 @@
     list-style-type: none;
     align-items: center;
     gap: 4px;
-    padding: 10px 15px 0px 15px;
+    padding: 10px 15px 0px 0px;
 
     @media screen and (max-width: 800px) {
       max-width: 345px;
@@ -96,6 +96,7 @@
 
     @media screen and (max-width: 375px) {
       gap: 3px;
+      padding-left: 15px;
     }
 
 

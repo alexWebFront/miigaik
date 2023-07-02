@@ -79,6 +79,7 @@
     &.error {
       border: 1px solid rgba(255, 0, 0, 0.35);
       background: $input-error;
+      margin-bottom: 11px;
 
       .dropdown__select-text-error {
         display: block;

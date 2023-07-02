@@ -3,10 +3,11 @@
     padding-top: 0;
 
     @media screen and (max-width: 1200px) {
-      max-width: 100%;
+      max-width: 770px;
     }
+
     @media screen and (max-width: 800px) {
-      max-width: 100%;
+      max-width: 375px;
     }
 
     .breadcrumb {
@@ -37,10 +38,7 @@
       margin-bottom: 20px;
 
       @media screen and (max-width: 1200px) {
-        min-width: 722px;
-      }
-      @media screen and (max-width: 767px) {
-        min-width: 290px;
+        min-width: auto;
       }
 
       &__title {

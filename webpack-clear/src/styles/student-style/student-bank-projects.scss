@@ -2,6 +2,19 @@
   .student-bank-projects {
     padding-top: 0;
 
+    @media screen and (max-width: 1800px) {
+      max-width: 1186px !important;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 1200px) {
+      max-width: 770px !important;
+    }
+
+    @media screen and (max-width: 800px) {
+      max-width: 375px !important;
+    }
+
     .breadcrumb{
       padding-left: 0;
       margin-bottom: 10px;

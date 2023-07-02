@@ -72,3 +72,15 @@
     }
   }
 }
+
+.tables-cards {
+  @media screen and (max-width: 1800px) {
+    max-width: 1105px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  @media screen and (max-width: 1200px) {
+    max-width: 730px !important;
+  }
+}

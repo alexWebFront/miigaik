@@ -333,8 +333,8 @@
 
         <!-- Основной контент страницы-->
         <div class="content">
-          <div class="content__top">
-            <h1>Главная страница</h1>
+          <div class="content__top tables-cards">
+            <h1 class="moderator-main-title">Главная страница</h1>
 
             <!-- Выпадающий список сортировки-->
             <div class="dropdown">
@@ -365,6 +365,153 @@
                 </ul>
               </div>
             </div>
+
+            <button class="dropdown__select-mobile">
+              <div class="dropdown__select-mobile-wrapper">
+                <svg class="dropdown__select-mobile-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.052 4H5.5C4.119 4 3 5.119 3 6.5V6.5C3 7.881 4.119 9 5.5 9H15.052" stroke="#3D5F8C"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M19.9749 4.02513C21.3417 5.39197 21.3417 7.60804 19.9749 8.97488C18.608 10.3417 16.392 10.3417 15.0251 8.97488C13.6583 7.60804 13.6583 5.39197 15.0251 4.02513C16.392 2.65829 18.608 2.65829 19.9749 4.02513"
+                    stroke="#3D5F8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M8.94824 20H18.5002C19.8812 20 21.0002 18.881 21.0002 17.5V17.5C21.0002 16.119 19.8812 15 18.5002 15H8.94824"
+                    stroke="#3D5F8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M8.97488 15.0251C10.3417 16.392 10.3417 18.608 8.97488 19.9749C7.60804 21.3417 5.39197 21.3417 4.02513 19.9749C2.65829 18.608 2.65829 16.392 4.02513 15.0251C5.39197 13.6583 7.60804 13.6583 8.97488 15.0251"
+                    stroke="#3D5F8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p class="dropdown__select-mobile-text">Сортировка</p>
+              </div>
+              <svg class="dropdown__select-mobile-union" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.5 12C5.5 12.5523 5.94772 13 6.5 13C7.05228 13 7.5 12.5523 7.5 12V7.5H12C12.5523 7.5 13 7.05228 13 6.5C13 5.94772 12.5523 5.5 12 5.5H7.5V1C7.5 0.447716 7.05228 0 6.5 0C5.94771 0 5.5 0.447715 5.5 1V5.5H1C0.447715 5.5 0 5.94772 0 6.5C0 7.05228 0.447715 7.5 1 7.5H5.5V12Z"
+                  fill="#3D5F8C" />
+              </svg>
+            </button>
+
+            <!--active-->
+          <div class="dropdown__select-mobile-active">
+            <div class="dropdown__select-mobile-active-header">
+              <div class="dropdown__select-mobile-active-cross">
+                <svg width="24" height="24" viewBox="0 0 24 24"
+                     fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.53022 16.7834C6.23732 17.0763 6.23732 17.5512 6.53022 17.844C6.82311 18.1369 7.29798 18.1369 7.59088 17.844L12.1874 13.2475L16.784 17.8441C17.0769 18.1369 17.5518 18.1369 17.8447 17.8441C18.1376 17.5512 18.1376 17.0763 17.8447 16.7834L13.2481 12.1868L17.8439 7.591C18.1368 7.29811 18.1368 6.82323 17.8439 6.53034C17.551 6.23745 17.0762 6.23745 16.7833 6.53034L12.1874 11.1262L7.59162 6.53035C7.29873 6.23746 6.82385 6.23746 6.53096 6.53035C6.23807 6.82324 6.23807 7.29812 6.53096 7.59101L11.1268 12.1868L6.53022 16.7834Z"
+                        fill="#777777"/>
+                </svg>
+              </div>
+              <p class="dropdown__select-mobile-active-title">Сортировка по таблице</p>
+            </div>
+            <div class="dropdown__select-mobile-active-wrapper">
+              <div class="dropdown__select error">
+                <p class="dropdown__select-value-title">Показывать от А до Я</p>
+                <p class="dropdown__select-value">Сначала новые</p>
+                <p class="dropdown__select-text-error">Опция не выбрана</p>
+                <svg class="dropdown__select-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.706 11.1326L16.9034 16.33C17.2484 16.675 17.8077 16.675 18.1527 16.33C18.4977 15.985 18.4977 15.4257 18.1527 15.0807L12.3309 9.25895C12.1738 9.1018 11.9721 9.01624 11.7666 9.00227C11.5204 8.98518 11.2684 9.07075 11.0801 9.25897L5.25883 15.0803C4.91372 15.4254 4.91372 15.9849 5.25883 16.33C5.60394 16.6751 6.16348 16.6751 6.50859 16.33L11.706 11.1326Z"
+                        fill="#777777"/>
+                </svg>
+                <ul class="dropdown__select-list">
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 1</p>
+                  </li>
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 2</p>
+                  </li>
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 3</p>
+                  </li>
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 4</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown__select">
+                <p class="dropdown__select-value-title">Описание кейса</p>
+                <p class="dropdown__select-value">Показывать только те кейсы, где есть</p>
+                <p class="dropdown__select-text-error">Опция не выбрана</p>
+                <svg class="dropdown__select-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.706 11.1326L16.9034 16.33C17.2484 16.675 17.8077 16.675 18.1527 16.33C18.4977 15.985 18.4977 15.4257 18.1527 15.0807L12.3309 9.25895C12.1738 9.1018 11.9721 9.01624 11.7666 9.00227C11.5204 8.98518 11.2684 9.07075 11.0801 9.25897L5.25883 15.0803C4.91372 15.4254 4.91372 15.9849 5.25883 16.33C5.60394 16.6751 6.16348 16.6751 6.50859 16.33L11.706 11.1326Z"
+                        fill="#777777"/>
+                </svg>
+                <ul class="dropdown__select-list">
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 1</p>
+                  </li>
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 2</p>
+                  </li>
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 3</p>
+                  </li>
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 4</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown__select">
+                <p class="dropdown__select-value-title">Итоговая презентация</p>
+                <p class="dropdown__select-value">Показывать только те кейсы, где есть</p>
+                <p class="dropdown__select-text-error">Опция не выбрана</p>
+                <svg class="dropdown__select-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.706 11.1326L16.9034 16.33C17.2484 16.675 17.8077 16.675 18.1527 16.33C18.4977 15.985 18.4977 15.4257 18.1527 15.0807L12.3309 9.25895C12.1738 9.1018 11.9721 9.01624 11.7666 9.00227C11.5204 8.98518 11.2684 9.07075 11.0801 9.25897L5.25883 15.0803C4.91372 15.4254 4.91372 15.9849 5.25883 16.33C5.60394 16.6751 6.16348 16.6751 6.50859 16.33L11.706 11.1326Z"
+                        fill="#777777"/>
+                </svg>
+                <ul class="dropdown__select-list">
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 1</p>
+                  </li>
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 2</p>
+                  </li>
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 3</p>
+                  </li>
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 4</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown__select">
+                <p class="dropdown__select-value-title">Итоговая оценка</p>
+                <p class="dropdown__select-value">От большей к меньшей</p>
+                <p class="dropdown__select-text-error">Опция не выбрана</p>
+                <svg class="dropdown__select-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.706 11.1326L16.9034 16.33C17.2484 16.675 17.8077 16.675 18.1527 16.33C18.4977 15.985 18.4977 15.4257 18.1527 15.0807L12.3309 9.25895C12.1738 9.1018 11.9721 9.01624 11.7666 9.00227C11.5204 8.98518 11.2684 9.07075 11.0801 9.25897L5.25883 15.0803C4.91372 15.4254 4.91372 15.9849 5.25883 16.33C5.60394 16.6751 6.16348 16.6751 6.50859 16.33L11.706 11.1326Z"
+                        fill="#777777"/>
+                </svg>
+                <ul class="dropdown__select-list">
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 1</p>
+                  </li>
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 2</p>
+                  </li>
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 3</p>
+                  </li>
+                  <li class="dropdown__select-item">
+                    <p class="dropdown__select-item-value">Пункт 4</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown__select-mobile-active-buttons">
+              <button class="button dropdown__select-mobile-active-accept">Применить сортировку</button>
+              <button class="dropdown__select-mobile-active-cancel">Отмена</button>
+            </div>
+          </div>
           </div>
 
           <!-- Карточки товаров-->

@@ -24,6 +24,16 @@
     }
 
     .dropdown {
+      @media screen and (max-width: 1200px) {
+        display: none;
+       }
+
+       &__select-mobile {
+        @media screen and (max-width: 1200px) {
+          display: flex;
+         }
+       }
+
       .content__card-tags {
         margin-bottom: 0;
 

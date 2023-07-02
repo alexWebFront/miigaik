@@ -7,18 +7,17 @@
     list-style-type: none;
     align-items: center;
     gap: 4px;
-    padding: 10px 20px 0px 10px;
+    padding: 10px 20px 10px 37px;
 
     @media screen and (max-width: 1800px) {
-      max-width: 1280px;
-      //margin: 0 auto;
-      margin-left: 0;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding-left: 15px;
     }
 
     @media screen and (max-width: 1200px) {
       max-width: 770px;
       //margin: 0 auto;
-      margin-left: 0;
     }
 
     @media screen and (max-width: 800px) {
@@ -44,3 +43,26 @@
   }
 }
 
+.breadcrumb-cards {
+  @media screen and (max-width: 1800px) {
+    max-width: 1140px !important;
+    padding-left: 10px !important;
+    margin: 0 auto !important;
+  }
+
+  @media screen and (max-width: 1200px) {
+    max-width: 750px !important;
+  }
+
+  @media screen and (max-width: 800px) {
+    max-width: 375px !important;
+  }
+}
+
+.breadcrumb-create-form {
+
+  @media screen and (max-width: 1800px) {
+    max-width: 480px !important;
+    margin: 0 auto !important;
+  }
+}

@@ -21,6 +21,12 @@
     align-items: flex-start;
     flex-direction: column;
 
+    br {
+      @media screen and (max-width: 420px) {
+        content: "";
+      }
+    }
+
 
     h1 {
       font-weight: 700;
@@ -32,6 +38,8 @@
 
       @media screen and (max-width: 800px) {
         font-size: 28px;
+        font-weight: 700;
+        line-height: normal;
         margin-bottom: 20px;
       }
     }
@@ -63,9 +71,7 @@
       font-size: 13px;
       line-height: 146.02%;
       color: $select-text;
-    }
-
-    &-input {
+      display: block;
       margin-bottom: 11px;
     }
 
@@ -133,6 +139,11 @@
 
 .registration-page {
   .breadcrumb {
-    max-width: 475px;
+    max-width: 450px;
+
+    @media screen and (max-width: 475px) {
+      padding-left: 15px;
+      max-width: 100%;
+    }
   }
 }

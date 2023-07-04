@@ -1,6 +1,5 @@
 .role-page {
   .student-case-request {
-    padding-top: 0;
 
     @media screen and (max-width: 1200px) {
       max-width: 770px;
@@ -9,10 +8,9 @@
     @media screen and (max-width: 800px) {
       max-width: 375px;
     }
-    
+
     .breadcrumb {
       padding-left: 0;
-      margin-bottom: 10px;
     }
 
     .table-wrapper {

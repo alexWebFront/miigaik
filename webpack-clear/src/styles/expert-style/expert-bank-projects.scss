@@ -4,22 +4,18 @@
     justify-content: flex-start;
 
     .expert-content-bank-projects {
-      max-width: 1290px;
-      width: 100%;
-      padding-top: 0;
-
-      @media screen and (max-width: 1800px) {
-        max-width: 100%;
-        margin: 0;
-      }
+      max-width: 1180px;
 
       @media screen and (max-width: 1200px) {
-        max-width: 100%;
+        max-width: 770px;
+      }
+
+      @media screen and (max-width: 800px) {
+        max-width: 375px;
       }
 
       .breadcrumb{
         padding-left: 0;
-        margin-bottom: 10px;
       }
 
       .content__top {

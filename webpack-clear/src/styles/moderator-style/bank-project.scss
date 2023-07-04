@@ -19,11 +19,10 @@
     }
 
     .content-bank-projects {
-      padding-top: 0;
+      max-width: 1290px;
 
-      @media screen and (max-width: 1800px) {
+      @media screen and (max-width: 1200px) {
         max-width: 770px;
-        margin: 0 auto;
       }
 
       @media screen and (max-width: 800px) {
@@ -32,7 +31,6 @@
 
       .breadcrumb{
         padding-left: 0;
-        margin-bottom: 10px;
       }
 
       .content__top {

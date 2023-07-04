@@ -1,6 +1,5 @@
 .role-page {
   .student-favorite {
-    padding-top: 0;
 
     @media screen and (max-width: 1200px) {
       max-width: 770px;
@@ -13,7 +12,6 @@
 
     .breadcrumb {
       padding-left: 0;
-      margin-bottom: 10px;
     }
 
     .table-wrapper {

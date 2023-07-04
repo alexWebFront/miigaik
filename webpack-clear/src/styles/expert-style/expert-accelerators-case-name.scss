@@ -1,8 +1,16 @@
 .role-page {
   .expert-content-case-name {
     padding-top: 0;
-    max-width: 100%;
-    margin: 0;
+
+    margin: 0 auto;
+
+    @media screen and (max-width: 1200px) {
+      max-width: 770px;
+    }
+
+    @media screen and (max-width: 800px) {
+      max-width: 375px;
+    }
 
     .breadcrumb {
       padding-left: 0;
@@ -10,6 +18,7 @@
 
       @media screen and (max-width: 800px) {
         max-width: 100%;
+        flex-wrap: wrap;
       }
 
       @media screen and (max-width: 500px) {
@@ -25,9 +34,14 @@
 
     .accelerators-item {
       margin-bottom: 50px;
+      max-width: 1480px;
 
       @media screen and (max-width: 800px) {
         margin-bottom: 30px;
+      }
+
+      &__wrapper-content {
+        max-width: 730px;
       }
 
       &__description {
@@ -35,15 +49,21 @@
 
         @media screen and (max-width: 800px) {
           font-size: 14px;
-          font-family: Montserrat;
           line-height: 140.523%;
         }
 
         p {
+          color: $black-gray;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 140.523%;
+
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+
           @media screen and (max-width: 800px) {
-            &:not(:last-child) {
-              margin-bottom: 10px !important;
-            }
+            font-size: 14px;
           }
         }
       }
@@ -171,6 +191,10 @@
             line-height: 18px;
             color: $black-gray;
             white-space: nowrap;
+
+            @media screen and (max-width: 768px) {
+              font-size: 14px;
+            }
           }
 
           &-point-name {
@@ -273,6 +297,7 @@
 
             a {
               color: $blue-link;
+              border-bottom: 1px solid rgba(79, 85, 189, 0.25);
             }
           }
 
@@ -321,7 +346,6 @@
             min-width: 264px;
             width: 100%;
 
-
             @media screen and (max-width: 1200px) {
               width: 100%;
               max-width: 100%;
@@ -331,10 +355,10 @@
             }
 
             &-hidden {
-              display: none;
+              display: none !important;
 
               @media screen and (max-width: 1200px) {
-                display: block;
+                display: block !important;
                 font-size: 14px;
                 color: $select-text !important;
                 margin-bottom: 5px;

@@ -1,13 +1,11 @@
 .role-page {
   .student-accelerators {
-    padding-top: 0;
 
     @media screen and (max-width: 800px) {
-      max-width: 100%;
+      //max-width: 100%;
     }
 
     .breadcrumb {
-      margin-bottom: 10px;
       padding-left: 0;
     }
 
@@ -18,7 +16,7 @@
 
     .dropdown-tags {
       .dropdown__select {
-        background: #EEE;
+        background: $drag-field-bg;
         padding: 9px 47px 9px 12px;
       }
     }

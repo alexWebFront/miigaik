@@ -89,7 +89,7 @@
       </div>
       <ul class="side-menu__list">
         <li class="side-menu__list-item">
-          <a href="/">
+          <a href="./moderatorMain.html">
             <svg class="side-menu__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_98_18845)">
@@ -106,8 +106,8 @@
             Главная страница
           </a>
         </li>
-        <li class="side-menu__list-item">
-          <a href="accelerators.html">
+        <li class="side-menu__list-item side-menu__list-item--active">
+          <a href="./accelerators.html">
             <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_98_18853)">
@@ -136,7 +136,7 @@
           </a>
         </li>
         <li class="side-menu__list-item">
-          <a href="#">
+          <a href="./requestCase.html">
             <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_98_18869)">
@@ -173,7 +173,7 @@
           </a>
         </li>
         <li class="side-menu__list-item">
-          <a href="#">
+          <a href="./requestTeam.html">
             <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_98_18886)">
@@ -198,7 +198,7 @@
           </a>
         </li>
         <li class="side-menu__list-item">
-          <a href="#">
+          <a href="./caseSuccess.html">
             <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_98_18899)">
@@ -220,7 +220,7 @@
           </a>
         </li>
         <li class="side-menu__list-item">
-          <a href="#">
+          <a href="./bankProjects.html">
             <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_98_18910)">
@@ -242,7 +242,7 @@
           </a>
         </li>
         <li class="side-menu__list-item">
-          <a href="#">
+          <a href="./personalData.html">
             <svg class="side-menu__svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_98_18921)">
@@ -322,19 +322,20 @@
         </div>
       </header>
 
-      <!-- Хлебные крошки-->
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb__item"><a href="/">Главная</a></li>
-          <li class="breadcrumb__point">•</li>
-          <li class="breadcrumb__item"><a href="./accelerators.html">Акселераторы</a></li>
-          <li class="breadcrumb__point">•</li>
-          <li class="breadcrumb__item active" aria-current="page">Название акселератора</li>
-        </ol>
-      </nav>
-
       <!-- Основной контент страницы-->
-      <div class="content content-popup">
+      <div class="content content-popup moderator-accelerators-item">
+
+        <!-- Хлебные крошки-->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb__item"><a href="/">Главная</a></li>
+            <li class="breadcrumb__point">•</li>
+            <li class="breadcrumb__item"><a href="./accelerators.html">Акселераторы</a></li>
+            <li class="breadcrumb__point">•</li>
+            <li class="breadcrumb__item active" aria-current="page">Название акселератора</li>
+          </ol>
+        </nav>
+
         <div class="content__top content__top-accelerators-item">
           <h1>Название акселератора</h1>
         </div>
@@ -608,7 +609,7 @@
         <div class="table-wrapper">
           <div class="table case-accelerators-table">
             <div class="table__title">
-              <div class="table__title-item table__title-name">
+              <div class="table__title-item table__title-title">
                 <div class="title-wrapper">
                   <p>Название кейса</p>
                   <svg class="table__sort-svg" width="12" height="12" viewBox="0 0 12 12" fill="none"
@@ -620,7 +621,7 @@
               </div>
               <div class="table__title-item table__title-files">
                 <div class="title-wrapper">
-                  <p>Загруженные файлы</p>
+                  <p>Загруженные <br> файлы</p>
                   <svg class="table__sort-svg" width="12" height="12" viewBox="0 0 12 12" fill="none"
                        xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 4.5L6 1.5L9 4.5" stroke="#6D7A86" stroke-linecap="round" stroke-linejoin="round"/>
@@ -650,7 +651,7 @@
               </div>
               <div class="table__title-item table__title-list-users">
                 <div class="title-wrapper">
-                  <p>Список участников команды</p>
+                  <p>Список <br> участников команды</p>
                   <svg class="table__sort-svg" width="12" height="12" viewBox="0 0 12 12" fill="none"
                        xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 4.5L6 1.5L9 4.5" stroke="#6D7A86" stroke-linecap="round" stroke-linejoin="round"/>
@@ -658,7 +659,6 @@
                   </svg>
                 </div>
               </div>
-              <div class="table__title-item table__title-empty-item"></div>
             </div>
             <div class="table__body">
               <div class="table__body-item">

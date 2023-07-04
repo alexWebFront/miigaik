@@ -1,5 +1,6 @@
 .footer {
   background: $dark-gray;
+  z-index: 2;
 
   &__content {
     display: flex;

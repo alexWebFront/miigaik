@@ -1,6 +1,5 @@
 .role-page {
   .student-bank-projects {
-    padding-top: 0;
 
     @media screen and (max-width: 1800px) {
       max-width: 1186px !important;
@@ -17,7 +16,6 @@
 
     .breadcrumb{
       padding-left: 0;
-      margin-bottom: 10px;
     }
   }
 }

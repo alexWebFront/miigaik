@@ -6,12 +6,13 @@
   }
 
   .content {
-    padding: 40px 40px 60px 38px;
+    padding: 10px 40px 60px 38px;
     height: auto;
-    
+
     @media screen and (max-width: 1800px) {
-      max-width: 1440px;
+      max-width: 1188px;
       padding: 10px 15px 40px 15px;
+      //padding: 0 15px 40px 15px;
       margin: 0 auto;
     }
 
@@ -22,6 +23,7 @@
 
     @media screen and (max-width: 800px) {
       padding: 9px 15px 40px 15px;
+      //padding: 0 15px 40px 15px;
       max-width: 380px;
     }
 
@@ -31,6 +33,7 @@
       justify-content: space-between;
       margin-bottom: 30px;
       margin-right: 10px;
+      max-width: 1480px;
 
       @media screen and (max-width: 800px) {
         margin-bottom: 20px;
@@ -54,16 +57,14 @@
     }
 
     &__line {
-      background: #D3D8EA;
+      background: $pagination-border;
       height: 1px;
       width: 100%;
       margin-bottom: 30px;
     }
 
   }
-
 }
-
 
 .content-create-form {
   @media screen and (max-width: 1800px) {
@@ -95,11 +96,11 @@
   }
 }
 
-.content-module-management, .content-roles {
-  .administrator-tabs {
-    @media screen and (max-width: 800px) {
-      max-width: 345px !important;
-      overflow: auto;
-    }
-  }
-}
+//.content-module-management, .content-roles {
+//  .administrator-tabs {
+//    @media screen and (max-width: 800px) {
+//      max-width: 345px !important;
+//      overflow: auto;
+//    }
+//  }
+//}

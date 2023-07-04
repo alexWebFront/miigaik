@@ -2,7 +2,7 @@
   &__cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    //justify-content: center;
     gap: 20px;
     margin-bottom: 26px;
     max-width: 1480px;
@@ -36,9 +36,16 @@
       margin-bottom: 10px;
     }
 
+    @media screen and (max-width: 320px) {
+      width: 290px;
+      height: 236px;
+      margin-bottom: 10px;
+    }
+
     img {
       width: 100%;
       height: 100%;
+      object-fit: cover;
     }
   }
 

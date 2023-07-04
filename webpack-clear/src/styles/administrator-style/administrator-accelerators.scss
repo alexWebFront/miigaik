@@ -1,6 +1,11 @@
-.role-page{
-  .content-administrator-accelerators{
-    .content__top--actions{
+.role-page {
+  .content-administrator-accelerators {
+
+    .breadcrumb {
+      padding-left: 0;
+    }
+
+    .content__top--actions {
       justify-content: flex-start;
       gap: 30px;
       flex-wrap: wrap;
@@ -8,7 +13,7 @@
 
     .dropdown {
       @media screen and (max-width: 1200px) {
-       display: none;
+        display: none;
       }
     }
 

@@ -16,10 +16,18 @@
     }
   }
 
+  .accelerators-create-subtitle {
+    color: $link-text;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 15px;
+  }
+
   textarea {
     resize: none;
-    background: #ffffff;
-    border: 1px solid #cbd2db;
+    background: $white;
+    border: 1px solid $border;
     border-radius: 4px;
     max-width: 480px;
     height: 132px;
@@ -29,6 +37,10 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 146.023%;
+
+    &::placeholder {
+      color: $black-gray;
+    }
   }
 
   .create-accelerator {
@@ -40,11 +52,98 @@
   }
 
   .control-point {
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+
+    &:last-child {
+      margin-top: 20px;
+
+    }
+  }
+
+  .control-point:after {
+    //content: '';
+    //border-bottom: 1px solid rgba(235, 238, 242, 1);
+    //border-radius: 2px;
+    //background: #EBEEF2;
+    //height: 5px;
+    //margin-bottom: 20px;
   }
 
   .control-point__item {
+    position: relative;
   }
 
   .control-point__title {
+    width: 100%;
+    border-radius: 4px;
+    background: $card-tags-bg;
+    color: $table-title-item;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 106.9%;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    padding: 14px 0 14px 12px;
+    margin-bottom: 11px;
+  }
+
+  .control-point-delete {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+
+    p {
+      color: $black-gray;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  .add-point {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-start;
+    cursor: pointer;
+    margin-bottom: 33px;
+
+    p {
+      color: $black-gray;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  .add-point-buttons {
+    display: flex;
+    gap: 44px;
+    align-items: center;
+
+    .button {
+      width: 186px;
+      height: 56px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 55.19%), #1B1BBB;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 146.023%;
+    }
+    .button-back{
+      color: $black-gray;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 146.023%;
+    }
   }
 }

@@ -1,12 +1,62 @@
 .role-page {
   .content-case-name {
-    padding-top: 0;
+    margin: 0 auto;
 
     @media screen and (max-width: 1200px) {
-      max-width: 100%;
+      max-width: 770px;
     }
+
     @media screen and (max-width: 800px) {
-      max-width: 100%;
+      max-width: 375px;
+    }
+
+    .breadcrumb {
+      padding-left: 0;
+
+      @media screen and (max-width: 800px) {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+
+      @media screen and (max-width: 500px) {
+        flex-wrap: wrap;
+      }
+    }
+
+    .accelerators-item {
+      margin-bottom: 50px;
+      max-width: 1480px;
+
+      @media screen and (max-width: 800px) {
+        margin-bottom: 30px;
+      }
+
+      &__wrapper-content {
+        max-width: 730px;
+      }
+
+      &__description {
+        margin-bottom: 0;
+
+        @media screen and (max-width: 800px) {
+          font-size: 14px;
+          line-height: 140.523%;
+        }
+
+        p {
+          color: $black-gray;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 140.523%;
+
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+          @media screen and (max-width: 800px) {
+            font-size: 14px;
+          }
+        }
+      }
     }
 
     .content__top {
@@ -176,6 +226,7 @@
 
             a {
               color: $blue-link;
+              border-bottom: 1px solid rgba(79, 85, 189, 0.25);
             }
           }
 

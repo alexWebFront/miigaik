@@ -1,6 +1,5 @@
 .role-page {
   .expert-accelerators-item {
-    padding-top: 0;
 
     @media screen and (max-width: 1200px) {
       max-width: 770px;
@@ -280,6 +279,7 @@
           &-title {
             max-width: 377px;
             width: 100%;
+            position: relative;
 
             @media screen and (max-width: 1500px) {
               max-width: 100%;
@@ -317,6 +317,32 @@
               font-size: 13px;
               line-height: 16px;
               color: $table-gray-text;
+
+              @media screen and (max-width: 1200px) {
+                display: block;
+              }
+
+              &:hover:before {
+                content: attr(data-text);
+                position: absolute;
+                top: 0;
+                left: 0;
+                max-width: 400px;
+                min-height: 38px;
+                color: $link-text;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: normal;
+                padding: 10px 12px;
+                border-radius: 4px;
+                background: $white;
+                box-shadow: 0 4px 8px 0 rgba(39, 51, 62, 0.20);
+                z-index: 2;
+
+                @media screen and (max-width: 1200px) {
+                  content: none;
+                }
+              }
             }
           }
 
@@ -479,6 +505,40 @@
               text-transform: uppercase;
               margin-right: 4px;
               color: $blue-link;
+            }
+          }
+        }
+      }
+    }
+
+    .accelerators-popup {
+      .popup__table {
+        max-width: 1126px;
+        min-width: auto;
+        width: 100%;
+
+        @media screen and (max-width: 1200px) {
+          max-width: 100%;
+        }
+
+        .table__body-item {
+          .table__body-item-role {
+            &-hidden {
+              display: none;
+
+              @media screen and (max-width: 1200px) {
+                display: block;
+                font-size: 14px;
+                color: $select-text !important;
+                margin-bottom: 5px;
+                margin-top: 12px;
+              }
+            }
+          }
+
+          .table__body-item-owner {
+            @media screen and (max-width: 1200px) {
+              padding-bottom: 0;
             }
           }
         }

@@ -184,8 +184,30 @@
               -webkit-box-orient: vertical;
 
               @media screen and (max-width: 1200px) {
-                font-size: 14px;
+                display: block;
                 max-width: 300px;
+              }
+
+              &:hover:before {
+                content: attr(data-text);
+                position: absolute;
+                top: 0;
+                left: 0;
+                min-width: 400px;
+                min-height: 38px;
+                color: $link-text;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: normal;
+                padding: 10px 12px;
+                border-radius: 4px;
+                background: $white;
+                box-shadow: 0 4px 8px 0 rgba(39, 51, 62, 0.20);
+                z-index: 2;
+
+                @media screen and (max-width: 1200px) {
+                  content: none;
+                }
               }
             }
           }

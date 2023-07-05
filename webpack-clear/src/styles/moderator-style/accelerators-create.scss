@@ -51,24 +51,18 @@
     margin-bottom: 11px;
   }
 
-  .control-point {
-    &:not(:last-child) {
+  .control-points {
+    &.control-point:not(:last-child) {
       margin-bottom: 35px;
-    }
-
-    &:last-child {
-      margin-top: 20px;
-
     }
   }
 
-  .control-point:after {
-    //content: '';
-    //border-bottom: 1px solid rgba(235, 238, 242, 1);
-    //border-radius: 2px;
-    //background: #EBEEF2;
-    //height: 5px;
-    //margin-bottom: 20px;
+  .control-point-end-line {
+    border-radius: 2px;
+    background: #EBEEF2;
+    height: 5px;
+    width: 100%;
+    margin-bottom: 23px;
   }
 
   .control-point__item {

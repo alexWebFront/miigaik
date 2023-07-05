@@ -328,7 +328,7 @@
         <!-- Хлебные крошки-->
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb__item"><a href="/">Главная</a></li>
+            <li class="breadcrumb__item"><a href="./moderatorMain.html">Главная</a></li>
             <li class="breadcrumb__point">•</li>
             <li class="breadcrumb__item"><a href="./accelerators.html">Акселераторы</a></li>
             <li class="breadcrumb__point">•</li>
@@ -665,7 +665,7 @@
                 <div class="table__body-item-title">
                   <p class="table__body-item-title-text">Название акселератора</p>
                   <p class="table__body-item-title-hidden">Описание кейса</p>
-                  <span class="table__body-item-title-span">Описание кейса можно на несколько строк или или или</span>
+                  <span data-text="Описание кейса, здесь будет описание кейса которое может быть разной длины и размера. Этот текст будет отображаться при наведении полностью" class="table__body-item-title-span">Описание кейса можно на несколько строк или или или</span>
                 </div>
                 <div class="table__body-item-files">
                   <p class="table__body-item-files-hidden">Загруженные файлы</p>
@@ -718,7 +718,7 @@
                 <div class="table__body-item-title">
                   <p class="table__body-item-title-text">Название акселератора</p>
                   <p class="table__body-item-title-hidden">Описание кейса</p>
-                  <span class="table__body-item-title-span">Описание кейса можно на несколько строк или или или</span>
+                  <span data-text="Описание кейса, здесь будет описание кейса которое может быть разной длины и размера. Этот текст будет отображаться при наведении полностью" class="table__body-item-title-span">Описание кейса можно на несколько строк или или или</span>
                 </div>
                 <div class="table__body-item-files">
                   <p class="table__body-item-files-hidden">Загруженные файлы</p>
@@ -771,7 +771,7 @@
                 <div class="table__body-item-title">
                   <p class="table__body-item-title-text">Название акселератора</p>
                   <p class="table__body-item-title-hidden">Описание кейса</p>
-                  <span class="table__body-item-title-span">Описание кейса можно на несколько строк или или или</span>
+                  <span data-text="Описание кейса, здесь будет описание кейса которое может быть разной длины и размера. Этот текст будет отображаться при наведении полностью" class="table__body-item-title-span">Описание кейса можно на несколько строк или или или</span>
                 </div>
                 <div class="table__body-item-files">
                   <p class="table__body-item-files-hidden">Загруженные файлы</p>
@@ -824,7 +824,7 @@
                 <div class="table__body-item-title">
                   <p class="table__body-item-title-text">Название акселератора</p>
                   <p class="table__body-item-title-hidden">Описание кейса</p>
-                  <span class="table__body-item-title-span">Описание кейса можно на несколько строк или или или</span>
+                  <span data-text="Описание кейса, здесь будет описание кейса которое может быть разной длины и размера. Этот текст будет отображаться при наведении полностью" class="table__body-item-title-span">Описание кейса можно на несколько строк или или или</span>
                 </div>
                 <div class="table__body-item-files">
                   <p class="table__body-item-files-hidden">Загруженные файлы</p>
@@ -877,7 +877,7 @@
                 <div class="table__body-item-title">
                   <p class="table__body-item-title-text">Название акселератора</p>
                   <p class="table__body-item-title-hidden">Описание кейса</p>
-                  <span class="table__body-item-title-span">Описание кейса можно на несколько строк или или или</span>
+                  <span data-text="Описание кейса, здесь будет описание кейса которое может быть разной длины и размера. Этот текст будет отображаться при наведении полностью" class="table__body-item-title-span">Описание кейса можно на несколько строк или или или</span>
                 </div>
                 <div class="table__body-item-files">
                   <p class="table__body-item-files-hidden">Загруженные файлы</p>
@@ -930,7 +930,7 @@
                 <div class="table__body-item-title">
                   <p class="table__body-item-title-text">Название акселератора</p>
                   <p class="table__body-item-title-hidden">Описание кейса</p>
-                  <span class="table__body-item-title-span">Описание кейса можно на несколько строк или или или</span>
+                  <span data-text="Описание кейса, здесь будет описание кейса которое может быть разной длины и размера. Этот текст будет отображаться при наведении полностью" class="table__body-item-title-span">Описание кейса можно на несколько строк или или или</span>
                 </div>
                 <div class="table__body-item-files">
                   <p class="table__body-item-files-hidden">Загруженные файлы</p>
@@ -1705,14 +1705,17 @@
   const popupOverlay = document.querySelector('.popup-overlay')
   const popupClose = popupOverlay.querySelector('.popup__close')
   const listUsersPopup = document.querySelector('.list-users-popup')
+  const bodyPopup = document.querySelector('body')
 
   // Клик по первому элементу ссылки
   listUsersPopup.addEventListener('click', function () {
     popupOverlay.classList.add('active')
+    bodyPopup.classList.add('body-popup-active')
   })
 
   popupClose.addEventListener('click', function () {
     popupOverlay.classList.remove('active')
+    bodyPopup.classList.remove('body-popup-active')
   })
 
 </script>

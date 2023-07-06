@@ -332,7 +332,7 @@
       </header>
 
       <!-- Основной контент страницы-->
-      <div class="content content-create-form">
+      <div class="content content-create-news-item content-create-form ">
 
         <!-- Хлебные крошки-->
         <nav aria-label="breadcrumb">
@@ -537,11 +537,85 @@
               </div>
             </div>
 
-            <div class="field-description__item">
-              <p>Загрузите изображение акселератора</p>
-              <p>Размер не менее 355 на 240 пкс, вес - не более 2 мб </p>
-              <input type="file" name="photo" multiple accept="image/*,image/jpeg">
+            <div class="field-description__item create-news">
+              <div class="load-image">
+                <p class="load-image__title">Загрузите изображение</p>
+                <span>Размер не менее 355 на 240 пкс, вес - не более 2 мб </span>
+                <div class="load-image__field">
+                  <div class="load-image__field-drag">
+                    <!--hidden-->
+                    <div class="load-image__field-drag-container">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M18.5 21H6.5C4.843 21 3.5 19.657 3.5 18V6C3.5 4.343 4.843 3 6.5 3H18.5C20.157 3 21.5 4.343 21.5 6V18C21.5 19.657 20.157 21 18.5 21Z"
+                              stroke="#B6BCD2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path
+                                d="M3.5 17.4854L8.112 12.8734C8.503 12.4824 9.136 12.4824 9.526 12.8734L10.932 14.2794L15.509 9.70341C15.9 9.31241 16.533 9.31241 16.923 9.70341L21.5 14.2804"
+                                stroke="#B6BCD2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path
+                                d="M9.01517 7.40671C9.16161 7.55316 9.16161 7.79059 9.01517 7.93704C8.86872 8.08349 8.63128 8.08349 8.48483 7.93704C8.33839 7.79059 8.33839 7.55316 8.48483 7.40671C8.63128 7.26026 8.86872 7.26026 9.01517 7.40671"
+                                stroke="#B6BCD2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <p class="load-image__field-drag-text">Перетащите файл(ы) JPEG, PNG
+                        или GIF в это поле, размером не менее
+                      </p>
+                    </div>
+                    <!--hidden-->
+                    <div class="load-image__field-drag-svg hidden">
+                      <div class="load-image__field-drag-svg-wrapper">
+                        <svg class="load-image__field-drag-svg-ellips" width="20" height="20" viewBox="0 0 20 20"
+                             fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <mask id="path-1-inside-1_440_66361" fill="white">
+                            <path
+                                    d="M0 0C2.62644 3.132e-08 5.22716 0.517315 7.65367 1.52241C10.0802 2.5275 12.285 4.00069 14.1421 5.85787C15.9993 7.71504 17.4725 9.91982 18.4776 12.3463C19.4827 14.7728 20 17.3736 20 20H18.05C18.05 17.6296 17.5831 15.2825 16.676 13.0926C15.7689 10.9026 14.4394 8.91283 12.7633 7.23674C11.0872 5.56064 9.09735 4.23109 6.90743 3.32399C4.7175 2.41689 2.37036 1.95002 0 1.95002V0Z"/>
+                          </mask>
+                          <path
+                                  d="M0 0C2.62644 3.132e-08 5.22716 0.517315 7.65367 1.52241C10.0802 2.5275 12.285 4.00069 14.1421 5.85787C15.9993 7.71504 17.4725 9.91982 18.4776 12.3463C19.4827 14.7728 20 17.3736 20 20H18.05C18.05 17.6296 17.5831 15.2825 16.676 13.0926C15.7689 10.9026 14.4394 8.91283 12.7633 7.23674C11.0872 5.56064 9.09735 4.23109 6.90743 3.32399C4.7175 2.41689 2.37036 1.95002 0 1.95002V0Z"
+                                  stroke="#0B16CC" stroke-width="4" mask="url(#path-1-inside-1_440_66361)"/>
+                        </svg>
+                        <svg class="load-image__field-drag-svg-close" width="24" height="24" viewBox="0 0 24 24"
+                             fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6.53022 16.7833C6.23732 17.0762 6.23732 17.551 6.53022 17.8439C6.82311 18.1368 7.29798 18.1368 7.59088 17.8439L12.1874 13.2474L16.784 17.8439C17.0769 18.1368 17.5518 18.1368 17.8447 17.8439C18.1376 17.551 18.1376 17.0762 17.8447 16.7833L13.2481 12.1867L17.8439 7.59088C18.1368 7.29798 18.1368 6.82311 17.8439 6.53022C17.551 6.23732 17.0762 6.23732 16.7833 6.53022L12.1874 11.126L7.59162 6.53023C7.29873 6.23733 6.82385 6.23733 6.53096 6.53023C6.23807 6.82312 6.23807 7.29799 6.53096 7.59089L11.1268 12.1867L6.53022 16.7833Z"
+                                fill="#777777"/>
+                        </svg>
+                        <svg class="load-image__field-drag-svg-close-circle" width="40" height="40" viewBox="0 0 40 40"
+                             fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="20" cy="20" r="19" stroke="#D3D8EA" stroke-width="2"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <!--hidden-->
+                    <div class="load-image__field-image-container hidden">
+                      <img src="./assets/images/content-card-image.svg" alt="" class="load-image__field-image">
+                    </div>
+                  </div>
+                  <div class="load-image__field-drag-load">
+                    <p class="load-image__field-drag-load-text">Макс. размер - 2 МБ</p>
+                    <div class="load-image__field-drag-load-wrapper">
+                      <p class="load-image__field-drag-load-error">Не удалось загрузить файл.</p>
+                      <button class="load-image__field-drag-load-button">Загрузить вручную</button>
+                    </div>
+                    <button class="load-image__field-drag-load-delete">
+                      <svg class="load-image__field-drag-load-delete-trash" width="24" height="24" viewBox="0 0 24 24"
+                           fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 7H19" stroke="#0B16CC" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M18 7V18C18 19.105 17.105 20 16 20H8C6.895 20 6 19.105 6 18V7" stroke="#0B16CC"
+                              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15 3.75977H9" stroke="#0B16CC" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M13.8709 15.3699L10.1309 11.6299" stroke="#0B16CC" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.1309 15.3699L13.8709 11.6299" stroke="#0B16CC" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
 
+                      <p class="load-image__field-drag-load-delete-text">Удалить</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 

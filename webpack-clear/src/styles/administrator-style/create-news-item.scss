@@ -65,6 +65,17 @@
           }
         }
 
+        .load-image__field-image-container{
+          width: 100%;
+          height: 100%;
+        }
+
+        .load-image__field-image{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
         &__field-drag-svg {
           position: absolute;
           top: 50%;

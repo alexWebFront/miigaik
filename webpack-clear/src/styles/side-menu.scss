@@ -232,6 +232,11 @@
       background: $white;
       transform: rotate(45deg);
 
+      @media screen and (max-width: 1800px) {
+        right: -19px;
+        top: 7.5px;
+      }
+
     }
 
     a {

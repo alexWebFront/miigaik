@@ -17,6 +17,11 @@
     border: none;
   }
 
+  &__body-item-show {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
 
   &__title {
     display: flex;

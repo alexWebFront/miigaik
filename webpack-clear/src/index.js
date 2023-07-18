@@ -60,7 +60,7 @@ dropDownFolder.forEach((itemFolder) => {
 })
 
 
-// Свернуть/показать полностью - не сделано
+// Свернуть/показать полностью элементы таблицы - НЕ СДЕЛАНО
 tableShowText.forEach((itemShow) => {
   itemShow.addEventListener('click', () => {
     console.log(13)
